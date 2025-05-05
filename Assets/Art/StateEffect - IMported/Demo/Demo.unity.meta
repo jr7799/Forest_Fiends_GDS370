@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 66d3511587a487145a4beaf59d909f56
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233528
+  packageName: 2D_PixelParticle_StateEffect
+  packageVersion: 1.0
+  assetPath: Assets/StateEffect/Demo/Demo.unity
+  uploadId: 527872

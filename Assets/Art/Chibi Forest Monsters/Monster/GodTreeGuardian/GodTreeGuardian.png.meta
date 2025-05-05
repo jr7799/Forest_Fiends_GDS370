@@ -1,0 +1,1257 @@
+fileFormatVersion: 2
+guid: 141c47eaeedc5ef44a627aed753a4313
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296965
+  packageName: '2D Monster - Cute & Chibi: Forest (Unique Skill Animated Prefab with
+    SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Chibi Monster Forest (Unique Skill Animated Prefab with SFX)/Monster/GodTreeGuardian/GodTreeGuardian.png
+  uploadId: 695132
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6381059454388202159
+    second: GodTreeGuardian_0
+  - first:
+      213: -7591209046565511534
+    second: GodTreeGuardian_1
+  - first:
+      213: 3789545352732753109
+    second: GodTreeGuardian_2
+  - first:
+      213: 563038253350455375
+    second: GodTreeGuardian_3
+  - first:
+      213: 5331938308017890566
+    second: GodTreeGuardian_4
+  - first:
+      213: 6774139304097993229
+    second: GodTreeGuardian_5
+  - first:
+      213: -8895234205511794100
+    second: GodTreeGuardian_6
+  - first:
+      213: -7433120580617411413
+    second: GodTreeGuardian_7
+  - first:
+      213: -6716344783270224252
+    second: GodTreeGuardian_8
+  - first:
+      213: -4657744768592455124
+    second: GodTreeGuardian_9
+  - first:
+      213: -4697852480935410764
+    second: GodTreeGuardian_10
+  - first:
+      213: -409486241227414515
+    second: GodTreeGuardian_11
+  - first:
+      213: 4869802853311637075
+    second: GodTreeGuardian_12
+  - first:
+      213: 2210064710529150503
+    second: GodTreeGuardian_13
+  - first:
+      213: -5645556093077688649
+    second: GodTreeGuardian_14
+  - first:
+      213: -7614301845793899197
+    second: GodTreeGuardian_15
+  - first:
+      213: -7759805812402845975
+    second: GodTreeGuardian_16
+  - first:
+      213: 7127017158047833723
+    second: GodTreeGuardian_17
+  - first:
+      213: -6600453286370541754
+    second: GodTreeGuardian_18
+  - first:
+      213: -1239725693908354507
+    second: GodTreeGuardian_19
+  - first:
+      213: 2269050382695947735
+    second: GodTreeGuardian_20
+  - first:
+      213: -1627856092047128331
+    second: GodTreeGuardian_21
+  - first:
+      213: 7495624435327511768
+    second: GodTreeGuardian_22
+  - first:
+      213: -2594493221363705802
+    second: GodTreeGuardian_23
+  - first:
+      213: 8471392066320516512
+    second: GodTreeGuardian_24
+  - first:
+      213: -5939957471412939641
+    second: GodTreeGuardian_25
+  - first:
+      213: 7126826581752907902
+    second: GodTreeGuardian_26
+  - first:
+      213: 7333186007553955618
+    second: GodTreeGuardian_27
+  - first:
+      213: 925531333835403701
+    second: GodTreeGuardian_28
+  - first:
+      213: 8291858312602948716
+    second: GodTreeGuardian_29
+  - first:
+      213: -6896117059736738624
+    second: GodTreeGuardian_30
+  - first:
+      213: 8261098853381678304
+    second: GodTreeGuardian_31
+  - first:
+      213: 3992851444004078270
+    second: GodTreeGuardian_32
+  - first:
+      213: 8992897269033832849
+    second: GodTreeGuardian_33
+  - first:
+      213: -7721000622817470927
+    second: GodTreeGuardian_34
+  - first:
+      213: 3212639914876492677
+    second: GodTreeGuardian_35
+  - first:
+      213: -9159323836702520677
+    second: GodTreeGuardian_36
+  - first:
+      213: 9037301773988565675
+    second: GodTreeGuardian_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GodTreeGuardian_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1714
+        width: 110
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1551b8a0c3ce177a0800000000000000
+      internalID: -6381059454388202159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_1
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1714
+        width: 112
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e1bb3979b96a690800000000000000
+      internalID: -7591209046565511534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_2
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1714
+        width: 110
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc3ed1ab6b279430800000000000000
+      internalID: 3789545352732753109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_3
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1714
+        width: 110
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4809edee4050d700800000000000000
+      internalID: 563038253350455375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1426
+        width: 110
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60524bd24a9def940800000000000000
+      internalID: 5331938308017890566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1426
+        width: 126
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02d5cf5ec3920e50800000000000000
+      internalID: 6774139304097993229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_6
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1426
+        width: 110
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42c09a7e97cd8480800000000000000
+      internalID: -8895234205511794100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_7
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1426
+        width: 123
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba467abd63048d890800000000000000
+      internalID: -7433120580617411413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_8
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1426
+        width: 114
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e512c1100cac2a0800000000000000
+      internalID: -6716344783270224252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1138
+        width: 108
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2adc9d8fcd5c5fb0800000000000000
+      internalID: -4657744768592455124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_10
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1138
+        width: 108
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b348a21f00edceb0800000000000000
+      internalID: -4697852480935410764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_11
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1138
+        width: 108
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04ea33ee66315af0800000000000000
+      internalID: -409486241227414515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_12
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1138
+        width: 108
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356e2ddc4e3059340800000000000000
+      internalID: 4869802853311637075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 850
+        width: 108
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e67b1152abbae10800000000000000
+      internalID: 2210064710529150503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_14
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 850
+        width: 123
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7beef8015a4f6a1b0800000000000000
+      internalID: -5645556093077688649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_15
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 850
+        width: 108
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d7ad440d0945690800000000000000
+      internalID: -7614301845793899197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_16
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 850
+        width: 121
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e687b11ab1af4490800000000000000
+      internalID: -7759805812402845975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_17
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 850
+        width: 110
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e1e8d385048e260800000000000000
+      internalID: 7127017158047833723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_18
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 562
+        width: 110
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ff25de4ba7664a0800000000000000
+      internalID: -6600453286370541754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_19
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 562
+        width: 110
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53afaabbc0c9bcee0800000000000000
+      internalID: -1239725693908354507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_20
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 562
+        width: 110
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd5e061d494d7f10800000000000000
+      internalID: 2269050382695947735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_21
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 467
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f843105281b869e0800000000000000
+      internalID: -1627856092047128331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_22
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 458
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc2f6dd5bec50860800000000000000
+      internalID: 7495624435327511768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_23
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 448
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638157059228efbd0800000000000000
+      internalID: -2594493221363705802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_24
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 438
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5c812733e609570800000000000000
+      internalID: 8471392066320516512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_25
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 428
+        width: 120
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7841187a628019da0800000000000000
+      internalID: -5939957471412939641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_26
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 418
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78813d340397e260800000000000000
+      internalID: 7126826581752907902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_27
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 418
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2275e1c22d5b4c560800000000000000
+      internalID: 7333186007553955618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_28
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 418
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1b0cd28d528dc00800000000000000
+      internalID: 925531333835403701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_29
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 418
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b258fdf9c95587344b03ded4fe523da9
+      internalID: 8291858312602948716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_30
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 274
+        width: 108
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca88d7a8ccab614b9a338d17829f8b1
+      internalID: -6896117059736738624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_31
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 274
+        width: 110
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7710c4ce4c94c1a48981acc6f205c4c9
+      internalID: 8261098853381678304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_32
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 274
+        width: 110
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbec5518f3bb4f469a12d8bf964dec0
+      internalID: 3992851444004078270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_33
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 323
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee995299209cee4c80f850417a45f1f
+      internalID: 8992897269033832849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_34
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 314
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6219952671de8fe4fb9f4b684b3780cd
+      internalID: -7721000622817470927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_35
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 304
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c830e63bf69d3d94db14c49b2662ceb5
+      internalID: 3212639914876492677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_36
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 294
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575de23705e6f8d48a0bc7cb82b0467e
+      internalID: -9159323836702520677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_37
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 284
+        width: 120
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40db4875d47e664facf4343659cefa3
+      internalID: 9037301773988565675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_38
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 274
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51610d762cf418439b85b063d55bed3
+      internalID: -1634824680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_39
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 274
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5876c4a5095c342b89e62eb7d4c0c7
+      internalID: -1507343017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_40
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 274
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b002f2da24f694883abae9cfb04691
+      internalID: -549001412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GodTreeGuardian_41
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 274
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db55be7ed94bb7949b7629c0e199ec3c
+      internalID: -1143769033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GodTreeGuardian_0: -6381059454388202159
+      GodTreeGuardian_1: -7591209046565511534
+      GodTreeGuardian_10: -4697852480935410764
+      GodTreeGuardian_11: -409486241227414515
+      GodTreeGuardian_12: 4869802853311637075
+      GodTreeGuardian_13: 2210064710529150503
+      GodTreeGuardian_14: -5645556093077688649
+      GodTreeGuardian_15: -7614301845793899197
+      GodTreeGuardian_16: -7759805812402845975
+      GodTreeGuardian_17: 7127017158047833723
+      GodTreeGuardian_18: -6600453286370541754
+      GodTreeGuardian_19: -1239725693908354507
+      GodTreeGuardian_2: 3789545352732753109
+      GodTreeGuardian_20: 2269050382695947735
+      GodTreeGuardian_21: -1627856092047128331
+      GodTreeGuardian_22: 7495624435327511768
+      GodTreeGuardian_23: -2594493221363705802
+      GodTreeGuardian_24: 8471392066320516512
+      GodTreeGuardian_25: -5939957471412939641
+      GodTreeGuardian_26: 7126826581752907902
+      GodTreeGuardian_27: 7333186007553955618
+      GodTreeGuardian_28: 925531333835403701
+      GodTreeGuardian_29: 8291858312602948716
+      GodTreeGuardian_3: 563038253350455375
+      GodTreeGuardian_30: -6896117059736738624
+      GodTreeGuardian_31: 8261098853381678304
+      GodTreeGuardian_32: 3992851444004078270
+      GodTreeGuardian_33: 8992897269033832849
+      GodTreeGuardian_34: -7721000622817470927
+      GodTreeGuardian_35: 3212639914876492677
+      GodTreeGuardian_36: -9159323836702520677
+      GodTreeGuardian_37: 9037301773988565675
+      GodTreeGuardian_38: -1634824680
+      GodTreeGuardian_39: -1507343017
+      GodTreeGuardian_4: 5331938308017890566
+      GodTreeGuardian_40: -549001412
+      GodTreeGuardian_41: -1143769033
+      GodTreeGuardian_5: 6774139304097993229
+      GodTreeGuardian_6: -8895234205511794100
+      GodTreeGuardian_7: -7433120580617411413
+      GodTreeGuardian_8: -6716344783270224252
+      GodTreeGuardian_9: -4657744768592455124
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
