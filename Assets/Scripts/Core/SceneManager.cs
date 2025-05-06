@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Scenes : MonoBehaviour
 {
     static Scenes instance;
+    GameManager gameManager;
     //private void Awake()
     //{
     //    if (instance == null)
@@ -17,13 +18,21 @@ public class Scenes : MonoBehaviour
     //        Destroy(gameObject);
     //    }
     //}
+    private void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
     }
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        if (gameManager.readyToPlay)
+            SceneManager.LoadScene(1);
+        else
+            Debug.Log("Character Locked: not ready to play");
+            //message or something
     }
     public void ToShop()
     {

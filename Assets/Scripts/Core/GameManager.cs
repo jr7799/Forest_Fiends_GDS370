@@ -3,23 +3,26 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, IDataPersistance
 {
     [Header("Save Vars")]
     public int coins;
+
     [Header("Stats")]
     public int totalSpawned;
     public int totalKilled;
     public int minutes;
     public int seconds;
+    public TMP_Text killCounter;
     [Header("Gem Management")]
     public int totalGems;
     public List<GameObject> gems = new List<GameObject>();
     public bool redGemSpawned = false;
 
-    public TMP_Text killCounter;
-
+    [Header("GamePlay")]
     static GameManager instance;
+    public bool readyToPlay;
+
     private void Awake()
     {
         if (instance == null)
@@ -31,6 +34,18 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void Start()
+    {
+        readyToPlay = false;
+    }
+    public void LoadData(GameData data)
+    {
+        coins = data.coins;
+    }
+    public void SaveData(ref GameData data)
+    {
+        data.coins = coins;
     }
     private void Update()
     {        
