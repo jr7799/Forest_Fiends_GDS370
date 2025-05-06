@@ -4,13 +4,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-
-
 public class StoreManager : MonoBehaviour
 {
     public Button[] buttons;
     GameManager gameManager;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -28,7 +26,7 @@ public class StoreManager : MonoBehaviour
             {
                 if (buttonSelect.selected && !buttonSelect.locked)
                 {
-                    Debug.Log("Already Unlocked");
+                    Debug.Log("Character ALREADY Unlocked" + buttonSelect.name);
                 }
                 else if(buttonSelect.selected && buttonSelect.locked)
                 {
@@ -36,12 +34,12 @@ public class StoreManager : MonoBehaviour
                     {
                         gameManager.coins -= buttonSelect.cost;
                         buttonSelect.locked = false;
+                        Debug.Log("NEW Character Unlocked" + buttonSelect.name);
                     }
                     else
                         Debug.Log("NEED MORE COINS");
                 }
             }
-
         }
     }
     public void Select(String test)
@@ -55,7 +53,7 @@ public class StoreManager : MonoBehaviour
             else
             {
                button.GetComponent<CharacterSelect>().selected = true;
-                Debug.Log("Unlocked:" + test);
+                Debug.Log("Character Selected:" + test);
             }
         }
     }

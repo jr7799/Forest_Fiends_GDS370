@@ -3142,7 +3142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1901175034793571550, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.09
+      value: -2.07
       objectReference: {fileID: 0}
     - target: {fileID: 1901175034793571550, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3184,6 +3184,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2907258013107325665, guid: b89d589f28014014cbfe48af46ba88de, type: 3}
+    - target: {fileID: 4946856513509174840, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5627839329701433367, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       propertyPath: orthographic size
       value: 9.01
@@ -6439,7 +6443,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3626226332462244954, guid: 44f68cdb764c1f541991a0dabdc6ccc8, type: 3}
       propertyPath: coins
-      value: 2000
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 3672932542597468150, guid: 44f68cdb764c1f541991a0dabdc6ccc8, type: 3}
       propertyPath: m_LocalPosition.x
