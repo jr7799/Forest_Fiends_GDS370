@@ -38,7 +38,7 @@ public class SettingsScript : MonoBehaviour
 
     public void SettingsMenu(InputAction.CallbackContext ctx)
     {
-        if(pauseMenu.activeSelf == false && whipMenu.activeSelf == false && bibleMenu.activeSelf == false && rewardsMenu.activeSelf == false)
+        if(pauseMenu.activeSelf == false)
         {
             settingsMenu.SetActive(!settingsMenu.activeSelf);
             Time.timeScale = settingsMenu.activeSelf ? 0 : 1;

@@ -41,7 +41,6 @@ public class EnemyDamage : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damageAmount);
-                playerHealth.takingDamage = true;
                 //if (anim != null)
                 //{
                 //    anim.SetBool(animWalkName, false);

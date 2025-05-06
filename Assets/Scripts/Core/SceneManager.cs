@@ -25,6 +25,10 @@ public class Scenes : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void ToShop()
+    {
+        SceneManager.LoadScene(5);
+    }
     public void LoseScene()
     {
         SceneManager.LoadScene(2);

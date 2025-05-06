@@ -6,7 +6,6 @@ public class GameAssets : MonoBehaviour
 {
     public Transform pfDamagePopup;
     public GameObject bulletPop;
-    public ScreenShake screenShakeScript;
 
     private static GameAssets _i;
     public static GameAssets i {

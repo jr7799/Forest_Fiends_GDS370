@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Save Vars")]
+    public int coins;
     [Header("Stats")]
     public int totalSpawned;
     public int totalKilled;
@@ -31,7 +33,10 @@ public class GameManager : MonoBehaviour
         }
     }
     private void Update()
-    {
+    {        
+        if(killCounter == null)
+            killCounter = GameObject.Find("KilledTXT").GetComponent<TMP_Text>();
+
         if (killCounter != null)
         {
             if (totalKilled < 10)
