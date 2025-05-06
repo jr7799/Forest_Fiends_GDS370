@@ -54,6 +54,16 @@ public class PlayerAttack : MonoBehaviour
     public bool whipActive = false;
     public bool bibleActive = false;
 
+
+    [Header("Boomerang Settings")]
+    public GameObject boomerangPrefab;
+    public Transform boomerangSpawnPoint;
+    public float boomerangSpeed = 10f;
+    public float boomerangReturnSpeed = 15f;
+    public float boomerangMaxDistance = 10f;
+    public float boomerangChainRadius = 5f;
+    public int boomerangMaxTargets = 5;
+
     SoundManager soundManager;
 
     void Start()
@@ -83,6 +93,10 @@ public class PlayerAttack : MonoBehaviour
             {
                 currentState = AttackState.Bible;
             }
+        }
+        if (Input.GetMouseButtonDown(1)) // Right click
+        {
+            ThrowBoomerang();
         }
     }
 
@@ -290,6 +304,32 @@ public class PlayerAttack : MonoBehaviour
             Vector3 offset = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0) * orbitRadius;
             bibles[i].transform.localPosition = offset;
         }
+    }
+
+    void ThrowBoomerang()
+    {
+        if (boomerangPrefab == null || boomerangSpawnPoint == null) return;
+
+        GameObject boomerangObj = Instantiate(boomerangPrefab, boomerangSpawnPoint.position, Quaternion.identity);
+
+        // Get direction to mouse
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 throwDirection = (mouseWorldPos - boomerangSpawnPoint.position);
+        throwDirection.z = 0f;
+
+        // Ensure BoomerangLogic is on the prefab or added here
+        BoomerangLogic logic = boomerangObj.GetComponent<BoomerangLogic>();
+        if (logic == null) logic = boomerangObj.AddComponent<BoomerangLogic>();
+
+        logic.Initialize(
+            transform,
+            boomerangSpeed,
+            boomerangReturnSpeed,
+            boomerangMaxDistance,
+            boomerangChainRadius,
+            boomerangMaxTargets,
+            throwDirection
+        );
     }
 }
 

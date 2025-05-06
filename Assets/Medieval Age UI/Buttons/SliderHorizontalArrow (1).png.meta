@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SliderHorizontalArrow (1)_0: 1895532017264381411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
