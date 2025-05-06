@@ -3406,6 +3406,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117343569}
   m_CullTransparentMesh: 1
+--- !u!4 &1172057742 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7589226018647493330, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+  m_PrefabInstance: {fileID: 4418773015715627436}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1189247235
 GameObject:
   m_ObjectHideFlags: 0
@@ -6640,6 +6645,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 362217043}
     m_Modifications:
+    - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: boomerangPrefab
+      value: 
+      objectReference: {fileID: 6872291039406273765, guid: 51ecbe4c86fb83b4e87466b488cd11d0, type: 3}
+    - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: boomerangSpawnPoint
+      value: 
+      objectReference: {fileID: 1172057742}
     - target: {fileID: 1901175034793571550, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
