@@ -1,5 +1,6 @@
 using NUnit.Framework.Internal;
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -7,7 +8,8 @@ using UnityEngine.UI;
 public class StoreManager : MonoBehaviour
 {
     public Button[] buttons;
-    GameManager gameManager;
+    public GameManager gameManager;
+
 
     void Start()
     {
@@ -17,6 +19,7 @@ public class StoreManager : MonoBehaviour
             button.onClick.AddListener(delegate { Select(button.name); });
         }
     }
+    
     public void Buy()
     {
         foreach(var button in buttons)
@@ -42,18 +45,23 @@ public class StoreManager : MonoBehaviour
             }
         }
     }
-    public void Select(String test)
+    public void Select(String name)
     {
         foreach (var button in buttons)
         {
-            if(button.name != test)
+            var buttonSelect = button.GetComponent<CharacterSelect>();
+            if (button.name != name)
             {
-                button.GetComponent<CharacterSelect>().selected = false;
+                buttonSelect.selected  = false;
             }
             else
             {
-               button.GetComponent<CharacterSelect>().selected = true;
-                Debug.Log("Character Selected:" + test);
+               buttonSelect.selected = true;
+                if (buttonSelect.locked == false)
+                {
+                    gameManager.readyToPlay = true;
+                }
+                Debug.Log("Character Selected:" + name);
             }
         }
     }
