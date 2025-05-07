@@ -29,7 +29,10 @@ public class Scenes : MonoBehaviour
     public void StartGame()
     {
         if (gameManager.readyToPlay)
-            SceneManager.LoadScene(1);
+        {
+            SceneManager.LoadSceneAsync(1);
+
+        }
         else
             Debug.Log("Character Locked: not ready to play");
             //message or something

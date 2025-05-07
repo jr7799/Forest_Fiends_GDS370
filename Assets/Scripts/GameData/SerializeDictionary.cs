@@ -4,28 +4,28 @@ using UnityEngine;
 [System.Serializable]
 public class SerializeDictionary<TKey, TValue> : Dictionary<TKey, TValue>, ISerializationCallbackReceiver
 {
-    [SerializeField] private List<TKey> keyList = new List<TKey>();
-    [SerializeField] private List<TValue> valueList = new List<TValue>();
+    [SerializeField] private List<TKey> keys = new List<TKey>();
+    [SerializeField] private List<TValue> values = new List<TValue>();
     public void OnBeforeSerialize()
     {
-        keyList.Clear();
-        valueList.Clear();
+        keys.Clear();
+        values.Clear();
         foreach(KeyValuePair<TKey, TValue> pair in this)
         {
-            keyList.Add(pair.Key);
-            valueList.Add(pair.Value);
+            keys.Add(pair.Key);
+            values.Add(pair.Value);
         }
     }
     public void OnAfterDeserialize()
     {
         this.Clear();
-        if(keyList.Count != valueList.Count)
+        if(keys.Count != values.Count)
         {
             Debug.LogError("Tried to desearlize a serializeableDictionary, but amount of keys did not match amount of values.");
         }
-        for(int i = 0; i < keyList.Count; i++)
+        for(int i = 0; i < keys.Count; i++)
         {
-            this.Add(keyList[i], valueList[i]);
+            this.Add(keys[i], values[i]);
         }
     }
 }

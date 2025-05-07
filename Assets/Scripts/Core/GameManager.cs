@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour, IDataPersistance
     public int totalGems;
     public List<GameObject> gems = new List<GameObject>();
     public bool redGemSpawned = false;
-
+    SerializeDictionary<string, bool> unlocks = new SerializeDictionary<string, bool>();
     [Header("GamePlay")]
     static GameManager instance;
     public bool readyToPlay;
@@ -43,8 +44,9 @@ public class GameManager : MonoBehaviour, IDataPersistance
     public void LoadData(GameData data)
     {
         coins = data.coins;
+        
     }
-    public void SaveData(ref GameData data)
+    public void SaveData(GameData data)
     {
         data.coins = coins;
     }

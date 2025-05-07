@@ -2,11 +2,13 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class DataPersistance : MonoBehaviour
 {
     [Header("File Storage Config")]
     [SerializeField] private string fileName; 
+    [SerializeField] private bool useEncryption; 
 
 
     private GameData gamedata;
@@ -25,12 +27,27 @@ public class DataPersistance : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        this.fileDataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
     }
-    private void Start()
+    private void OnEnable()
     {
-        fileDataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
+    }
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
+    }
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+
         dataPersistanceObjects = FindAllDataPersistenceObjects();
         LoadGame();
+    }
+    public void OnSceneUnloaded(Scene scene)
+    {
+        SaveGame();
     }
     private void OnApplicationQuit()
     {
@@ -52,6 +69,7 @@ public class DataPersistance : MonoBehaviour
         {
             obj.LoadData(gamedata);
         }
+        Debug.Log("Loaded Unlocks = " + gamedata.charactersUnlocked.Keys);
         Debug.Log("Loaded Coin Count = " + gamedata.coins);
 
     }
@@ -59,9 +77,10 @@ public class DataPersistance : MonoBehaviour
     {
         foreach (IDataPersistance obj in dataPersistanceObjects)
         {
-            obj.SaveData(ref gamedata);
+            obj.SaveData(gamedata);
         }
         Debug.Log("Saved Coin Count = " + gamedata.coins);
+        Debug.Log("Saved Unlocks = " + gamedata.charactersUnlocked.Keys);
         fileDataHandler.Save(gamedata);
     }
 

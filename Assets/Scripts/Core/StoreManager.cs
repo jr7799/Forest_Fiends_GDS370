@@ -27,7 +27,8 @@ public class StoreManager : MonoBehaviour
     }
     public void Buy()
     {
-        EventSystem.current.SetSelectedGameObject(selectedButton.gameObject);
+        if(selectedButton != null)
+            EventSystem.current.SetSelectedGameObject(selectedButton.gameObject);
         foreach (var button in buttons)
         {
             var buttonSelect = button.GetComponent<CharacterSelect>();

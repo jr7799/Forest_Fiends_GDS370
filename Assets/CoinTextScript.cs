@@ -38,6 +38,10 @@ public class CoinTextScript : MonoBehaviour
             {
                 coinCount.text = "0" + gameManager.coins.ToString();
             }
+            else if (gameManager.coins >= 100000)
+            {
+                coinCount.text = gameManager.coins.ToString();
+            }
         }
     }
 }

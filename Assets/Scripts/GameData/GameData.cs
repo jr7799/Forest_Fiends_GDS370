@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security;
+
+[System.Serializable]
 public class GameData
 {
     public int coins;

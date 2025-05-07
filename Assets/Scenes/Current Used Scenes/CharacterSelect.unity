@@ -1654,17 +1654,19 @@ MonoBehaviour:
   bibleSpawnDecrement: 0.2
   whipParticlePrefab: {fileID: 9149871035759107137, guid: 3a60d399f793832438d3e40e4df06b65, type: 3}
   whipSpawnPoint: {fileID: 151498746}
-  whipResetInterval: 12
   whipSpawnDecrement: 0.15
   screenShake: {fileID: 1320274803}
   magnitude: 0.05
   duration: 0.1
   whipTimer: 0
   whipTimerReset: 0
+  whipTriggerSpeed: 0.5
   bibleTimer: 0
   bibleTimerReset: 0
+  bibleTriggerSpeed: 0.5
   whipActive: 0
   bibleActive: 0
+  boomerangActive: 0
   boomerangPrefab: {fileID: 0}
   boomerangSpawnPoint: {fileID: 0}
   boomerangSpeed: 10
@@ -1672,6 +1674,11 @@ MonoBehaviour:
   boomerangMaxDistance: 10
   boomerangChainRadius: 5
   boomerangMaxTargets: 5
+  boomerangTimer: 0
+  boomerangTimerReset: 10
+  boomerangTriggerSpeed: 0.5
+  enemies: []
+  enemyPositions: []
 --- !u!114 &164077540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2430,6 +2437,7 @@ MonoBehaviour:
   - {fileID: 260863781}
   - {fileID: 741918372}
   gameManager: {fileID: 0}
+  selectedButton: {fileID: 0}
 --- !u!1001 &334416388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4364,7 +4372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38382a97970e83f45aa77e45d98304ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: ae51b948-ab28-42a8-a015-f64109bbfa7a
+  id: ae51b948
   cost: 0
   locked: 1
   selected: 0
