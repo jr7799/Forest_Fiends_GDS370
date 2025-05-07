@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4422131430879515058}
   - component: {fileID: 7589670331761833433}
   - component: {fileID: 4567675128545461835}
-  - component: {fileID: 6346903631845990175}
   - component: {fileID: 2035130450336382604}
   m_Layer: 0
   m_Name: ThrowableDefault
@@ -80,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 4815476061570213978, guid: c8fd22447a9d4cf4abc7082415295a82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -152,23 +151,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!114 &6346903631845990175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6347877601717469760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 970e33a0997ade24084d46dbd5f87eba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potionPrefab: {fileID: 6347877601717469760}
-  tempPlayerWeapon: {fileID: 0}
-  throwForce: 10
+  m_Offset: {x: 0, y: -0.06791353}
+  m_Radius: 0.92106366
 --- !u!114 &2035130450336382604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,4 +165,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f17756bbc97384c9261df37dc4241e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionEffect: {fileID: 5538653657646568222, guid: c604a591b543eb748b8c8c1577e85024, type: 3}

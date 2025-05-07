@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6d6b9e48bab683b47a22ab5a60ebabc7
+guid: 9545c1e2214fe4e4d956c5395f5e029b
 DefaultImporter:
   externalObjects: {}
   userData: 
@@ -7,9 +7,9 @@ DefaultImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 296965
-  packageName: '2D Monster - Cute & Chibi: Forest (Unique Skill Animated Prefab with
+  productId: 296778
+  packageName: 'Cute Chibi Character: Medieval (Unique Skill Animated Prefab with
     SFX)'
-  packageVersion: 
+  packageVersion: 1.0
   assetPath: Assets/Art/Hood And Monk Chibi/Demo Scene/DemoScene.unity
-  uploadId: 0
+  uploadId: 695064

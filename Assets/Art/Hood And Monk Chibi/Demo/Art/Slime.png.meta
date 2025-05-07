@@ -1,13 +1,5 @@
 fileFormatVersion: 2
 guid: 45d014015b99fb4418a417c2c2202c3e
-AssetOrigin:
-  serializedVersion: 1
-  productId: 296953
-  packageName: Cute Chibi Character Free Pack (Unique Skill Animated Prefab with
-    SFX)
-  packageVersion: 1.0
-  assetPath: Assets/Chibi Character Free (Unique Skill Animated Prefab with SFX)/Demo/Art/Slime.png
-  uploadId: 695069
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -83,7 +75,7 @@ TextureImporter:
       213: -7984460838228542658
     second: Slime_23
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -147,7 +139,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 1
   platformSettings:
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -157,10 +149,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -170,10 +161,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -183,10 +173,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -196,10 +185,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -209,11 +197,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -222,7 +209,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -239,7 +225,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -261,7 +246,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -283,7 +267,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -305,7 +288,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -327,7 +309,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -349,7 +330,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -371,7 +351,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -393,7 +372,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -415,7 +393,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -437,7 +414,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -459,7 +435,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -481,7 +456,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -503,7 +477,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -525,7 +498,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -547,7 +519,6 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -569,7 +540,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -591,7 +561,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -613,7 +582,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -635,7 +603,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -657,7 +624,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -679,7 +645,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -701,7 +666,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -723,7 +687,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -745,7 +708,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -757,7 +719,6 @@ TextureImporter:
       edges: []
       weights: []
     outline: []
-    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -767,8 +728,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    spriteCustomMetadata:
-      entries: []
     nameFileIdTable:
       Slime_0: -7282886668606283007
       Slime_1: 4518187702968751635
@@ -799,3 +758,11 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296778
+  packageName: 'Cute Chibi Character: Medieval (Unique Skill Animated Prefab with
+    SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Art/Hood And Monk Chibi/Demo/Art/Slime.png
+  uploadId: 695064

@@ -1,0 +1,685 @@
+fileFormatVersion: 2
+guid: 59505325aaf39eb44832476faa4bcbae
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HoodParts_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1334
+        width: 271
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b092796826bfa4b93928ae4b16cca3
+      internalID: -1910363653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_1
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 884
+        width: 404
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d90e99713690554cb568b5b3e841a26
+      internalID: -1699427906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_2
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1046
+        width: 125
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6455ffd48ebf9954b9c372f55818d678
+      internalID: 2073815348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_3
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1046
+        width: 174
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14c2957d0b40e745a278d066fec3e8c
+      internalID: -1923365701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_4
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1046
+        width: 220
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81152f95e649f541ab5aaa044437911
+      internalID: -794651152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_5
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 884
+        width: 403
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f74b3b91eee58d43acde8e7ecd70a9f
+      internalID: -1098693504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_6
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 1169
+        width: 130
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710027960202fb848b1c52a448a923c2
+      internalID: 1777144527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_7
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1191
+        width: 78
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f359ffd80df10b741b9cc26415229f78
+      internalID: -581410577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_8
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1154
+        width: 271
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec2a0c80af60d040b704ed2799651ba
+      internalID: 181601965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_9
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 940
+        width: 284
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abfdb150c0469843a6df5c9ace1c70e
+      internalID: -512307259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_10
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 528
+        width: 177
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06322248f4f12ee4dac47de876832c2e
+      internalID: 521533969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_11
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 527
+        width: 456
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685e8cc7ae1e7004290d1c88f191a7e2
+      internalID: -1995507311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_12
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 611
+        width: 202
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f4ece2cb280d549a784c360b72245a
+      internalID: -2004372975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_13
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 552
+        width: 150
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1c1ea299c5e4d49a58984b811c5e77
+      internalID: 301791478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_14
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 524
+        width: 455
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6618d8092b770e84db2cc62d1faa596f
+      internalID: 1698232940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_15
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 538
+        width: 177
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056d3f5ef47945b4281977cbe676494e
+      internalID: -41768333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_16
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 347
+        width: 146
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92ec01f91c68844f92eb6d5a05231ab
+      internalID: -1165707433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_17
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 344
+        width: 149
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010cd25b08429364f9df7e747cf774fe
+      internalID: 382857476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_18
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 56
+        width: 214
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d937ec24cea08d48ae8b86eace43ec4
+      internalID: -746268862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_19
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 56
+        width: 142
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d00c0a5d5d8dcf4cbe30681ad349561
+      internalID: 1721339310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_20
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 344
+        width: 149
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920162b489fd95c41b2dd434e0d17fbb
+      internalID: 1582298294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_21
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 347
+        width: 148
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ce156bb7f2170469bdd0d474019243
+      internalID: -532118205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_22
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 88
+        width: 274
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e077a840ecd8947a164de4d9c22283
+      internalID: -719480981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 88
+        width: 544
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beeb9115673d56a4895c88e69e62b429
+      internalID: -1758271280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HoodParts_24
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 88
+        width: 544
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe540db9931ba0442932e90624e139bc
+      internalID: 219073538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HoodParts_0: -1910363653
+      HoodParts_1: -1699427906
+      HoodParts_10: 521533969
+      HoodParts_11: -1995507311
+      HoodParts_12: -2004372975
+      HoodParts_13: 301791478
+      HoodParts_14: 1698232940
+      HoodParts_15: -41768333
+      HoodParts_16: -1165707433
+      HoodParts_17: 382857476
+      HoodParts_18: -746268862
+      HoodParts_19: 1721339310
+      HoodParts_2: 2073815348
+      HoodParts_20: 1582298294
+      HoodParts_21: -532118205
+      HoodParts_22: -719480981
+      HoodParts_23: -1758271280
+      HoodParts_24: 219073538
+      HoodParts_3: -1923365701
+      HoodParts_4: -794651152
+      HoodParts_5: -1098693504
+      HoodParts_6: 1777144527
+      HoodParts_7: -581410577
+      HoodParts_8: 181601965
+      HoodParts_9: -512307259
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296778
+  packageName: 'Cute Chibi Character: Medieval (Unique Skill Animated Prefab with
+    SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Art/Hood And Monk Chibi/Characters/Hood/HoodParts.png
+  uploadId: 695064

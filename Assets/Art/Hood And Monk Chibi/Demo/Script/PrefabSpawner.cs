@@ -37,13 +37,8 @@ namespace Art_Controller
         public GameObject prefab;
         //Delay Time Before the prefab spawn
         public float delay;
-        //The flying speed of prefab before Hit, set to zero(0) if the prefab have no flying time (Direct Hit)
-        //Set to (-1) if the prefab spawn and Hit on character
+        //The flying speed of prefab before Hit, set to zero if the prefab have no flying time (Direct Hit)
         public float flyingSpeed;
-        //If want the skill to rotate around target, fill in the rotate duration. 0 means not rotating.
-        public float rotateDuration;
-        //If skill spawn position depends on monster, set this
-        public Vector3 monsterOffset;
     }
 
     [System.Serializable]
@@ -53,8 +48,6 @@ namespace Art_Controller
         public State state;
         //Times of Sfx played According to Length of List, Delay time is before each Sfx played
         public List<float> delay;
-        //Sfx to replace the original
-        public AudioClip replacementSFX;
     }
     /*End of General Code*/
 
@@ -107,58 +100,35 @@ namespace Art_Controller
         private IEnumerator SpawnSkill(ActionInfo skillInfo)
         {
             yield return new WaitForSeconds(skillInfo.delay);
-            Vector3 monsterPosition = monsterTransform.position + monsterOffset;
-            Vector3 spawnPosition = skillInfo.monsterOffset == Vector3.zero ?
-                currentCharacter.transform.position + characterInfo[currentIndex].characterOffset : monsterPosition + skillInfo.monsterOffset;
-            GameObject skillPrefab = Instantiate(skillInfo.prefab, spawnPosition, Quaternion.identity);
+            GameObject skillPrefab = Instantiate(skillInfo.prefab, currentCharacter.transform.position + characterInfo[currentIndex].characterOffset, Quaternion.identity);
             Animator skillAnimator = skillPrefab.GetComponent<Animator>();
             //Skill Flying
             if (skillInfo.flyingSpeed > 0)
             {
-                if(skillAnimator!=null)
-                    skillAnimator.Play("flying");
+                skillAnimator.Play("flying");
                 while (Vector3.Distance(skillPrefab.transform.position, monsterTransform.position + monsterOffset) > Mathf.Epsilon)
                 {
-                    skillPrefab.transform.position = Vector3.MoveTowards(skillPrefab.transform.position, monsterPosition, Time.deltaTime * skillInfo.flyingSpeed);
+                    skillPrefab.transform.position = Vector3.MoveTowards(skillPrefab.transform.position, monsterTransform.position+ monsterOffset, Time.deltaTime * skillInfo.flyingSpeed);
                     yield return null;
                     
                 }
             }
             //Skill Hit
-            if(skillInfo.flyingSpeed == 0)
-            {
-                skillPrefab.transform.position = monsterPosition;
-            }
-            if (skillAnimator != null)
-                skillAnimator.Play("hit");
+            skillPrefab.transform.position = monsterTransform.position + monsterOffset;
+            skillAnimator.Play("hit");
             //Skill Hit SFX
-            AudioSource skillSFX = skillPrefab.GetComponent<AudioSource>();
-            if (skillSFX != null)
-                skillSFX.PlayOneShot(skillSFX.clip);
-            if(skillInfo.rotateDuration > 0)
-            {
-                //Rotate of skill
-                Quaternion startRotation = skillPrefab.transform.rotation;
-                Quaternion endRotation = Quaternion.Euler(0, 0, 180); 
-                float elapsedTime = 0f;
-
-                while (elapsedTime < skillInfo.rotateDuration)
-                {
-                    skillPrefab.transform.rotation = Quaternion.Lerp(startRotation, endRotation, elapsedTime / skillInfo.rotateDuration);
-                    elapsedTime += Time.deltaTime*5;
-                    yield return null;
-                }
-            }
-            else if (skillAnimator != null)
-                yield return new WaitUntil(() => skillAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1);
+            skillPrefab.GetComponent<AudioSource>().PlayOneShot(skillPrefab.GetComponent<AudioSource>().clip);
+            yield return new WaitUntil(() => skillAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1);
             //Fade
             var spriteRenderer = skillPrefab.GetComponent<SpriteRenderer>();
             float transparency = spriteRenderer.color.a;
+            Animator animator = skillPrefab.GetComponent<Animator>();
+            float duration = animator.GetCurrentAnimatorStateInfo(0).length;
             while (transparency > 0)
             {
                 transparency -= 0.1f;
                 spriteRenderer.color = new Color(1, 1, 1, transparency);
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(duration * 0.2f);
             }
             Destroy(skillPrefab);
         }
@@ -182,14 +152,7 @@ namespace Art_Controller
                 StartCoroutine(ActionSFX());
                 //Attack Prefab
                 if (characterInfo[currentIndex].actions.Count > 0 && characterInfo[currentIndex].actions.Any(x => x.type == ActionType.Attack))
-                {
-                    List<ActionInfo> actions = characterInfo[currentIndex].actions.Where(x => x.type == ActionType.Attack).ToList();
-                    //Spawn All listed Prefab, remember for the delay for each spawned prefab
-                    for (int i = 0; i < actions.Count; i++)
-                    {
-                        StartCoroutine(SpawnSkill(actions[i]));
-                    }
-                }   
+                    StartCoroutine(SpawnSkill(characterInfo[currentIndex].actions.FirstOrDefault(x => x.type == ActionType.Attack)));
             }
             else if (state == State.Attack && clips.Any(x => x.name == "skill"))
             {
@@ -200,14 +163,7 @@ namespace Art_Controller
                 StartCoroutine(ActionSFX());
                 //Skill Prefab
                 if (characterInfo[currentIndex].actions.Count > 0 && characterInfo[currentIndex].actions.Any(x => x.type == ActionType.Skill))
-                {
-                    List<ActionInfo> actions = characterInfo[currentIndex].actions.Where(x => x.type == ActionType.Skill).ToList();
-                    //Spawn All listed Prefab, remember for the delay for each spawned prefab
-                    for (int i = 0; i < actions.Count; i++)
-                    {
-                        StartCoroutine(SpawnSkill(actions[i]));
-                    }
-                }
+                    StartCoroutine(SpawnSkill(characterInfo[currentIndex].actions.FirstOrDefault(x => x.type == ActionType.Skill)));
             }
             else if (state == State.Skill && clips.Any(x => x.name == "secondSkill"))
             {
@@ -218,14 +174,7 @@ namespace Art_Controller
                 StartCoroutine(ActionSFX());
                 //Second Skill Prefab
                 if (characterInfo[currentIndex].actions.Count > 0 && characterInfo[currentIndex].actions.Any(x => x.type == ActionType.SecondSkill))
-                {
-                    List<ActionInfo> actions = characterInfo[currentIndex].actions.Where(x => x.type == ActionType.SecondSkill).ToList();
-                    //Spawn All listed Prefab, remember for the delay for each spawned prefab
-                    for (int i = 0; i < actions.Count; i++)
-                    {
-                        StartCoroutine(SpawnSkill(actions[i]));
-                    }
-                }
+                    StartCoroutine(SpawnSkill(characterInfo[currentIndex].actions.FirstOrDefault(x => x.type == ActionType.SecondSkill)));
             }
             else 
             {
@@ -289,14 +238,12 @@ namespace Art_Controller
         public IEnumerator ActionSFX()
         {
             ActionSfx currentActionSfx = characterInfo[currentIndex].actionSfx.FirstOrDefault(x=>x.state == state);
-            if (currentActionSfx == null) yield break;
             AudioSource characterAudio = currentCharacter.GetComponent<AudioSource>();
-            AudioClip clipToPlay = currentActionSfx.replacementSFX != null ? currentActionSfx.replacementSFX : characterAudio.clip;
-            if (characterAudio == null) yield break;
+            if (currentActionSfx == null) yield break;
             foreach (float second in currentActionSfx.delay)
             {
                 yield return new WaitForSeconds(second);
-                characterAudio.PlayOneShot(clipToPlay);
+                characterAudio.PlayOneShot(characterAudio.clip);
             }
         }
     }

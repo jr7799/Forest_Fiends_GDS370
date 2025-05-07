@@ -1,0 +1,1059 @@
+fileFormatVersion: 2
+guid: 8ee118114c4bd9c428ef016ff01eb29e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlchemistParts_0
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 853
+        width: 407
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c66b8ad23932747a1a0ddf924e6a86
+      internalID: 713491145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_1
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1113
+        width: 136
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb0189cbfcb66046a2969c958b35cec
+      internalID: -698879742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_2
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1124
+        width: 136
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd389a1885d1ca4ca9288501cb77a54
+      internalID: -1197420383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_3
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 847
+        width: 410
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc88f81b6942c974a96a7c0a97e62adb
+      internalID: -1140866132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 431
+        width: 119
+        height: 665
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0956a67ae50fa0b43a2dc6045b19caa4
+      internalID: 1036081700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_5
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 524
+        width: 153
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dc4076cd1ff65498a3946131394113
+      internalID: 1941839882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_6
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 486
+        width: 256
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1d49393e40f9648acb51cc32edb5f7
+      internalID: -1929539907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_7
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 573
+        width: 171
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a7b8e8b3d913241b11a3d3074b5afd
+      internalID: -670267043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_8
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 560
+        width: 159
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c6bf7460335d345919fcc48cd408e9
+      internalID: -1635243260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_9
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 524
+        width: 153
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2916404546364408a2487820e1dccc
+      internalID: 1844512310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_10
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 477
+        width: 256
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157a2a879706d77498f258579b60a1d5
+      internalID: -650417088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_11
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 573
+        width: 171
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1445c4b2eeb7ec5428b395a00ac1c90d
+      internalID: 1365283617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_12
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 431
+        width: 119
+        height: 665
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c174c0b741338448abd2aeaf1dab6f5
+      internalID: 548509553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_13
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 539
+        width: 93
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818f05596cefc104e9895770fe0d0f45
+      internalID: 1231573751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_14
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 545
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b913bf2a5ba974890b4d47aeb92311
+      internalID: 408482013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_15
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 541
+        width: 35
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00b87576186f684fbadf198450ed8ad
+      internalID: 2024543938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_16
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 552
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001ae61d6ca1d83438f71f5ef3d0b3f7
+      internalID: 1280895638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_17
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 461
+        width: 181
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c939c88640f13ca42bd15f31136e0511
+      internalID: 566625795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_18
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 499
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf61f383e5cd9f47a0683cd16f7699b
+      internalID: -33209585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_19
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 455
+        width: 134
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597d55b04a0c46b41a7bbc9cf5925812
+      internalID: -475897713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_20
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 455
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e583375060c9148b393c84b339988a
+      internalID: -192049552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_21
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 442
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3091af33cd133b747be8cbcb9e50db5d
+      internalID: -1139408511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_22
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 435
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16aacd3d11e4c74a8e5b9b7c2b619d6
+      internalID: -36503638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_23
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 347
+        width: 147
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39f006837ce0c2438a157418a9c87d4
+      internalID: -1351932904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_24
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 344
+        width: 149
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca2c560d4f35b24faafb76a2fffae9a
+      internalID: -657215560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_25
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 435
+        width: 69
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f3f1082c93dee44bcdb1c07dc47181
+      internalID: -2082934890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_26
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 347
+        width: 147
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade74e5f680d5fa4f9aadee52bde6ce0
+      internalID: -1009161875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_27
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 344
+        width: 149
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078e079f35c0e4b4faa45ad1b98ae7d7
+      internalID: 643772179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_28
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 269
+        width: 93
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67058e5d29b2737459cbfea79c820bd8
+      internalID: -934105700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_29
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 275
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13168aabb85b0c9459746875eb7508ad
+      internalID: 832047697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_30
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 290
+        width: 159
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de4fa10eff990940a943dde94497576
+      internalID: 1360408628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_31
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 271
+        width: 35
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163e3641936f5454495aef74683619a1
+      internalID: -230595306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_32
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 282
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f7cad97cb85a141a6e5a10c84e5178
+      internalID: 860566216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_33
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 88
+        width: 544
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdeac0522635b64aa87a24e6596dd3e
+      internalID: 2050765797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_34
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 191
+        width: 181
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61f2dd3b7bc3844eab0dd8dc55056ac
+      internalID: 1505954227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_35
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 229
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602a45d994fedd243852f8fd3bf033a1
+      internalID: 1046249675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_36
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 88
+        width: 544
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e265ce7580910a47bc61eb3cb30ffcc
+      internalID: -118313273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_37
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 185
+        width: 134
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f320e02a060b414080109a16db1f29a
+      internalID: 1978280703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 185
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83da916bd9fedd449afb65b5e40cc53
+      internalID: 526455992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_39
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 172
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5f6e201fc0c7d40b23ac8d98a38d5b
+      internalID: -592830361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_40
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 165
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3399fab69059b614f8fdb25bbcdb0534
+      internalID: 1855626302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlchemistParts_41
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 165
+        width: 69
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60096c8af809f4b4a837b9c7e9bda175
+      internalID: 757133317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AlchemistParts_0: 713491145
+      AlchemistParts_1: -698879742
+      AlchemistParts_10: -650417088
+      AlchemistParts_11: 1365283617
+      AlchemistParts_12: 548509553
+      AlchemistParts_13: 1231573751
+      AlchemistParts_14: 408482013
+      AlchemistParts_15: 2024543938
+      AlchemistParts_16: 1280895638
+      AlchemistParts_17: 566625795
+      AlchemistParts_18: -33209585
+      AlchemistParts_19: -475897713
+      AlchemistParts_2: -1197420383
+      AlchemistParts_20: -192049552
+      AlchemistParts_21: -1139408511
+      AlchemistParts_22: -36503638
+      AlchemistParts_23: -1351932904
+      AlchemistParts_24: -657215560
+      AlchemistParts_25: -2082934890
+      AlchemistParts_26: -1009161875
+      AlchemistParts_27: 643772179
+      AlchemistParts_28: -934105700
+      AlchemistParts_29: 832047697
+      AlchemistParts_3: -1140866132
+      AlchemistParts_30: 1360408628
+      AlchemistParts_31: -230595306
+      AlchemistParts_32: 860566216
+      AlchemistParts_33: 2050765797
+      AlchemistParts_34: 1505954227
+      AlchemistParts_35: 1046249675
+      AlchemistParts_36: -118313273
+      AlchemistParts_37: 1978280703
+      AlchemistParts_38: 526455992
+      AlchemistParts_39: -592830361
+      AlchemistParts_4: 1036081700
+      AlchemistParts_40: 1855626302
+      AlchemistParts_41: 757133317
+      AlchemistParts_5: 1941839882
+      AlchemistParts_6: -1929539907
+      AlchemistParts_7: -670267043
+      AlchemistParts_8: -1635243260
+      AlchemistParts_9: 1844512310
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296778
+  packageName: 'Cute Chibi Character: Medieval (Unique Skill Animated Prefab with
+    SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Art/Hood And Monk Chibi/Characters/Alchemist/AlchemistParts.png
+  uploadId: 695064

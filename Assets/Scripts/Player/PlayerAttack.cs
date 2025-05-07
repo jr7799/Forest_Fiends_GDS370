@@ -70,6 +70,19 @@ public class PlayerAttack : MonoBehaviour
     public float boomerangTimerReset = 10;
     public float boomerangTriggerSpeed = 0.5f;
 
+
+    [Header("Throwable Potion Settings")]
+    public GameObject potionPrefab;
+    public float potionLobHeight = 5f;
+    public float potionLobDuration = 0.5f;
+    public float potionImpactRadius = 3f;
+    public float potionThrowCooldown = 1f;
+    private float lastPotionThrowTime = -Mathf.Infinity;
+
+
+
+
+
     SoundManager soundManager;
 
     void Start()
@@ -90,6 +103,11 @@ public class PlayerAttack : MonoBehaviour
             HandleWhipLogic();
         if(boomerangActive)
             ThrowBoomerang();
+        if (Input.GetKeyDown(KeyCode.J) && Time.time - lastPotionThrowTime >= potionThrowCooldown)
+        {
+            ThrowPotion();
+            lastPotionThrowTime = Time.time;
+        }
     }
 
     void HandleShooting()
@@ -329,5 +347,55 @@ public class PlayerAttack : MonoBehaviour
         }
         return closestEnemy != null ? closestEnemy.transform.position : Vector3.zero;
     }
+
+    void ThrowPotion()
+    {
+        Debug.Log("ThrowPotion triggered");
+
+        if (potionPrefab == null)
+        {
+            Debug.LogWarning("Missing potionPrefab!");
+            return;
+        }
+
+        Vector2 start = transform.position;
+        Vector2 mouseTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        GameObject potion = Instantiate(potionPrefab, start, Quaternion.identity);
+        Debug.Log("Potion instantiated");
+
+        StartCoroutine(PotionLobArc(potion, mouseTarget));
+    }
+    IEnumerator PotionLobArc(GameObject potion, Vector2 target)
+    {
+        float elapsed = 0f;
+        Vector2 start = potion.transform.position;
+
+        // Phase 1: Lob arc
+        while (elapsed < potionLobDuration)
+        {
+            // Stop early if the potion was destroyed
+            if (potion == null) yield break;
+
+            float t = elapsed / potionLobDuration;
+            Vector2 mid = Vector2.Lerp(start, target, t);
+            mid.y += Mathf.Sin(t * Mathf.PI) * potionLobHeight;
+
+            potion.transform.position = mid;
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Stop if destroyed before snapping
+        if (potion == null) yield break;
+
+        Vector2 randomOffset = Random.insideUnitCircle * potionImpactRadius;
+        Vector2 finalPoint = target + randomOffset;
+        potion.transform.position = finalPoint;
+
+        Debug.Log("Potion impacted at: " + finalPoint);
+        Destroy(potion); // Replace with explosion/effect if needed
+    }
+
 }
 

@@ -1,13 +1,5 @@
 fileFormatVersion: 2
 guid: 933d7e717b9571349839bf2d01cb070f
-AssetOrigin:
-  serializedVersion: 1
-  productId: 296953
-  packageName: Cute Chibi Character Free Pack (Unique Skill Animated Prefab with
-    SFX)
-  packageVersion: 1.0
-  assetPath: Assets/Chibi Character Free (Unique Skill Animated Prefab with SFX)/Icon/characterIcon.png
-  uploadId: 695069
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -75,7 +67,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -88,7 +80,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -101,7 +93,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,9 +118,8 @@ TextureImporter:
         width: 216
         height: 216
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -148,9 +139,8 @@ TextureImporter:
         width: 216
         height: 216
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -161,8 +151,112 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: characterIcon_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1704
+        width: 216
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cbfc96a64bf5d429a73991175c9045
+      internalID: 1550620361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterIcon_3
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1704
+        width: 216
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa795d2257e3d424ab42a77f5072564c
+      internalID: 913567569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterIcon_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1704
+        width: 216
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c381a41ff24942a4e80422950045b931
+      internalID: 34933429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterIcon_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1488
+        width: 216
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca7e5628874b9a4aabc29e7f36da39b
+      internalID: 1223742353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterIcon_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1488
+        width: 216
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92215690fe1f5ca4db5714b25ea65ef9
+      internalID: -419563738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -172,11 +266,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    spriteCustomMetadata:
-      entries: []
     nameFileIdTable:
       characterIcon_0: 2107396066
       characterIcon_1: -990920262
+      characterIcon_10: 2070843139
+      characterIcon_11: 2104081973
       characterIcon_2: 1550620361
       characterIcon_3: 913567569
       characterIcon_4: 34933429
@@ -184,8 +278,17 @@ TextureImporter:
       characterIcon_6: -419563738
       characterIcon_7: 2145504754
       characterIcon_8: 307563866
+      characterIcon_9: 433425274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296778
+  packageName: 'Cute Chibi Character: Medieval (Unique Skill Animated Prefab with
+    SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Art/Hood And Monk Chibi/Icon/characterIcon.png
+  uploadId: 695064

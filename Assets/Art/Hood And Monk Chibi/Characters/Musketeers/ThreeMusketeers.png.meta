@@ -1,0 +1,900 @@
+fileFormatVersion: 2
+guid: 84030b7c99f033a4a877de26dd7b8add
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ThreeMusketeers_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3168
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a211c8c8cd7c51140848ce2e1013a4ab
+      internalID: 41685295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_1
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 3168
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dc97a95b4ba6d44a0a6db13e0ce9d7
+      internalID: -131387866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 3168
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eba11dac44fc434b952c04896adc5c9
+      internalID: 822923991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_3
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 3168
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d440a2146a1715f47a55649bee3a5ec5
+      internalID: -900337734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2736
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3c848b6fd4e7c4e910749defd6af5c
+      internalID: -164256664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_5
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2736
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8659672422be0341af5ad351400c5c9
+      internalID: 510387172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_6
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2736
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e90850156c64ca45864bf2a9b8a0533
+      internalID: 1712315056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_7
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2736
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d583a109b2f9c464cad770f1534b8feb
+      internalID: -1435484229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea21c9b7be583ca4aa0e48340abbceff
+      internalID: -1819882313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2304
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c000c9edd9f8b2543bfd2c4cf6f801dc
+      internalID: 952946249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_10
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2304
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9824933d872f17543aad15f01d879731
+      internalID: 249286867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_11
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2304
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d089c6557802d443a062e45cfe5ee38
+      internalID: -2104355738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_12
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2304
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb41e79e21a0dca41b49789797ba5070
+      internalID: 1344902834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_13
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2304
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06111c00c17373a48ac753d9790e8c55
+      internalID: 1852670851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1872
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e86a942a2bfaa647b47613126f36231
+      internalID: 1474416959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_15
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1872
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b0823756535db47a4319bc8df878e4
+      internalID: 2019125020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_16
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1872
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cec4b0d0f8c314e9d365581608fc3b
+      internalID: 1042307760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_17
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1872
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe6f7fec82146148b42004b800aec7f
+      internalID: -1505728447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c046e41144c4ff40bac7597a4481a51
+      internalID: -1861682967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_19
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1440
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e10cf0efabb164a9fe8bbba398eddf
+      internalID: -1000952101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_20
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1440
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7468f8c4acba5458f081ca800f42df
+      internalID: -239226461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a69426e364538408432d8e61768f6b
+      internalID: -59979200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1008
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64196dac7fa9366478f3be2b4adc5660
+      internalID: 1318309918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_23
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1008
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09506aa93614ce849a1e509c44e4805c
+      internalID: -713977374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47208c5a747ffb54caa9e8a736681a62
+      internalID: -882569332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_25
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56bfffbec4120f488eb21abf9c53ca0
+      internalID: -1114197761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_26
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 576
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbb6185a06056f4395956e14e39a0df
+      internalID: 756434535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_27
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 576
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc296728b6fc04941a7dbc51fb482a29
+      internalID: -28686499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_28
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 576
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c98341bdab1a9440932b8a7786e065b
+      internalID: 1977828546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_29
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 576
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9347370ca935cd34f947d5c7edc0b853
+      internalID: 1944023842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_30
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 576
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdeaf07c40fa6a439c4dd3f1158fab1
+      internalID: 1708288164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_31
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 576
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474c3572c44cae04ea4bbf0a78e3ea11
+      internalID: 1184355177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThreeMusketeers_32
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 576
+        width: 432
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b05839ea71c15e4285524e0feafe003
+      internalID: 1045386853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ThreeMusketeers_0: 41685295
+      ThreeMusketeers_1: -131387866
+      ThreeMusketeers_10: 249286867
+      ThreeMusketeers_11: -2104355738
+      ThreeMusketeers_12: 1344902834
+      ThreeMusketeers_13: 1852670851
+      ThreeMusketeers_14: 1474416959
+      ThreeMusketeers_15: 2019125020
+      ThreeMusketeers_16: 1042307760
+      ThreeMusketeers_17: -1505728447
+      ThreeMusketeers_18: -1861682967
+      ThreeMusketeers_19: -1000952101
+      ThreeMusketeers_2: 822923991
+      ThreeMusketeers_20: -239226461
+      ThreeMusketeers_21: -59979200
+      ThreeMusketeers_22: 1318309918
+      ThreeMusketeers_23: -713977374
+      ThreeMusketeers_24: -882569332
+      ThreeMusketeers_25: -1114197761
+      ThreeMusketeers_26: 756434535
+      ThreeMusketeers_27: -28686499
+      ThreeMusketeers_28: 1977828546
+      ThreeMusketeers_29: 1944023842
+      ThreeMusketeers_3: -900337734
+      ThreeMusketeers_30: 1708288164
+      ThreeMusketeers_31: 1184355177
+      ThreeMusketeers_32: 1045386853
+      ThreeMusketeers_4: -164256664
+      ThreeMusketeers_5: 510387172
+      ThreeMusketeers_6: 1712315056
+      ThreeMusketeers_7: -1435484229
+      ThreeMusketeers_8: -1819882313
+      ThreeMusketeers_9: 952946249
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296778
+  packageName: 'Cute Chibi Character: Medieval (Unique Skill Animated Prefab with
+    SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Art/Hood And Monk Chibi/Characters/Musketeers/ThreeMusketeers.png
+  uploadId: 695064
