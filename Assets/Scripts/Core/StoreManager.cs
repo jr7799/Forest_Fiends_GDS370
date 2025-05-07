@@ -64,6 +64,9 @@ public class StoreManager : MonoBehaviour
             else
             {
                 buttonSelect.selected = true;
+                gameManager.playerSprite = buttonSelect.playerSprite;
+                gameManager.playerAnimation = buttonSelect.playerAnimation;
+                gameManager.playerWeapon = buttonSelect.playerWeapon;
                 selectedButton = button;
                 if (buttonSelect.locked == false)
                 {

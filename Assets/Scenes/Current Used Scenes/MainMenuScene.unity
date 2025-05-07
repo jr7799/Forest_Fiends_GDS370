@@ -7290,6 +7290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Save+Load_Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7281152486879033578, guid: 9f26f6f50277dc1419f95a6b2730d5e8, type: 3}
+      propertyPath: useEncryption
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

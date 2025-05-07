@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour, IDataPersistance
     [Header("GamePlay")]
     static GameManager instance;
     public bool readyToPlay;
+    [Header("Player Items")]
+    public Sprite playerSprite;
+    public RuntimeAnimatorController playerAnimation;
+    public string playerWeapon;
 
     private void Awake()
     {

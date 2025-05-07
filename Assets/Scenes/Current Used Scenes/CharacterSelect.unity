@@ -1677,6 +1677,11 @@ MonoBehaviour:
   boomerangTimer: 0
   boomerangTimerReset: 10
   boomerangTriggerSpeed: 0.5
+  potionPrefab: {fileID: 0}
+  potionLobHeight: 5
+  potionLobDuration: 0.5
+  potionImpactRadius: 3
+  potionThrowCooldown: 1
   enemies: []
   enemyPositions: []
 --- !u!114 &164077540
@@ -2370,6 +2375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38382a97970e83f45aa77e45d98304ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSprite: {fileID: -1857628011, guid: e24d22ccc16c89245baf2659c92d6624, type: 3}
+  playerAnimation: {fileID: 9100000, guid: ffdf0b4e95a3be74c873dfaa90460623, type: 2}
+  playerWeapon: Orbs
   id: 178de8b5-6c8f-4948-9f8d-e4d11ecd6878
   cost: 100
   locked: 1
@@ -2613,7 +2621,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Samurai
+  m_text: 'Knight
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ea7531cb4ba8f147979bd683b74b0b3, type: 2}
   m_sharedMaterial: {fileID: -3813535183309535762, guid: 0ea7531cb4ba8f147979bd683b74b0b3, type: 2}
@@ -3652,7 +3662,7 @@ GameObject:
   - component: {fileID: 658739633}
   - component: {fileID: 658739636}
   m_Layer: 5
-  m_Name: Samurai
+  m_Name: Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3785,6 +3795,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38382a97970e83f45aa77e45d98304ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSprite: {fileID: -5711848221618334454, guid: 2108f124c63317242bfd0ffd967f7d7c, type: 3}
+  playerAnimation: {fileID: 9100000, guid: c53ffdae5d732b845a375c3c9b26811a, type: 2}
+  playerWeapon: boomerang
   id: b8a09258-e802-425b-9acb-704b6ec0c6bd
   cost: 450
   locked: 1
@@ -4372,6 +4385,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38382a97970e83f45aa77e45d98304ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSprite: {fileID: -4254019441913832834, guid: b89d589f28014014cbfe48af46ba88de, type: 3}
+  playerAnimation: {fileID: 9100000, guid: 73422bbbd7db33b4d92ded25a5382f2c, type: 2}
+  playerWeapon: Shooting
   id: ae51b948
   cost: 0
   locked: 1
@@ -4557,14 +4573,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4254019441913832834, guid: b89d589f28014014cbfe48af46ba88de, type: 3}
+  m_Sprite: {fileID: 1640629036, guid: 127c856414636de4190630d573f1ea73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5437,8 +5453,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 23.99998}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -1.6, y: 1.1}
+  m_SizeDelta: {x: 50, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052497685
 MonoBehaviour:
@@ -5453,14 +5469,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4254019441913832834, guid: b89d589f28014014cbfe48af46ba88de, type: 3}
+  m_Sprite: {fileID: 41685295, guid: 84030b7c99f033a4a877de26dd7b8add, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5687,6 +5703,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38382a97970e83f45aa77e45d98304ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSprite: {fileID: 41685295, guid: 84030b7c99f033a4a877de26dd7b8add, type: 3}
+  playerAnimation: {fileID: 9100000, guid: aaf36d27de9cd2b4e8536ffe4512a271, type: 2}
+  playerWeapon: Whip
   id: 7ffb3923-5791-4e11-9e16-6cfe608248e1
   cost: 250
   locked: 1
@@ -5933,17 +5952,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175820171}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.03435612, w: 0.99940974}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 658739632}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.938}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 23.99998}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -2.9, y: 18.1}
+  m_SizeDelta: {x: 110, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175820173
 MonoBehaviour:
@@ -5958,14 +5977,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4254019441913832834, guid: b89d589f28014014cbfe48af46ba88de, type: 3}
+  m_Sprite: {fileID: -5711848221618334454, guid: 2108f124c63317242bfd0ffd967f7d7c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6419,8 +6438,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 24}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 1.9}
+  m_SizeDelta: {x: 40, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1279287504
 MonoBehaviour:
@@ -6435,14 +6454,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4254019441913832834, guid: b89d589f28014014cbfe48af46ba88de, type: 3}
+  m_Sprite: {fileID: -1857628011, guid: e24d22ccc16c89245baf2659c92d6624, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7376,8 +7395,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 23.99998}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 25.3}
+  m_SizeDelta: {x: 105, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1468314021
 MonoBehaviour:
@@ -7392,14 +7411,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4254019441913832834, guid: b89d589f28014014cbfe48af46ba88de, type: 3}
+  m_Sprite: {fileID: -565228348, guid: cad26561f3c2b0a408dbd3f65ad82a18, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7569,6 +7588,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38382a97970e83f45aa77e45d98304ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSprite: {fileID: -565228348, guid: cad26561f3c2b0a408dbd3f65ad82a18, type: 3}
+  playerAnimation: {fileID: 9100000, guid: bc5ead543cf82c54fbbff1d7fce48ac4, type: 2}
+  playerWeapon: beartrap
   id: b2fea8fc-c951-41b6-8f5c-c4181775c660
   cost: 1000
   locked: 1
@@ -9939,6 +9961,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38382a97970e83f45aa77e45d98304ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSprite: {fileID: 1640629036, guid: 127c856414636de4190630d573f1ea73, type: 3}
+  playerAnimation: {fileID: 9100000, guid: 70aa02474488f5042bfc46055c24ee66, type: 2}
+  playerWeapon: Bomb
   id: a82492f0-9112-4e18-930f-e3fb42f61504
   cost: 700
   locked: 1

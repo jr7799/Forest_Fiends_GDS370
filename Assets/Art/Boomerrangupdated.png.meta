@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c8fd22447a9d4cf4abc7082415295a82
+guid: bf76e123e109ff34bab98d5940914f65
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4815476061570213978
-    second: star_0
+      213: -1169220190596106342
+    second: Boomerrangupdated_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: star_0
+      name: Boomerrangupdated_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 23
-        width: 180
-        height: 171
+        x: 38
+        y: 48
+        width: 938
+        height: 938
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a582a4ae6f104d240800000000000000
-      internalID: 4815476061570213978
+      spriteID: a97fd437e6816cfe0800000000000000
+      internalID: -1169220190596106342
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      star_0: 4815476061570213978
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

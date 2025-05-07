@@ -6525,6 +6525,10 @@ PrefabInstance:
       propertyPath: boomerangMaxDistance
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1316396183411298568, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: aaf36d27de9cd2b4e8536ffe4512a271, type: 2}
     - target: {fileID: 1901175034793571550, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6577,6 +6581,10 @@ PrefabInstance:
       propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 1291267930}
+    - target: {fileID: 4946856513509174840, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 41685295, guid: 84030b7c99f033a4a877de26dd7b8add, type: 3}
     - target: {fileID: 8246352286908514975, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       propertyPath: xpBarFill
       value: 
