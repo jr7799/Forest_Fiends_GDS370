@@ -9,7 +9,7 @@ public class StoreManager : MonoBehaviour
 {
     public Button[] buttons;
     public GameManager gameManager;
-
+    public Button selectedButton;
 
     void Start()
     {
@@ -19,10 +19,16 @@ public class StoreManager : MonoBehaviour
             button.onClick.AddListener(delegate { Select(button.name); });
         }
     }
-    
+    private void Update()
+    {
+        //gets the current selected gameobject which can include buttons
+        if(selectedButton != null)
+            EventSystem.current.SetSelectedGameObject(selectedButton.gameObject);
+    }
     public void Buy()
     {
-        foreach(var button in buttons)
+        EventSystem.current.SetSelectedGameObject(selectedButton.gameObject);
+        foreach (var button in buttons)
         {
             var buttonSelect = button.GetComponent<CharacterSelect>();
             if (buttonSelect != null)
@@ -56,7 +62,8 @@ public class StoreManager : MonoBehaviour
             }
             else
             {
-               buttonSelect.selected = true;
+                buttonSelect.selected = true;
+                selectedButton = button;
                 if (buttonSelect.locked == false)
                 {
                     gameManager.readyToPlay = true;

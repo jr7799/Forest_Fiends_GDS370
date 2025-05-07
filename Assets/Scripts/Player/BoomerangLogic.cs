@@ -36,7 +36,6 @@ public class BoomerangLogic : MonoBehaviour
         this.moveDirection = initialDirection.normalized;
         this.startPos = transform.position;
     }
-
     void Update()
     {
         if (player == null) return;

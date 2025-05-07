@@ -8,4 +8,8 @@ public class LifeTimeDestroy : MonoBehaviour
     {
         Destroy(gameObject, time);
     }
+    private void OnApplicationQuit()
+    {
+        Destroy(gameObject);
+    }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour, IDataPersistance
 {
     [Header("Save Vars")]
@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour, IDataPersistance
     private void Start()
     {
         readyToPlay = false;
+        
     }
     public void LoadData(GameData data)
     {
@@ -49,9 +50,12 @@ public class GameManager : MonoBehaviour, IDataPersistance
     }
     private void Update()
     {        
-        if(killCounter == null)
-            killCounter = GameObject.Find("KilledTXT").GetComponent<TMP_Text>();
-
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "ForestGameScene")
+        {
+            if (killCounter == null)
+                killCounter = GameObject.Find("KilledTXT").GetComponent<TMP_Text>();
+        }
         if (killCounter != null)
         {
             if (totalKilled < 10)
