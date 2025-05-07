@@ -17,6 +17,6 @@ public class PotionImpact : MonoBehaviour
             
         //}
 
-        Destroy(gameObject); 
+        //Destroy(gameObject); 
     }
 }

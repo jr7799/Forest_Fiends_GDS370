@@ -350,51 +350,36 @@ public class PlayerAttack : MonoBehaviour
 
     void ThrowPotion()
     {
-        Debug.Log("ThrowPotion triggered");
-
-        if (potionPrefab == null)
-        {
-            Debug.LogWarning("Missing potionPrefab!");
-            return;
-        }
-
+        if (potionPrefab == null) return;
         Vector2 start = transform.position;
         Vector2 mouseTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         GameObject potion = Instantiate(potionPrefab, start, Quaternion.identity);
-        Debug.Log("Potion instantiated");
-
         StartCoroutine(PotionLobArc(potion, mouseTarget));
     }
     IEnumerator PotionLobArc(GameObject potion, Vector2 target)
     {
-        float elapsed = 0f;
-        Vector2 start = potion.transform.position;
+        float speed = 20f; // projectile speed
+        float distanceThreshold = 0.1f;
 
-        // Phase 1: Lob arc
-        while (elapsed < potionLobDuration)
+        while (potion != null && Vector2.Distance(potion.transform.position, target) > distanceThreshold)
         {
-            // Stop early if the potion was destroyed
-            if (potion == null) yield break;
-
-            float t = elapsed / potionLobDuration;
-            Vector2 mid = Vector2.Lerp(start, target, t);
-            mid.y += Mathf.Sin(t * Mathf.PI) * potionLobHeight;
-
-            potion.transform.position = mid;
-            elapsed += Time.deltaTime;
+            Vector2 currentPos = potion.transform.position;
+            Vector2 direction = (target - currentPos).normalized;
+            potion.transform.position = Vector2.MoveTowards(currentPos, target, speed * Time.deltaTime);
             yield return null;
         }
 
-        // Stop if destroyed before snapping
         if (potion == null) yield break;
 
-        Vector2 randomOffset = Random.insideUnitCircle * potionImpactRadius;
-        Vector2 finalPoint = target + randomOffset;
-        potion.transform.position = finalPoint;
+        // No random radius — go exactly to the target point
+        potion.transform.position = target;
 
-        Debug.Log("Potion impacted at: " + finalPoint);
-        Destroy(potion); // Replace with explosion/effect if needed
+        Debug.Log("Potion hit exact target at: " + target);
+
+        yield return new WaitForSeconds(0.3f);
+        if (potion != null)
+            Destroy(potion);
     }
 
 }
