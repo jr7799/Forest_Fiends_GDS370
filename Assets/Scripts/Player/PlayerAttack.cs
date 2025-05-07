@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
+using System.ComponentModel.Design;
+using UnityEditor.Experimental.GraphView;
+using System.Diagnostics.CodeAnalysis;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -23,7 +26,6 @@ public class PlayerAttack : MonoBehaviour
     [Header("Whip Settings")]       
     public GameObject whipParticlePrefab;   // New whip particle
     public Transform whipSpawnPoint;        // Where to spawn the particle
-    public float whipResetInterval = 12f;
     public float whipSpawnDecrement = 0.15f;
 
     [Header("ScreenShake")]
@@ -36,8 +38,6 @@ public class PlayerAttack : MonoBehaviour
 
     private GameObject[] bibles;
     private float orbitTimer;
-    private float bibleResetTimer;
-    private float whipResetTimer;
     private bool isFading = false;
     private Coroutine fadeCoroutine;
 
@@ -45,14 +45,17 @@ public class PlayerAttack : MonoBehaviour
     private AttackState currentState = AttackState.Bible;
 
     [Header("Whip Timer")]
-    public float whipTimer;
-    public float whipTimerReset;
+    public float whipTimer = 0;
+    public float whipTimerReset = 12;
+    public float whipTriggerSpeed = 0.5f; //reward increase to trigger faster
     [Header("Bible Timer")]
-    public float bibleTimer;
-    public float bibleTimerReset;
-
+    public float bibleTimer = 0;
+    public float bibleTimerReset = 15;
+    public float bibleTriggerSpeed = 0.5f; //reward increase to trugger faster
+    [Header("Unlock Bools")]
     public bool whipActive = false;
     public bool bibleActive = false;
+    public bool boomerangActive = false;
 
 
     [Header("Boomerang Settings")]
@@ -63,6 +66,9 @@ public class PlayerAttack : MonoBehaviour
     public float boomerangMaxDistance = 10f;
     public float boomerangChainRadius = 5f;
     public int boomerangMaxTargets = 5;
+    public float boomerangTimer = 0;
+    public float boomerangTimerReset = 10;
+    public float boomerangTriggerSpeed = 0.5f;
 
     SoundManager soundManager;
 
@@ -73,31 +79,17 @@ public class PlayerAttack : MonoBehaviour
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
         orbitTimer = bibleOrbitDuration;
-        bibleResetTimer = bibleResetInterval;
-        whipResetTimer = whipResetInterval;
     }
 
     void Update()
     {
         HandleShooting();
-
-        if (currentState == AttackState.Bible)
-        {
+        if(bibleActive)
             HandleBibleLogic();
-        }
-        else if (currentState == AttackState.Whip)
-        {
-            if (whipActive)         
-                HandleWhipLogic();
-            else
-            {
-                currentState = AttackState.Bible;
-            }
-        }
-        if (Input.GetMouseButtonDown(1)) // Right click
-        {
+        if(whipActive)
+            HandleWhipLogic();
+        if(boomerangActive)
             ThrowBoomerang();
-        }
     }
 
     void HandleShooting()
@@ -111,10 +103,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 Vector3 mouseWorldPos = cam.ScreenToWorldPoint(Input.mousePosition);
                 mouseWorldPos.z = 0f;
-
                 Vector2 direction = (mouseWorldPos - tempPlayerWeapon.position).normalized;
-
-
                 Vector2 playerPos = transform.position;
                 Vector2 weaponPos = tempPlayerWeapon.position;
                 Vector2 toWeapon = weaponPos - playerPos;
@@ -137,15 +126,15 @@ public class PlayerAttack : MonoBehaviour
                     else
                         rb.linearVelocity = -direction * bulletSpeed;
                 }
-
                 //screenShake.Shake(duration, magnitude);
             }
         }
     }
-
     void HandleBibleLogic()
     {
-        if(bibleActive)
+        bibleTimer -= Time.deltaTime * bibleTriggerSpeed;
+
+        if (bibleTimer <= 0f)
         {
             if (bibles != null && !isFading)
             {
@@ -159,38 +148,22 @@ public class PlayerAttack : MonoBehaviour
             }
             else if (bibles == null)
             {
-                bibleResetTimer -= Time.deltaTime * 2;
-
-                if (bibleResetTimer <= 0f)
-                {
-                    whipResetTimer = whipResetInterval;
-                    currentState = AttackState.Whip; // Switch to whip mode
-                    
-                }
+                ResetBibleOrbit();
             }
         }
     }
-
     void HandleWhipLogic()
     {
-        whipResetTimer -= Time.deltaTime * 2;
+        whipTimer -= Time.deltaTime * whipTriggerSpeed;
 
-        if (whipResetTimer <= 0f)
+        if (whipTimer <= 0f)
         {
             TriggerWhipEffect();
-        
-            // Switch back to Bible mode
-            bibleResetInterval = Mathf.Max(1f, bibleResetInterval - bibleSpawnDecrement);
-            whipResetInterval = Mathf.Max(1f, whipResetInterval - whipSpawnDecrement);
-            ResetBibleOrbit();
-            currentState = AttackState.Bible;
         }       
     }
-
     void TriggerWhipEffect()
     {
         Debug.Log("Whip effect triggered");
-
         if (whipParticlePrefab != null && whipSpawnPoint != null)
         {
             Vector3 spawnPos = whipSpawnPoint.position;
@@ -213,8 +186,8 @@ public class PlayerAttack : MonoBehaviour
         {
             Debug.LogWarning("Missing whipParticlePrefab or whipSpawnPoint!");
         }
+        whipTimer = whipTimerReset;
     }
-
     IEnumerator DisableWhipEffectAfterSeconds(float seconds)
     {
         yield return new WaitForSeconds(seconds);
@@ -223,7 +196,6 @@ public class PlayerAttack : MonoBehaviour
             whipParticlePrefab.SetActive(false);
         }
     }
-
     public void SpawnBibles()
     {
         bibles = new GameObject[numberOfBibles];
@@ -238,7 +210,6 @@ public class PlayerAttack : MonoBehaviour
         orbitTimer = bibleOrbitDuration;
         isFading = false;
     }
-
     IEnumerator FadeOutBibles()
     {
         isFading = true;
@@ -277,10 +248,9 @@ public class PlayerAttack : MonoBehaviour
         }
 
         bibles = null;
-        bibleResetTimer = bibleResetInterval;
+        bibleTimer = bibleTimerReset;
         isFading = false;
     }
-
     void ResetBibleOrbit()
     {
         if (fadeCoroutine != null)
@@ -288,12 +258,9 @@ public class PlayerAttack : MonoBehaviour
             StopCoroutine(fadeCoroutine);
             fadeCoroutine = null;
         }
-
         isFading = false;
-        bibleResetTimer = bibleResetInterval;
         SpawnBibles();
     }
-
     void RotateBibles()
     {
         if (bibles == null) return;
@@ -305,31 +272,62 @@ public class PlayerAttack : MonoBehaviour
             bibles[i].transform.localPosition = offset;
         }
     }
-
+    GameObject boomerangObj;
     void ThrowBoomerang()
     {
-        if (boomerangPrefab == null || boomerangSpawnPoint == null) return;
+        boomerangTimer -= Time.deltaTime * boomerangTriggerSpeed;
+        if (boomerangTimer <= 0f)
+        {
+            BoomerangLogic logic = null;
+            if (boomerangObj == null && boomerangPrefab != null)
+            {
+                boomerangObj = Instantiate(boomerangPrefab, boomerangSpawnPoint.position, Quaternion.identity);
 
-        GameObject boomerangObj = Instantiate(boomerangPrefab, boomerangSpawnPoint.position, Quaternion.identity);
+                Vector3 targetPosition = GetClosestEnemyPosition();
+                Vector3 throwDirection = (targetPosition - boomerangSpawnPoint.position).normalized;
 
-        // Get direction to mouse
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 throwDirection = (mouseWorldPos - boomerangSpawnPoint.position);
-        throwDirection.z = 0f;
 
-        // Ensure BoomerangLogic is on the prefab or added here
-        BoomerangLogic logic = boomerangObj.GetComponent<BoomerangLogic>();
-        if (logic == null) logic = boomerangObj.AddComponent<BoomerangLogic>();
+                // Ensure BoomerangLogic is on the prefab or added here
+                logic = boomerangObj.GetComponent<BoomerangLogic>();
+                if (logic == null) logic = boomerangObj.AddComponent<BoomerangLogic>();
+                logic.destroyed.AddListener(boomerangeResetTimer);
+                logic.Initialize(
+                    transform,
+                    boomerangSpeed,
+                    boomerangReturnSpeed,
+                    boomerangMaxDistance,
+                    boomerangChainRadius,
+                    boomerangMaxTargets,
+                    throwDirection
+                );
+            }
+            else return;           
+        }
+    }
+    void boomerangeResetTimer()
+    {
+        boomerangTimer = boomerangTimerReset;
+    }
+     
+    public GameObject[] enemies;
+    public Vector3[] enemyPositions;
+    public Vector3 GetClosestEnemyPosition()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject closestEnemy = null;
+        float shortestDistance = Mathf.Infinity;
+        Vector3 currentPosition = transform.position;
 
-        logic.Initialize(
-            transform,
-            boomerangSpeed,
-            boomerangReturnSpeed,
-            boomerangMaxDistance,
-            boomerangChainRadius,
-            boomerangMaxTargets,
-            throwDirection
-        );
+        foreach (GameObject enemy in enemies)
+        {
+            float distance = Vector3.Distance(currentPosition, enemy.transform.position);
+            if (distance < shortestDistance)
+            {
+                shortestDistance = distance;
+                closestEnemy = enemy;
+            }
+        }
+        return closestEnemy != null ? closestEnemy.transform.position : Vector3.zero;
     }
 }
 

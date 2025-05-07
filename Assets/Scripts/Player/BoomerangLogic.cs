@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class BoomerangLogic : MonoBehaviour
 {
@@ -14,10 +15,10 @@ public class BoomerangLogic : MonoBehaviour
     private int maxTargets;
 
     private int currentTargetIndex = 0;
-    private bool returning = false;
+    public bool returning { get; private set; } = false;
     private List<GameObject> hitEnemies = new List<GameObject>();
     private GameObject currentTarget;
-
+    public UnityEvent destroyed;
     public void Initialize(
         Transform playerTransform,
         float speed,
@@ -78,7 +79,10 @@ public class BoomerangLogic : MonoBehaviour
             }
         }
     }
-
+    private void OnDestroy()
+    {
+        destroyed.Invoke();
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (!returning && other.CompareTag("Enemy") && !hitEnemies.Contains(other.gameObject))
