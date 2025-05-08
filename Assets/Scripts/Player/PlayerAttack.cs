@@ -62,8 +62,12 @@ public class PlayerAttack : MonoBehaviour
     public float boomerangTimer = 0;
     public float boomerangTimerReset = 10;
     public float boomerangTriggerSpeed = 0.5f;
-    [Header("Unlock Bools")]
+    [Header("trap Timer")]
+    public float trapTimer = 0;
+    public float trapTimerReset = 10;
+    public float trapTriggerSpeed = 0.5f;
 
+    [Header("Unlock Bools")]
     public bool whipActive = false;
     public bool bibleActive = false;
     public bool boomerangActive = false;

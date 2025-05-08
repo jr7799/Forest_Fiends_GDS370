@@ -30,7 +30,7 @@ public class Scenes : MonoBehaviour
     {
         if (gameManager.readyToPlay)
         {
-            SceneManager.LoadSceneAsync(1);
+            SceneManager.LoadScene(1);
 
         }
         else

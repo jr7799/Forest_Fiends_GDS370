@@ -21,8 +21,15 @@ public class StoreManager : MonoBehaviour
     private void Update()
     {
         //gets the current selected gameobject which can include buttons
-        if(selectedButton != null)
+        if (selectedButton != null)
+        {
             EventSystem.current.SetSelectedGameObject(selectedButton.gameObject);
+
+            if (selectedButton.GetComponent<CharacterSelect>().locked == false)
+            {
+                gameManager.readyToPlay = true;
+            }
+        }
     }
     public void Buy()
     {
@@ -43,6 +50,7 @@ public class StoreManager : MonoBehaviour
                     {
                         gameManager.coins -= buttonSelect.cost;
                         buttonSelect.locked = false;
+                        gameManager.readyToPlay = true;
                         Debug.Log("NEW Character Unlocked" + buttonSelect.name);
                     }
                     else
@@ -67,10 +75,7 @@ public class StoreManager : MonoBehaviour
                 gameManager.playerAnimation = buttonSelect.playerAnimation;
                 gameManager.playerWeapon = buttonSelect.playerWeapon;
                 selectedButton = button;
-                if (buttonSelect.locked == false)
-                {
-                    gameManager.readyToPlay = true;
-                }
+
                 Debug.Log("Character Selected:" + name);
             }
         }
