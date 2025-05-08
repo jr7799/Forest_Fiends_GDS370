@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
-using System.ComponentModel.Design;
-using UnityEditor.Experimental.GraphView;
-using System.Diagnostics.CodeAnalysis;
+using System.Net;
+
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -48,17 +47,31 @@ public class PlayerAttack : MonoBehaviour
     public float whipTimer = 0;
     public float whipTimerReset = 12;
     public float whipTriggerSpeed = 0.5f; //reward increase to trigger faster
+
     [Header("Bible Timer")]
     public float bibleTimer = 0;
     public float bibleTimerReset = 15;
     public float bibleTriggerSpeed = 0.5f; //reward increase to trugger faster
+
+    [Header("Potion Timer")]
+    public float potionTimer = 0;
+    public float potionTimerReset = 15;
+    public float potionTriggerSpeed = 0.5f;
+
+    [Header("Boomerang Timer")]
+    public float boomerangTimer = 0;
+    public float boomerangTimerReset = 10;
+    public float boomerangTriggerSpeed = 0.5f;
     [Header("Unlock Bools")]
+
     public bool whipActive = false;
     public bool bibleActive = false;
     public bool boomerangActive = false;
-
-
+    public bool shootingActive = false;
+    public bool bearTrapsActive = false;
+    public bool potionActive = false;
     [Header("Boomerang Settings")]
+
     public GameObject boomerangPrefab;
     public Transform boomerangSpawnPoint;
     public float boomerangSpeed = 10f;
@@ -66,25 +79,23 @@ public class PlayerAttack : MonoBehaviour
     public float boomerangMaxDistance = 10f;
     public float boomerangChainRadius = 5f;
     public int boomerangMaxTargets = 5;
-    public float boomerangTimer = 0;
-    public float boomerangTimerReset = 10;
-    public float boomerangTriggerSpeed = 0.5f;
-
 
     [Header("Throwable Potion Settings")]
     public GameObject potionPrefab;
     public float potionLobHeight = 5f;
     public float potionLobDuration = 0.5f;
     public float potionImpactRadius = 3f;
-    public float potionThrowCooldown = 1f;
-    private float lastPotionThrowTime = -Mathf.Infinity;
-
-
-
-
 
     SoundManager soundManager;
-
+    private void Awake()
+    {
+        whipActive = false;
+        bibleActive = false;
+        boomerangActive = false;
+        shootingActive = false;
+        bearTrapsActive = false;
+        potionActive = false;
+    }
     void Start()
     {
         cam = Camera.main;
@@ -96,18 +107,22 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        HandleShooting();
-        if(bibleActive)
+        if (shootingActive)
+            HandleShooting();
+        if (bibleActive)
             HandleBibleLogic();
-        if(whipActive)
+        if (whipActive)
             HandleWhipLogic();
-        if(boomerangActive)
+        if (boomerangActive)
             ThrowBoomerang();
-        if (Input.GetKeyDown(KeyCode.J) && Time.time - lastPotionThrowTime >= potionThrowCooldown)
+        if (bearTrapsActive)
+            Debug.Log("Traps Active");
+        if (potionActive)
         {
+            Debug.Log("BOmbs Active");
             ThrowPotion();
-            lastPotionThrowTime = Time.time;
         }
+           
     }
 
     void HandleShooting()
@@ -304,7 +319,6 @@ public class PlayerAttack : MonoBehaviour
                 Vector3 targetPosition = GetClosestEnemyPosition();
                 Vector3 throwDirection = (targetPosition - boomerangSpawnPoint.position).normalized;
 
-
                 // Ensure BoomerangLogic is on the prefab or added here
                 logic = boomerangObj.GetComponent<BoomerangLogic>();
                 if (logic == null) logic = boomerangObj.AddComponent<BoomerangLogic>();
@@ -347,39 +361,71 @@ public class PlayerAttack : MonoBehaviour
         }
         return closestEnemy != null ? closestEnemy.transform.position : Vector3.zero;
     }
-
+    GameObject potion;
     void ThrowPotion()
     {
-        if (potionPrefab == null) return;
-        Vector2 start = transform.position;
-        Vector2 mouseTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        potionTimer -= Time.deltaTime * potionTriggerSpeed;
+        if (potionTimer <= 0)
+        {
+            if (potion == null && potionPrefab != null)
+            {
+                Vector2 start = transform.position;
+                Vector2 mouseTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        GameObject potion = Instantiate(potionPrefab, start, Quaternion.identity);
-        StartCoroutine(PotionLobArc(potion, mouseTarget));
+                potion = Instantiate(potionPrefab, start, Quaternion.identity);
+
+                StartCoroutine(PotionLobArc(potion, new Vector2(potion.transform.position.x, potion.transform.position.y + potionDistance)));
+            }
+            else return;
+        }
+        
     }
-    IEnumerator PotionLobArc(GameObject potion, Vector2 target)
+    public float minRadius = 2f;
+    public float maxRadius = 10f;
+    public float spinSpeed = 360f; // degrees per second
+    public float speed = 10f;
+    public float distanceThreshold = 0.1f;
+    public float potionDistance = 10f;
+    IEnumerator PotionLobArc(GameObject potion, Vector2 arcTarget)
     {
-        float speed = 20f; // projectile speed
-        float distanceThreshold = 0.1f;
 
-        while (potion != null && Vector2.Distance(potion.transform.position, target) > distanceThreshold)
+        // === Phase 1: Move up to arc peak ===
+        while (potion != null && Vector2.Distance(potion.transform.position, arcTarget) > distanceThreshold)
         {
             Vector2 currentPos = potion.transform.position;
-            Vector2 direction = (target - currentPos).normalized;
-            potion.transform.position = Vector2.MoveTowards(currentPos, target, speed * Time.deltaTime);
+            potion.transform.position = Vector2.MoveTowards(currentPos, arcTarget, speed/1.75f * Time.deltaTime);        
+            potion.transform.Rotate(0f, 0f, spinSpeed * Time.deltaTime);
             yield return null;
         }
 
         if (potion == null) yield break;
 
-        // No random radius — go exactly to the target point
-        potion.transform.position = target;
+        potion.transform.position = arcTarget;
+        Debug.Log("Potion reached arc peak at: " + arcTarget);
 
-        Debug.Log("Potion hit exact target at: " + target);
+        // === Phase 2: Calculate random target around the player (this object) ===
 
-        yield return new WaitForSeconds(0.3f);
-        if (potion != null)
-            Destroy(potion);
+        float randomRadius = Random.Range(minRadius, maxRadius);
+        Vector2 randomDirection = Random.insideUnitCircle.normalized;
+        Vector2 randomOffset = randomDirection * randomRadius;
+        Vector2 finalTarget = (Vector2)transform.position + randomOffset;
+
+        Debug.DrawLine(arcTarget, finalTarget, Color.magenta, 1f);
+        Debug.Log("Potion moving to final randomized target at: " + finalTarget);
+
+        // === Phase 3: Move to final position around player ===
+        while (potion != null && Vector2.Distance(potion.transform.position, finalTarget) > distanceThreshold)
+        {
+            Vector2 currentPos = potion.transform.position;
+            potion.transform.position = Vector2.MoveTowards(currentPos, finalTarget, speed * Time.deltaTime);
+            potion.transform.Rotate(0f, 0f, potion.transform.rotation.z);
+            yield return null;
+        }
+
+        if (potion == null) yield break;
+        potion.transform.position = finalTarget;
+        Destroy(potion);
+        potionTimer = potionTimerReset;
     }
 
 }

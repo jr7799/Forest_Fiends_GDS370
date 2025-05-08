@@ -33,7 +33,7 @@ public class DamagePopup : MonoBehaviour {
     }
     public void SetUp(float damageAmount, bool isCriticalHit)
     {
-        text.SetText(damageAmount.ToString());
+        text.SetText(damageAmount.ToString("F0"));
         if(!isCriticalHit)
         {
             text.fontSize = 10;

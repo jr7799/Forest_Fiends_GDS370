@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerInitalizer : MonoBehaviour
@@ -27,7 +26,7 @@ public class PlayerInitalizer : MonoBehaviour
         }
         else if(playerWeapon == "Bomb")
         {
-            playerAttack.bombsActive = true;
+            playerAttack.potionActive = true;
         }
         else if (playerWeapon == "Orbs")
         {
@@ -41,11 +40,5 @@ public class PlayerInitalizer : MonoBehaviour
         {
             playerAttack.boomerangActive = true;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

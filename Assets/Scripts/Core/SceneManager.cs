@@ -49,9 +49,13 @@ public class Scenes : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
-    public void Options()
+    public void Controls()
     {
         SceneManager.LoadScene(4);
+    }
+    public void Options()
+    {
+        SceneManager.LoadScene(6);
     }
     public void QuitGame()
     {

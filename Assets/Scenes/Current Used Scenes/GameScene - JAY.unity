@@ -6493,9 +6493,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 362217043}
     m_Modifications:
     - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: speed
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: maxRadius
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: potionPrefab
+      value: 
+      objectReference: {fileID: 6347877601717469760, guid: b56bb48f4c9520e499a5fa3cc4af4999, type: 3}
+    - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       propertyPath: boomerangPrefab
       value: 
       objectReference: {fileID: 6872291039406273765, guid: 51ecbe4c86fb83b4e87466b488cd11d0, type: 3}
+    - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: distanceThreshold
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       propertyPath: boomerangSpawnPoint
       value: 
