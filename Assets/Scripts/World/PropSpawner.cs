@@ -39,24 +39,39 @@ public class PropSpawner : MonoBehaviour
     void SpawnOffscreenProps()
     {
         Vector3 playerPos = player.position;
-        int cellRange = Mathf.CeilToInt(spawnRadius / spacing);
+        int attempts = 100; // Number of attempts per frame to spawn something
 
-        for (int x = -cellRange; x <= cellRange; x++)
+        for (int i = 0; i < attempts; i++)
         {
-            for (int y = -cellRange; y <= cellRange; y++)
-            {
-                Vector2Int gridPos = lastPlayerCell + new Vector2Int(x, y);
-                Vector3 worldPos = GridToWorld(gridPos);
+            // Pick a random angle and distance from the player
+            float angle = Random.Range(0f, Mathf.PI * 2f);
+            float distance = Random.Range(spawnRadius * 0.5f, spawnRadius);
+            Vector3 offset = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * distance;
+            Vector3 spawnPos = playerPos + offset;
 
-                if (Vector3.Distance(playerPos, worldPos) <= spawnRadius &&
-                    !IsPointVisible(worldPos) &&
-                    !spawnedProps.ContainsKey(gridPos) &&
-                    Random.value < spawnChance)
-                {
-                    GameObject prefab = spawnPrefabs[Random.Range(0, spawnPrefabs.Length)];
-                    GameObject obj = Instantiate(prefab, worldPos, Quaternion.identity);
-                    spawnedProps[gridPos] = obj;
-                }
+            // Skip if visible
+            if (IsPointVisible(spawnPos))
+                continue;
+
+            // Convert to grid for tracking, but allow random offset
+            Vector2Int gridPos = WorldToGrid(spawnPos);
+            if (spawnedProps.ContainsKey(gridPos))
+                continue;
+
+            // Only spawn based on chance
+            if (Random.value < spawnChance)
+            {
+                GameObject prefab = spawnPrefabs[Random.Range(0, spawnPrefabs.Length)];
+
+                // Add some jitter to avoid a perfect grid appearance
+                Vector3 jitter = new Vector3(
+                    Random.Range(-spacing * 0.3f, spacing * 0.3f),
+                    Random.Range(-spacing * 0.3f, spacing * 0.3f),
+                    0f
+                );
+
+                GameObject obj = Instantiate(prefab, spawnPos + jitter, Quaternion.identity);
+                spawnedProps[gridPos] = obj;
             }
         }
     }
