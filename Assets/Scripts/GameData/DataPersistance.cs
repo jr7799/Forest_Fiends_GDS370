@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class DataPersistance : MonoBehaviour
 {
@@ -27,7 +28,11 @@ public class DataPersistance : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        this.fileDataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
+        string exeFolder = Path.GetDirectoryName(Application.dataPath);
+
+        // Define the saves folder path
+        string savesFolder = Path.Combine(exeFolder, "Saves");
+        this.fileDataHandler = new FileDataHandler(savesFolder, fileName, useEncryption);
     }
     private void OnEnable()
     {
