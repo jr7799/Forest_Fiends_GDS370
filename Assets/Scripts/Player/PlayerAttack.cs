@@ -41,7 +41,7 @@ public class PlayerAttack : MonoBehaviour
     private Coroutine fadeCoroutine;
 
     private enum AttackState { Bible, Whip }
-    private AttackState currentState = AttackState.Bible;
+    //private AttackState currentState = AttackState.Bible;
 
     [Header("Whip Timer")]
     public float whipTimer = 0;

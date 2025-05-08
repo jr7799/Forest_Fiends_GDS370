@@ -14,7 +14,7 @@ public class BoomerangLogic : MonoBehaviour
     private float chainRadius;
     private int maxTargets;
 
-    private int currentTargetIndex = 0;
+    //private int currentTargetIndex = 0;
     public bool returning { get; private set; } = false;
     private List<GameObject> hitEnemies = new List<GameObject>();
     private GameObject currentTarget;
