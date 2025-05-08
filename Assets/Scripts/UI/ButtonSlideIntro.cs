@@ -1,23 +1,19 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ButtonRiseIntro : MonoBehaviour
+public class ButtonSlideIntro : MonoBehaviour
 {
-    public RectTransform[] buttons;       
-    public Vector2[] targetPositions;     
-    public float moveSpeed = 500f;
+    public RectTransform[] buttons;            // Buttons to move
+    public Vector2[] targetPositions;          // Target positions set in the Inspector
+    public float moveSpeed = 1000f;
     public float delayBetweenButtons = 0.3f;
 
     void Start()
     {
-        targetPositions = new Vector2[buttons.Length];
-
-        for (int i = 0; i < buttons.Length; i++)
+        if (buttons.Length != targetPositions.Length)
         {
-            Vector2 startPos = buttons[i].anchoredPosition;
-            // Raise each button 150 units higher than its start
-            targetPositions[i] = startPos + new Vector2(0, 150);
+            Debug.LogError("Buttons and targetPositions arrays must be the same length!");
+            return;
         }
 
         StartCoroutine(MoveButtonsSequentially());
@@ -39,6 +35,7 @@ public class ButtonRiseIntro : MonoBehaviour
             rect.anchoredPosition = Vector2.MoveTowards(rect.anchoredPosition, targetPos, moveSpeed * Time.deltaTime);
             yield return null;
         }
+
         rect.anchoredPosition = targetPos;
     }
 }
