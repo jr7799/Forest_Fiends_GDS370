@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using ChristinaCreatesGames.EyeMovement;
 using CodeMonkey.Utils;
@@ -9,7 +8,8 @@ public class EnemyHealth : MonoBehaviour
     [Header("Health")]
     public float currentHealth;
     float startHealth = 10f;
-
+    public float minHealth = 8f;
+    public float maxHealth = 13f;
     private GemSpawner gemSpawner;
     private PupilTracking pupilTracking;
     private GameManager manager;
@@ -18,13 +18,12 @@ public class EnemyHealth : MonoBehaviour
 
     void Start()
     {
+        startHealth = Random.Range(minHealth, maxHealth);
         currentHealth = startHealth;
         pupilTracking = GameObject.Find("Viewcone").GetComponent<PupilTracking>();
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         gemSpawner = GetComponent<GemSpawner>();
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
-
-
     }
     public void TakeDamage(float damage, bool isCriticalHit)
     {

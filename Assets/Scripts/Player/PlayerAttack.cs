@@ -126,7 +126,10 @@ public class PlayerAttack : MonoBehaviour
         if (boomerangActive)
             ThrowBoomerang();
         if (bearTrapsActive)
+        {
             Debug.Log("Traps Active");
+            ThrowBearTrap();
+        }
         if (potionActive)
         {
             Debug.Log("BOmbs Active");
@@ -220,7 +223,7 @@ public class PlayerAttack : MonoBehaviour
             if (hitbox != null)
                 hitbox.gameObject.SetActive(true);
 
-            StartCoroutine(DisableWhipHitbox(hitbox?.gameObject, 0.3f));
+            //StartCoroutine(DisableWhipHitbox(hitbox?.gameObject, 0.3f));
 
             ParticleSystem ps = newWhip.GetComponent<ParticleSystem>();
             if (ps != null)
@@ -239,7 +242,6 @@ public class PlayerAttack : MonoBehaviour
         }
         whipTimer = whipTimerReset;
     }
-    // UPDATED WHIP LOGIC 
     IEnumerator DisableWhipHitbox(GameObject hitbox, float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -441,23 +443,22 @@ public class PlayerAttack : MonoBehaviour
 
         if (potion == null) yield break;
         potion.transform.position = finalTarget;
+        potion.GetComponent<PotionImpact>().position = finalTarget;
         Destroy(potion);
         potionTimer = potionTimerReset;
     }
 
+    GameObject trap;
     void ThrowBearTrap()
     {
-        if (bearTrapPrefab == null) return;
-
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
-
-        GameObject trap = Instantiate(bearTrapPrefab, transform.position, Quaternion.identity);
-        Rigidbody2D rb = trap.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        trapTimer -= Time.deltaTime * trapTriggerSpeed;
+        if(trapTimer <= 0f)
         {
-            rb.AddForce(direction * bearTrapThrowForce, ForceMode2D.Impulse);
+            if (bearTrapPrefab == null) return;
+            trap = Instantiate(bearTrapPrefab, transform.position, Quaternion.identity);
+            trapTimer = trapTimerReset;
         }
+        
     }
 
     // Helper to clamp direction to 4 cardinal directions

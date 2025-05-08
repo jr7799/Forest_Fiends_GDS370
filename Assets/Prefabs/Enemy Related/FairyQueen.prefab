@@ -83,7 +83,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1882073603415319637, guid: e0242c0d8534874479e288686d5ae675, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -171,6 +171,9 @@ MonoBehaviour:
   damageAmount: 0.3
   playerHealthBar: {fileID: 0}
   takingDamage: 0
+  anim: {fileID: 0}
+  animAttackName: 
+  animWalkName: 
 --- !u!114 &-636089432892496095
 MonoBehaviour:
   m_ObjectHideFlags: 0
