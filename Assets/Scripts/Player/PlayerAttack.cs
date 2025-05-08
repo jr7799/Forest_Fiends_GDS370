@@ -220,7 +220,7 @@ public class PlayerAttack : MonoBehaviour
             if (hitbox != null)
                 hitbox.gameObject.SetActive(true);
 
-            StartCoroutine(DisableWhipHitbox(hitbox?.gameObject, 0.3f));
+            //StartCoroutine(DisableWhipHitbox(hitbox?.gameObject, 0.3f));
 
             ParticleSystem ps = newWhip.GetComponent<ParticleSystem>();
             if (ps != null)

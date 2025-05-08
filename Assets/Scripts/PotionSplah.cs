@@ -24,5 +24,8 @@ public class PotionSplah : MonoBehaviour
             }
         }
     }
-
+    private void OnApplicationQuit()
+    {
+        Destroy(gameObject);
+    }
 }
