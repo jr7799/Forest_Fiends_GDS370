@@ -204,25 +204,33 @@ public class PlayerAttack : MonoBehaviour
             TriggerWhipEffect();
         }       
     }
+
+    //UPDATED WHIP LOGIC 
     void TriggerWhipEffect()
     {
         Debug.Log("Whip effect triggered");
         if (whipParticlePrefab != null && whipSpawnPoint != null)
         {
             Vector3 spawnPos = whipSpawnPoint.position;
-            spawnPos.z = 0f; // force into 2D view
+            spawnPos.z = 0f;
 
             GameObject newWhip = Instantiate(whipParticlePrefab, spawnPos, Quaternion.identity);
+
+            Transform hitbox = newWhip.transform.Find("WhipHitbox");
+            if (hitbox != null)
+                hitbox.gameObject.SetActive(true);
+
+            StartCoroutine(DisableWhipHitbox(hitbox?.gameObject, 0.3f));
 
             ParticleSystem ps = newWhip.GetComponent<ParticleSystem>();
             if (ps != null)
             {
                 ps.Play();
-                Destroy(newWhip, ps.main.duration + ps.main.startLifetime.constant); // cleanup after done
+                Destroy(newWhip, ps.main.duration + ps.main.startLifetime.constant);
             }
             else
             {
-                Destroy(newWhip, 2f); // fallback if no ParticleSystem
+                Destroy(newWhip, 2f);
             }
         }
         else
@@ -231,13 +239,12 @@ public class PlayerAttack : MonoBehaviour
         }
         whipTimer = whipTimerReset;
     }
-    IEnumerator DisableWhipEffectAfterSeconds(float seconds)
+    // UPDATED WHIP LOGIC 
+    IEnumerator DisableWhipHitbox(GameObject hitbox, float delay)
     {
-        yield return new WaitForSeconds(seconds);
-        if (whipParticlePrefab != null)
-        {
-            whipParticlePrefab.SetActive(false);
-        }
+        yield return new WaitForSeconds(delay);
+        if (hitbox != null)
+            hitbox.SetActive(false);
     }
     public void SpawnBibles()
     {
