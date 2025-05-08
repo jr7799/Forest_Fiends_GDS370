@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4343365176273808728}
   - component: {fileID: 6473672669112438966}
   - component: {fileID: 5983544662595847679}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boomerang
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -168,3 +168,5 @@ MonoBehaviour:
   destroyed:
     m_PersistentCalls:
       m_Calls: []
+  damage: 10
+  isCriticalHit: 0

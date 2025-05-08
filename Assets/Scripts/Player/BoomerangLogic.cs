@@ -83,11 +83,25 @@ public class BoomerangLogic : MonoBehaviour
     {
         destroyed.Invoke();
     }
-    void OnTriggerEnter2D(Collider2D other)
+    public float damage = 5;
+    [SerializeField] bool isCriticalHit;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!returning && other.CompareTag("Enemy") && !hitEnemies.Contains(other.gameObject))
+        if (!returning && collision.CompareTag("Enemy") && !hitEnemies.Contains(collision.gameObject))
         {
-            ChainToNextEnemy(other.gameObject);
+            ChainToNextEnemy(collision.gameObject);
+        }
+        isCriticalHit = Random.Range(0, 100) < 30;
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
+            if (enemy != null)
+            {
+                if (!isCriticalHit)
+                    enemy.TakeDamage(damage, false);
+                else
+                    enemy.TakeDamage(damage * 1.35f, true);
+            }
         }
     }
 
@@ -140,4 +154,5 @@ public class BoomerangLogic : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, chainRadius);
     }
+
 }

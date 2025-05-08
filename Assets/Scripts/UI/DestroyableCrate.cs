@@ -12,7 +12,7 @@ public class DestroyableCrate : MonoBehaviour
     {
         if (destroyed) return;
 
-        if (other.CompareTag("PlayerAttack")) // or Bullet, etc.
+        if (other.CompareTag("PlayerBullet")) // or Bullet, etc.
         {
             destroyed = true;
             GetComponent<SpriteRenderer>().sprite = destroyedSprite;
