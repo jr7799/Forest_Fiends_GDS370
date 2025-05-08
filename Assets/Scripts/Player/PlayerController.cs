@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
         //    soundManager.PlayerWalking();
         //else
         //    soundManager.stopWalking();
-            anim.SetFloat("Move", moveDirection.magnitude);
+        anim.SetFloat("Move", moveDirection.magnitude);
     }
 
     public void HandleMovementInput(InputAction.CallbackContext ctx)
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
             Vector3 orbitPos = playerPos + direction * orbitDistance;
             mouseCursorObject.transform.position = orbitPos;
 
-           
+
         }
     }
 }
