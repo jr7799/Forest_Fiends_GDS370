@@ -1760,6 +1760,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719248902}
   m_CullTransparentMesh: 1
+--- !u!4 &744119728 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+  m_PrefabInstance: {fileID: 1119759553}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &754651530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,11 +2568,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1957177701}
+  - {fileID: 619394802}
   - {fileID: 1798680966}
   - {fileID: 1324881753}
-  - {fileID: 1957177701}
   - {fileID: 1291267931}
-  - {fileID: 619394802}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1065456168
@@ -2720,6 +2725,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117343569}
   m_CullTransparentMesh: 1
+--- !u!1001 &1119759553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 519420032}
+    m_Modifications:
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.977348
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.481989
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6445572
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888159550305298666, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929728305559933614, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
+      propertyPath: m_Name
+      value: WeatherManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 633880c76a9f6ad498b8bff6cd8b64f5, type: 3}
 --- !u!82 &1201361473 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 5171955374670097791, guid: c395a67c2072eb44dbca8af47afebb15, type: 3}
@@ -5317,6 +5379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Confetti
       objectReference: {fileID: 0}
+    - target: {fileID: 5538653657646568222, guid: c604a591b543eb748b8c8c1577e85024, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6913001784635804248, guid: c604a591b543eb748b8c8c1577e85024, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.65171504
@@ -5605,6 +5671,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1901175034793571550, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       insertIndex: 2
       addedObject: {fileID: 782590931}
+    - targetCorrespondingSourceObject: {fileID: 7648641614375346331, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 744119728}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2498739871897456609, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       insertIndex: -1
