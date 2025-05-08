@@ -1072,7 +1072,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &69113197
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2944,7 +2944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -47, y: 14}
+  m_AnchoredPosition: {x: -47, y: 15.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374473937
@@ -2965,7 +2965,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -68.59
+  m_Spacing: -63.62
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -3684,7 +3684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &565643904
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3721,10 +3721,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 16
+    m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 147.2
+  m_Spacing: 89.2
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -5564,7 +5564,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11847522}
         m_TargetAssemblyTypeName: Scenes, Assembly-CSharp
-        m_MethodName: Options
+        m_MethodName: Controls
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6116,7 +6116,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 1484651370185245732, guid: 9fd8c0e1d8d65fd41a5dd2ae94f62a58, type: 3}
     m_PressedSprite: {fileID: 485126173946664319, guid: ab172260a5886ae4aa0820aa48f2a688, type: 3}
-    m_SelectedSprite: {fileID: 2211433905920893234, guid: 5194af109ef84c04bb44e714f82e0db5, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -6131,7 +6131,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11847522}
         m_TargetAssemblyTypeName: Scenes, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: ToShop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7506,7 +7506,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: -7752328596714263423, guid: 77211cbacfddbf24b88e6f93ae43f0cb, type: 3}
     m_PressedSprite: {fileID: 3253844432142300336, guid: 2fe8376a1458bfd448b9f2aac3adcf8c, type: 3}
-    m_SelectedSprite: {fileID: 1468190221771211672, guid: a335e2a68e587904c82916bd19f41158, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -8216,7 +8216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1707357592
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9720,7 +9720,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: -7469280530448033860, guid: 9c85e2f69fae7b041b7a817dc19975a4, type: 3}
     m_PressedSprite: {fileID: -1547996689449677278, guid: 343cd3a6f5dd29d40b3ae7d693440920, type: 3}
-    m_SelectedSprite: {fileID: 5955728038286058617, guid: 9035adcea3c0b8a4cadce746a4899496, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal

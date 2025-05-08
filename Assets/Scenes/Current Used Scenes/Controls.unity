@@ -4239,7 +4239,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: -1563285237874802920, guid: 4e4567df8ab3b8f4da7e8880f16389ab, type: 3}
     m_PressedSprite: {fileID: -1638073398957448169, guid: 73e8fb21d223cb14cb41e97fcfb2d7c9, type: 3}
-    m_SelectedSprite: {fileID: -4971420897931427575, guid: 1f049ca0e6e8ffc47ade16568140956d, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -4716,7 +4716,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 1484651370185245732, guid: 9fd8c0e1d8d65fd41a5dd2ae94f62a58, type: 3}
     m_PressedSprite: {fileID: 485126173946664319, guid: ab172260a5886ae4aa0820aa48f2a688, type: 3}
-    m_SelectedSprite: {fileID: 2211433905920893234, guid: 5194af109ef84c04bb44e714f82e0db5, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -4731,7 +4731,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11847522}
         m_TargetAssemblyTypeName: Scenes, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: ToShop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5795,7 +5795,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: -7752328596714263423, guid: 77211cbacfddbf24b88e6f93ae43f0cb, type: 3}
     m_PressedSprite: {fileID: 3253844432142300336, guid: 2fe8376a1458bfd448b9f2aac3adcf8c, type: 3}
-    m_SelectedSprite: {fileID: 1468190221771211672, guid: a335e2a68e587904c82916bd19f41158, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -7270,7 +7270,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: -7469280530448033860, guid: 9c85e2f69fae7b041b7a817dc19975a4, type: 3}
     m_PressedSprite: {fileID: -1547996689449677278, guid: 343cd3a6f5dd29d40b3ae7d693440920, type: 3}
-    m_SelectedSprite: {fileID: 5955728038286058617, guid: 9035adcea3c0b8a4cadce746a4899496, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
