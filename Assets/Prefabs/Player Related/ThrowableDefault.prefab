@@ -165,3 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f17756bbc97384c9261df37dc4241e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 7293484800006959905, guid: 0a7866df5ece18a4994bfa9009a22ec2, type: 3}
+  pop: {fileID: 1791433480073036325, guid: 2fcaa08519e0b494d93af8897bf7dbe3, type: 3}
+  position: {x: 0, y: 0, z: 0}
