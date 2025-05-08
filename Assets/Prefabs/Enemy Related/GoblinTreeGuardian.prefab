@@ -155,6 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
+  minHealth: 8
+  maxHealth: 13
   spriteRenderer: {fileID: 7704994652277594457}
 --- !u!114 &6659334256821169210
 MonoBehaviour:
@@ -197,7 +199,7 @@ MonoBehaviour:
   smallGemXP_Amount: 15
   mediumGemXP_Amount: 25
   chanceOfHeal: 2.5
-  healPrefab: {fileID: 6905880086860067629, guid: 3cd0572ec13c6a942a777bb93e0c891c, type: 3}
+  healPrefab: {fileID: 6905880086860067629, guid: 0fc4fc9241fd808448d37117a1a17fd1, type: 3}
   healOffset_X: 0
   healOffset_Y: 0
 --- !u!70 &7805429621578415330

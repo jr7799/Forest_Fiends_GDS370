@@ -234,8 +234,8 @@ MonoBehaviour:
   - {x: 52.5, y: -52.5}
   - {x: 52.5, y: -52.5}
   - {x: 52.5, y: -52.5}
-  moveSpeed: 500
-  delayBetweenButtons: 0.3
+  moveSpeed: 450
+  delayBetweenButtons: 0.25
 --- !u!1 &235860373
 GameObject:
   m_ObjectHideFlags: 0
@@ -4009,6 +4009,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BGMusicManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4894547350296739449, guid: 127a3bb433011e34585671278050aec2, type: 3}
+      propertyPath: winMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f4c939b06e9eb34597ae699e281acf2, type: 3}
+    - target: {fileID: 4894547350296739449, guid: 127a3bb433011e34585671278050aec2, type: 3}
+      propertyPath: mainMenuMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a0a5fba17b706944be4023e32b274bf, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

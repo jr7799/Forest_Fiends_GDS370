@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class BGMusic : MonoBehaviour
 {
-    static BGMusic instance;
+    public static BGMusic instance;
     [SerializeField] public AudioSource musicSource;
-    [SerializeField] private AudioClip backgroundMusic3;
+    [SerializeField] private AudioClip mainMenuMusic;
+    [SerializeField] private AudioClip winMusic; 
+    [SerializeField] private AudioClip loseMusic;
+    [SerializeField] private AudioClip forestMusic;
+    [SerializeField] private AudioClip desertMusic;
+    [SerializeField] private AudioClip tundraMusic;
 
     private void Awake()
     {
@@ -20,16 +25,37 @@ public class BGMusic : MonoBehaviour
     }
     private void Start()
     {
-        PlayBackgroundMusic();
+        switchToMainMenuMusic();
+        musicSource.loop = true;
+        musicSource.Play();
     }
     public void StopBackgroundMusic()//
     {
         musicSource.Stop();
     }
-    public void PlayBackgroundMusic()//
+    public void switchToLoseMusic()
     {
-        musicSource.clip = backgroundMusic3;
-        musicSource.loop = true;
-        musicSource.Play();
+        musicSource.clip = loseMusic;
+    }
+    public void switchToWinMusic()
+    {
+        musicSource.clip = winMusic;
+    }
+    public void switchToMainMenuMusic()
+    {
+        musicSource.clip = mainMenuMusic;
+
+    }
+    public void SwitchToForestMusic()
+    {
+        musicSource.clip = forestMusic;
+    }
+    public void SwitchToDesertMusic()
+    {
+        musicSource.clip = desertMusic;
+    }
+    public void SwitchToTundraMusic()
+    {
+        musicSource.clip = tundraMusic;
     }
 }

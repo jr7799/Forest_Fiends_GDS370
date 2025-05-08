@@ -1,5 +1,5 @@
 {
-    "coins": 550,
+    "coins": 450,
     "charactersUnlocked": {
         "keys": [
             "178de8b5-6c8f-4948-9f8d-e4d11ecd6878",
@@ -10,7 +10,7 @@
             "7ffb3923-5791-4e11-9e16-6cfe608248e1"
         ],
         "values": [
-            true,
+            false,
             false,
             false,
             true,

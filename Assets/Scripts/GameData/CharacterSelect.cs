@@ -16,13 +16,16 @@ public class CharacterSelect : MonoBehaviour, IDataPersistance
     [SerializeField] public bool locked = true;
     public bool selected = false;
     public Image character;
+    public Image weapon;
 
     // Update is called once per frame
     void Update()
     {
-
         if (locked) character.color = Color.black;
         else character.color = Color.white;
+
+        if (locked) weapon.color = Color.black;
+        else weapon.color = Color.white;
     }
 
     public void LoadData(GameData data)
@@ -30,6 +33,9 @@ public class CharacterSelect : MonoBehaviour, IDataPersistance
         data.charactersUnlocked.TryGetValue(id, out locked);
         if(locked) character.color = Color.black;
         else character.color = Color.white;
+
+        if (locked) weapon.color = Color.black;
+        else weapon.color = Color.white;
     }
 
     public void SaveData(GameData data)
