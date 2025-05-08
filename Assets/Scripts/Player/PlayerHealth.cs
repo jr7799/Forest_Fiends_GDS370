@@ -86,7 +86,7 @@ public class PlayerHealth : MonoBehaviour
     public IEnumerator Death()
     {
         soundManager.Lose();
-        bgMusic.StopBackgroundMusic();
+        bgMusic.switchToLoseMusic();
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(2);
     }

@@ -531,8 +531,8 @@ MonoBehaviour:
   targetPositions:
   - {x: 52.5, y: -52.5}
   - {x: 52.5, y: -191.5}
-  moveSpeed: 1000
-  delayBetweenButtons: 0.3
+  moveSpeed: 450
+  delayBetweenButtons: 0.25
 --- !u!1001 &29134536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6031,8 +6031,8 @@ MonoBehaviour:
   targetPositions:
   - {x: 52.5, y: -52.5}
   - {x: 52.5, y: -202.5}
-  moveSpeed: 1000
-  delayBetweenButtons: 0.3
+  moveSpeed: 450
+  delayBetweenButtons: 0.25
 --- !u!4 &1707914831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2801984831219318487, guid: 4ca6add50853f3e4c85c0a9c5eac787b, type: 3}

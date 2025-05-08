@@ -3,27 +3,23 @@ using UnityEngine;
 public class DestroyableCrate : MonoBehaviour
 {
     public Sprite destroyedSprite;
-    public GameObject foodPrefab; // Assign your Food prefab in the inspector
+    public GameObject[] foodPrefabs; // Assign two or more prefabs in the Inspector
     public float dropDelay = 0.2f;
 
-    private bool destroyed = false;
-
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (destroyed) return;
-
-        if (other.CompareTag("PlayerBullet")) // or Bullet, etc.
+        if (other.gameObject.CompareTag("PlayerBullet")) // or Bullet, etc.
         {
-            destroyed = true;
             GetComponent<SpriteRenderer>().sprite = destroyedSprite;
 
             // Optional: Disable the collider to prevent further triggers
             GetComponent<Collider2D>().enabled = false;
 
-            // Drop the food
-            if (foodPrefab != null)
+            // Drop a random food prefab
+            if (foodPrefabs != null && foodPrefabs.Length > 0)
             {
-                Instantiate(foodPrefab, transform.position, Quaternion.identity);
+                int randomIndex = Random.Range(0, foodPrefabs.Length);
+                Instantiate(foodPrefabs[randomIndex], transform.position, Quaternion.identity);
             }
 
             Destroy(gameObject, dropDelay);

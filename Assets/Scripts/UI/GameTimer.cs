@@ -11,11 +11,11 @@ public class GameTimer : MonoBehaviour
     public TMP_Text clock;
     public int maxTime = 10;
     GameManager manager;
-    SoundManager soundManager;
+    BGMusic soundManager;
     void Start()
     { 
         //updateBestTime();
-        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        soundManager = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
     bool switchEndgame;
@@ -57,7 +57,7 @@ public class GameTimer : MonoBehaviour
     }
     public IEnumerator Win()
     {
-        soundManager.Win();
+        soundManager.switchToWinMusic();
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(3);
     }
