@@ -6654,6 +6654,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6347877601717469760, guid: b56bb48f4c9520e499a5fa3cc4af4999, type: 3}
     - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: bearTrapPrefab
+      value: 
+      objectReference: {fileID: 6662290947276958146, guid: 52f01cc407633864299c0133cb252180, type: 3}
+    - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
+      propertyPath: bearTrapsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067248939030942, guid: 00818d28211b4f1408d43288dec08d93, type: 3}
       propertyPath: boomerangActive
       value: 0
       objectReference: {fileID: 0}

@@ -86,6 +86,12 @@ public class PlayerAttack : MonoBehaviour
     public float potionLobDuration = 0.5f;
     public float potionImpactRadius = 3f;
 
+    [Header("Bear Trap Settings")]
+    public GameObject bearTrapPrefab;
+    public float bearTrapThrowForce = 10f;
+    public float bearTrapCooldown = 2f;
+    private float lastBearTrapTime = -Mathf.Infinity;
+
     SoundManager soundManager;
     private void Awake()
     {
@@ -122,7 +128,7 @@ public class PlayerAttack : MonoBehaviour
             Debug.Log("BOmbs Active");
             ThrowPotion();
         }
-           
+
     }
 
     void HandleShooting()
@@ -428,5 +434,28 @@ public class PlayerAttack : MonoBehaviour
         potionTimer = potionTimerReset;
     }
 
+    void ThrowBearTrap()
+    {
+        if (bearTrapPrefab == null) return;
+
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
+
+        GameObject trap = Instantiate(bearTrapPrefab, transform.position, Quaternion.identity);
+        Rigidbody2D rb = trap.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.AddForce(direction * bearTrapThrowForce, ForceMode2D.Impulse);
+        }
+    }
+
+    // Helper to clamp direction to 4 cardinal directions
+    Vector2 GetCardinalDirection(Vector2 input)
+    {
+        if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
+            return new Vector2(Mathf.Sign(input.x), 0);
+        else
+            return new Vector2(0, Mathf.Sign(input.y));
+    }
 }
 
