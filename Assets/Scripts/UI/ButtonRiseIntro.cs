@@ -8,8 +8,7 @@ public class ButtonRiseIntro : MonoBehaviour
     public Vector2[] targetPositions;     
     public float moveSpeed = 500f;
     public float delayBetweenButtons = 0.3f;
-
-    void Start()
+    private void Awake()
     {
         targetPositions = new Vector2[buttons.Length];
 
@@ -21,6 +20,10 @@ public class ButtonRiseIntro : MonoBehaviour
         }
 
         StartCoroutine(MoveButtonsSequentially());
+    }
+    void Start()
+    {
+        
     }
 
     IEnumerator MoveButtonsSequentially()

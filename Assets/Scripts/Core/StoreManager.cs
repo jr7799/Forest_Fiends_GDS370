@@ -27,7 +27,7 @@ public class StoreManager : MonoBehaviour
 
             if (selectedButton.GetComponent<CharacterSelect>().locked == false)
             {
-                gameManager.readyToPlay = true;
+                gameManager.characterSelected = true;
             }
         }
     }
@@ -50,7 +50,7 @@ public class StoreManager : MonoBehaviour
                     {
                         gameManager.coins -= buttonSelect.cost;
                         buttonSelect.locked = false;
-                        gameManager.readyToPlay = true;
+                        gameManager.characterSelected = true;
                         Debug.Log("NEW Character Unlocked" + buttonSelect.name);
                     }
                     else

@@ -12,8 +12,7 @@ public class PlayerXP : MonoBehaviour
     [Header("UI")]
     public Image xpBarFill;  // Fill image of XP bar
 
-    public UnityEvent LevelUpWhip;
-    public UnityEvent LevelUpBible;
+    public UnityEvent LevelUpWeapon;
     public UnityEvent LevelUpGeneric;
 
     SoundManager soundManager;
@@ -27,8 +26,8 @@ public class PlayerXP : MonoBehaviour
         {
             xpBarFill.fillAmount = (float)currentXP / xpToNextLevel;
         }
+      
     }
-    int menuTracker = 0;
     public void AddXP(int amount)
     {
         currentXP += amount;
@@ -42,27 +41,18 @@ public class PlayerXP : MonoBehaviour
             playerLevel++;
             xpToNextLevel = Mathf.RoundToInt(xpToNextLevel * 1.35f); // Increase difficulty each level
             currentXP = temp;
-            menuTracker++;
-            if(menuTracker == 1)
+            if (playerLevel % 5 == 0)
             {
-                if (LevelUpBible != null)
-                    LevelUpBible.Invoke();
+                if(GetComponent<PlayerAttack>().inventoryCount < 4)
+                    if (LevelUpWeapon != null)
+                        LevelUpWeapon.Invoke();
             }
-            else if (menuTracker == 2)
-            {
-                if (LevelUpGeneric != null)
-                    LevelUpGeneric.Invoke();
-            }
-            else if (menuTracker == 3)
-            {
-                if (LevelUpWhip != null)
-                    LevelUpWhip.Invoke();
-            }
-            else if (menuTracker >= 4)
+            else
             {
                 if (LevelUpGeneric != null)
                     LevelUpGeneric.Invoke();
             }
+
             Debug.Log("Level Up! New Level: " + playerLevel);
         }
     }

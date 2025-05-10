@@ -151,4 +151,5 @@ MonoBehaviour:
   foodPrefabs:
   - {fileID: 6905880086860067629, guid: 3cd0572ec13c6a942a777bb93e0c891c, type: 3}
   - {fileID: 6905880086860067629, guid: 31c0cbdaff4ad7e4aa616030f0d1e96b, type: 3}
-  dropDelay: 0.2
+  - {fileID: 6905880086860067629, guid: 60bedbacea139f446a972097b9914545, type: 3}
+  dropDelay: 0

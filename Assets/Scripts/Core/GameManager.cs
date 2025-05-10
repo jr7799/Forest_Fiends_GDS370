@@ -7,25 +7,27 @@ public class GameManager : MonoBehaviour, IDataPersistance
 {
     [Header("Save Vars")]
     public int coins;
-
+    SerializeDictionary<string, bool> unlocks = new SerializeDictionary<string, bool>();
     [Header("Stats")]
-    public int totalSpawned;
     public int totalKilled;
     public int minutes;
     public int seconds;
-    public TMP_Text killCounter;
+    private int totalSpawned;
+    private TMP_Text killCounter;
     [Header("Gem Management")]
-    public int totalGems;
     public List<GameObject> gems = new List<GameObject>();
     public bool redGemSpawned = false;
-    SerializeDictionary<string, bool> unlocks = new SerializeDictionary<string, bool>();
+    private int totalGems;
     [Header("GamePlay")]
-    static GameManager instance;
     public bool readyToPlay;
+    public bool characterSelected;
+    static GameManager instance;
     [Header("Player Items")]
     public Sprite playerSprite;
     public RuntimeAnimatorController playerAnimation;
     public string playerWeapon;
+    [Header("Level Select")]
+    public int levelIndex = 0;
 
     private void Awake()
     {
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour, IDataPersistance
     private void Start()
     {
         readyToPlay = false;
+        characterSelected = false;
         
     }
     public void LoadData(GameData data)

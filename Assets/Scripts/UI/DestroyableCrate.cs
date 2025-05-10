@@ -3,26 +3,53 @@ using UnityEngine;
 public class DestroyableCrate : MonoBehaviour
 {
     public Sprite destroyedSprite;
-    public GameObject[] foodPrefabs; // Assign two or more prefabs in the Inspector
+    public GameObject[] foodPrefabs; // Assign in Inspector
     public float dropDelay = 0.2f;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("PlayerBullet")) // or Bullet, etc.
+        if (other.gameObject.CompareTag("PlayerBullet"))
         {
             GetComponent<SpriteRenderer>().sprite = destroyedSprite;
-
-            // Optional: Disable the collider to prevent further triggers
             GetComponent<Collider2D>().enabled = false;
 
-            // Drop a random food prefab
             if (foodPrefabs != null && foodPrefabs.Length > 0)
             {
-                int randomIndex = Random.Range(0, foodPrefabs.Length);
-                Instantiate(foodPrefabs[randomIndex], transform.position, Quaternion.identity);
+                GameObject chosenPrefab = GetWeightedRandomPrefab();
+                if (chosenPrefab != null)
+                {
+                    Instantiate(chosenPrefab, transform.position, Quaternion.identity);
+                }
             }
 
             Destroy(gameObject, dropDelay);
         }
+    }
+
+    private GameObject GetWeightedRandomPrefab()
+    {
+        // Higher weight for earlier prefabs
+        int totalWeight = 0;
+        int[] weights = new int[foodPrefabs.Length];
+
+        for (int i = 0; i < foodPrefabs.Length; i++)
+        {
+            weights[i] = foodPrefabs.Length - i; // e.g., 3,2,1 for 3 prefabs
+            totalWeight += weights[i];
+        }
+
+        int randomValue = Random.Range(0, totalWeight);
+        int cumulative = 0;
+
+        for (int i = 0; i < foodPrefabs.Length; i++)
+        {
+            cumulative += weights[i];
+            if (randomValue < cumulative)
+            {
+                return foodPrefabs[i];
+            }
+        }
+
+        return null; // fallback
     }
 }

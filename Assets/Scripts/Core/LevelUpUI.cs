@@ -9,7 +9,7 @@ public class LevelUpUI : MonoBehaviour
         gameObject.SetActive(false);
         confetti.SetActive(false);
     }
-    public void TriggerLevelUpMenu()
+    public void TriggerLevelUpMenus()
     {
         gameObject.SetActive(true);
         confetti.SetActive(true);

@@ -1,16 +1,38 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
-using System.Net;
+using System.Collections.Generic;
+using System.Linq;
 
 
 public class PlayerAttack : MonoBehaviour
 {
+    [Header("Core Items")]
+    SoundManager soundManager; 
+
+    [Header("Unlock Bools")]
+    public bool whipActive = false;
+    public bool bibleActive = false;
+    public bool boomerangActive = false;
+    public bool shootingActive = false;
+    public bool bearTrapsActive = false;
+    public bool potionActive = false;
+
+    [Header("ScreenShake")]
+    private ScreenShake screenShake;
+    private float magnitude = 0.2f;
+    private float duration = 0.2f;
+    private Camera cam;
+
+    [Header("'inventory'")]
+    public int inventoryCount;
+
     [Header("Shooting Settings")]
     public GameObject bulletPrefab;
     public Transform tempPlayerWeapon;
     public float bulletSpeed = 10f;
     public float fireRate = 0.25f;
+    private float nextFireTime = 0f;
 
     [Header("Bible Orbit Settings")]
     public GameObject biblePrefab;
@@ -21,61 +43,27 @@ public class PlayerAttack : MonoBehaviour
     public float fadeDuration = 2f;
     public float bibleResetInterval = 10f;
     public float bibleSpawnDecrement = 0.2f;
-
-    [Header("Whip Settings")]       
-    public GameObject whipParticlePrefab;   // New whip particle
-    public Transform whipSpawnPoint;        // Where to spawn the particle
-    public float whipSpawnDecrement = 0.15f;
-
-    [Header("ScreenShake")]
-    public ScreenShake screenShake;
-    public float magnitude = 0.2f;
-    public float duration = 0.2f;
-
-    private float nextFireTime = 0f;
-    private Camera cam;
-
     private GameObject[] bibles;
     private float orbitTimer;
     private bool isFading = false;
     private Coroutine fadeCoroutine;
-
-    private enum AttackState { Bible, Whip }
-    //private AttackState currentState = AttackState.Bible;
-
-    [Header("Whip Timer")]
-    public float whipTimer = 0;
-    public float whipTimerReset = 12;
-    public float whipTriggerSpeed = 0.5f; //reward increase to trigger faster
 
     [Header("Bible Timer")]
     public float bibleTimer = 0;
     public float bibleTimerReset = 15;
     public float bibleTriggerSpeed = 0.5f; //reward increase to trugger faster
 
-    [Header("Potion Timer")]
-    public float potionTimer = 0;
-    public float potionTimerReset = 15;
-    public float potionTriggerSpeed = 0.5f;
+    [Header("Whip Settings")]       
+    public GameObject whipParticlePrefab;   // New whip particle
+    public Transform whipSpawnPoint;        // Where to spawn the particle
+    public float whipSpawnDecrement = 0.15f;
 
-    [Header("Boomerang Timer")]
-    public float boomerangTimer = 0;
-    public float boomerangTimerReset = 10;
-    public float boomerangTriggerSpeed = 0.5f;
-    [Header("trap Timer")]
-    public float trapTimer = 0;
-    public float trapTimerReset = 10;
-    public float trapTriggerSpeed = 0.5f;
+    [Header("Whip Timer")]
+    public float whipTimer = 0;
+    public float whipTimerReset = 12;
+    public float whipTriggerSpeed = 0.5f; //reward increase to trigger faster
 
-    [Header("Unlock Bools")]
-    public bool whipActive = false;
-    public bool bibleActive = false;
-    public bool boomerangActive = false;
-    public bool shootingActive = false;
-    public bool bearTrapsActive = false;
-    public bool potionActive = false;
     [Header("Boomerang Settings")]
-
     public GameObject boomerangPrefab;
     public Transform boomerangSpawnPoint;
     public float boomerangSpeed = 10f;
@@ -83,20 +71,51 @@ public class PlayerAttack : MonoBehaviour
     public float boomerangMaxDistance = 10f;
     public float boomerangChainRadius = 5f;
     public int boomerangMaxTargets = 5;
+    public int maxBoomerangs = 1; // Set in Inspector
+    GameObject boomerangObj;
+    public List<GameObject> activeBoomerangs = new List<GameObject>();
+    public GameObject[] enemies;
+    public Vector3[] enemyPositions;
+
+    [Header("Boomerang Timer")]
+    public float boomerangTimer = 0;
+    public float boomerangTimerReset = 10;
+    public float boomerangTriggerSpeed = 0.5f;
 
     [Header("Throwable Potion Settings")]
     public GameObject potionPrefab;
     public float potionLobHeight = 5f;
     public float potionLobDuration = 0.5f;
     public float potionImpactRadius = 3f;
+    public int maxPotions = 3;
+    public float minRadius = 2f;
+    public float maxRadius = 10f;
+    public float spinSpeed = 360f; // degrees per second
+    public float potionSpeed = 10f;
+    public float distanceThreshold = 0.1f;
+    public float potionDistance = 10f;
+    GameObject potion;
+    private List<GameObject> activePotions = new List<GameObject>();
+
+    [Header("Throwable Potion Timer")]
+    public float potionTimer = 0;
+    public float potionTimerReset = 15;
+    public float potionTriggerSpeed = 0.5f;
 
     [Header("Bear Trap Settings")]
+    public int maxTraps = 3;
     public GameObject bearTrapPrefab;
     public float bearTrapThrowForce = 10f;
     public float bearTrapCooldown = 2f;
     private float lastBearTrapTime = -Mathf.Infinity;
+    GameObject trap;
+    private List<GameObject> activeTraps = new List<GameObject>();
 
-    SoundManager soundManager;
+    [Header("Bear trap Timer")]
+    public float trapTimer = 0;
+    public float trapTimerReset = 10;
+    public float trapTriggerSpeed = 0.5f;
+
     private void Awake()
     {
         whipActive = false;
@@ -126,16 +145,9 @@ public class PlayerAttack : MonoBehaviour
         if (boomerangActive)
             ThrowBoomerang();
         if (bearTrapsActive)
-        {
-            Debug.Log("Traps Active");
             ThrowBearTrap();
-        }
         if (potionActive)
-        {
-            Debug.Log("BOmbs Active");
             ThrowPotion();
-        }
-
     }
 
     void HandleShooting()
@@ -170,7 +182,10 @@ public class PlayerAttack : MonoBehaviour
                     if(!isMouseBetween)
                         rb.linearVelocity = direction * bulletSpeed;
                     else
+                    {
                         rb.linearVelocity = -direction * bulletSpeed;
+                        bullet.GetComponent<SpriteRenderer>().flipY = true;
+                    }
                 }
                 //screenShake.Shake(duration, magnitude);
             }
@@ -207,8 +222,6 @@ public class PlayerAttack : MonoBehaviour
             TriggerWhipEffect();
         }       
     }
-
-    //UPDATED WHIP LOGIC 
     void TriggerWhipEffect()
     {
         Debug.Log("Whip effect triggered");
@@ -242,12 +255,12 @@ public class PlayerAttack : MonoBehaviour
         }
         whipTimer = whipTimerReset;
     }
-    IEnumerator DisableWhipHitbox(GameObject hitbox, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        if (hitbox != null)
-            hitbox.SetActive(false);
-    }
+    //IEnumerator DisableWhipHitbox(GameObject hitbox, float delay)
+    //{
+    //    yield return new WaitForSeconds(delay);
+    //    if (hitbox != null)
+    //        hitbox.SetActive(false);
+    //}
     public void SpawnBibles()
     {
         bibles = new GameObject[numberOfBibles];
@@ -324,87 +337,93 @@ public class PlayerAttack : MonoBehaviour
             bibles[i].transform.localPosition = offset;
         }
     }
-    GameObject boomerangObj;
     void ThrowBoomerang()
     {
         boomerangTimer -= Time.deltaTime * boomerangTriggerSpeed;
+
         if (boomerangTimer <= 0f)
         {
             BoomerangLogic logic = null;
-            if (boomerangObj == null && boomerangPrefab != null)
+
+            if (boomerangPrefab != null)
             {
-                boomerangObj = Instantiate(boomerangPrefab, boomerangSpawnPoint.position, Quaternion.identity);
+                for(int i = 0; i < maxBoomerangs; i++)
+                {
+                    GameObject newBoomerang = Instantiate(boomerangPrefab, boomerangSpawnPoint.position, Quaternion.identity);
+                    activeBoomerangs.Add(newBoomerang);
 
-                Vector3 targetPosition = GetClosestEnemyPosition();
-                Vector3 throwDirection = (targetPosition - boomerangSpawnPoint.position).normalized;
+                    Vector3 targetPosition = GetNthClosestEnemyPosition(i);
+                    Vector3 throwDirection = (targetPosition - boomerangSpawnPoint.position).normalized;
 
-                // Ensure BoomerangLogic is on the prefab or added here
-                logic = boomerangObj.GetComponent<BoomerangLogic>();
-                if (logic == null) logic = boomerangObj.AddComponent<BoomerangLogic>();
-                logic.destroyed.AddListener(boomerangeResetTimer);
-                logic.Initialize(
-                    transform,
-                    boomerangSpeed,
-                    boomerangReturnSpeed,
-                    boomerangMaxDistance,
-                    boomerangChainRadius,
-                    boomerangMaxTargets,
-                    throwDirection
-                );
+                    logic = newBoomerang.GetComponent<BoomerangLogic>();
+                    if (logic == null) logic = newBoomerang.AddComponent<BoomerangLogic>();
+
+                    logic.destroyed.AddListener(() =>
+                    {
+                        //boomerangeResetTimer();
+                        activeBoomerangs.Remove(newBoomerang); // Remove from list on destroy
+                    });
+
+                    logic.Initialize(
+                        transform,
+                        boomerangSpeed,
+                        boomerangReturnSpeed,
+                        boomerangMaxDistance,
+                        boomerangChainRadius,
+                        boomerangMaxTargets,
+                        throwDirection
+                    );
+                }
+                boomerangTimer = boomerangTimerReset; // Reset the timer or however you wish
             }
-            else return;           
+            
         }
-    }
-    void boomerangeResetTimer()
-    {
-        boomerangTimer = boomerangTimerReset;
-    }
-     
-    public GameObject[] enemies;
-    public Vector3[] enemyPositions;
-    public Vector3 GetClosestEnemyPosition()
+    }    
+    public Vector3 GetNthClosestEnemyPosition(int n)//for boomerang
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        GameObject closestEnemy = null;
-        float shortestDistance = Mathf.Infinity;
         Vector3 currentPosition = transform.position;
 
-        foreach (GameObject enemy in enemies)
+        // Sort enemies by distance
+        var sortedEnemies = enemies
+            .OrderBy(enemy => Vector3.Distance(currentPosition, enemy.transform.position))
+            .ToList();
+
+        // Return the Nth closest enemy position (0-based index)
+        if (n >= 0 && n < sortedEnemies.Count)
         {
-            float distance = Vector3.Distance(currentPosition, enemy.transform.position);
-            if (distance < shortestDistance)
-            {
-                shortestDistance = distance;
-                closestEnemy = enemy;
-            }
+            return sortedEnemies[n].transform.position;
         }
-        return closestEnemy != null ? closestEnemy.transform.position : Vector3.zero;
-    }
-    GameObject potion;
+
+        return Vector3.zero; // Return zero if index is out of range
+    } 
     void ThrowPotion()
     {
         potionTimer -= Time.deltaTime * potionTriggerSpeed;
         if (potionTimer <= 0)
         {
-            if (potion == null && potionPrefab != null)
+            if (activePotions.Count < maxPotions && potionPrefab != null)
             {
-                Vector2 start = transform.position;
-                Vector2 mouseTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                for(int i = 0; i < maxPotions; i++)
+                {
+                    Vector2 start = transform.position;
+                    Vector2 mouseTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-                potion = Instantiate(potionPrefab, start, Quaternion.identity);
-
-                StartCoroutine(PotionLobArc(potion, new Vector2(potion.transform.position.x, potion.transform.position.y + potionDistance)));
+                    potion = Instantiate(potionPrefab, start, Quaternion.identity);
+                    activePotions.Add(potion);
+                    potion.GetComponent<PotionImpact>().destroyed.AddListener(() =>
+                    {
+                        activePotions.Remove(potion); // Remove from list on destroy
+                    });
+               
+                    StartCoroutine(PotionLobArc(potion, new Vector2(potion.transform.position.x, potion.transform.position.y + potionDistance)));
+                }
+                potionTimer = potionTimerReset;
             }
             else return;
         }
         
     }
-    public float minRadius = 2f;
-    public float maxRadius = 10f;
-    public float spinSpeed = 360f; // degrees per second
-    public float speed = 10f;
-    public float distanceThreshold = 0.1f;
-    public float potionDistance = 10f;
     IEnumerator PotionLobArc(GameObject potion, Vector2 arcTarget)
     {
 
@@ -412,7 +431,7 @@ public class PlayerAttack : MonoBehaviour
         while (potion != null && Vector2.Distance(potion.transform.position, arcTarget) > distanceThreshold)
         {
             Vector2 currentPos = potion.transform.position;
-            potion.transform.position = Vector2.MoveTowards(currentPos, arcTarget, speed/1.75f * Time.deltaTime);        
+            potion.transform.position = Vector2.MoveTowards(currentPos, arcTarget, potionSpeed/1.75f * Time.deltaTime);        
             potion.transform.Rotate(0f, 0f, spinSpeed * Time.deltaTime);
             yield return null;
         }
@@ -436,8 +455,8 @@ public class PlayerAttack : MonoBehaviour
         while (potion != null && Vector2.Distance(potion.transform.position, finalTarget) > distanceThreshold)
         {
             Vector2 currentPos = potion.transform.position;
-            potion.transform.position = Vector2.MoveTowards(currentPos, finalTarget, speed * Time.deltaTime);
-            potion.transform.Rotate(0f, 0f, potion.transform.rotation.z);
+            potion.transform.position = Vector2.MoveTowards(currentPos, finalTarget, potionSpeed * Time.deltaTime);
+            potion.transform.Rotate(0f, 0f, 0f);
             yield return null;
         }
 
@@ -447,15 +466,16 @@ public class PlayerAttack : MonoBehaviour
         Destroy(potion);
         potionTimer = potionTimerReset;
     }
-
-    GameObject trap;
     void ThrowBearTrap()
     {
         trapTimer -= Time.deltaTime * trapTriggerSpeed;
         if(trapTimer <= 0f)
         {
             if (bearTrapPrefab == null) return;
-            trap = Instantiate(bearTrapPrefab, transform.position, Quaternion.identity);
+            for (int i = 0; i < maxTraps; i ++)
+            {
+                trap = Instantiate(bearTrapPrefab, transform.position, Quaternion.identity);
+            }
             trapTimer = trapTimerReset;
         }
         

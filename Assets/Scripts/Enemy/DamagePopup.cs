@@ -73,4 +73,8 @@ public class DamagePopup : MonoBehaviour {
                 Destroy(gameObject);          
         }
     }
+    private void OnApplicationQuit()
+    {
+        Destroy(gameObject);
+    }
 }
