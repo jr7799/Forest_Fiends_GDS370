@@ -18,27 +18,33 @@ public class PlayerInitalizer : MonoBehaviour
         playerWeapon = manager.playerWeapon;
         if(playerWeapon == "Shooting")
         {
-            playerAttack.shootingActive = true;           
+            playerAttack.shootingActive = true;
+            playerAttack.inventoryCount++;
         }
         else if(playerWeapon == "bearTrap")
         {
             playerAttack.bearTrapsActive = true;
+            playerAttack.inventoryCount++;
         }
         else if(playerWeapon == "Bomb")
         {
             playerAttack.potionActive = true;
+            playerAttack.inventoryCount++;
         }
         else if (playerWeapon == "Orbs")
         {
             playerAttack.bibleActive = true;
+            playerAttack.inventoryCount++;
         }
         else if (playerWeapon == "Whip")
         {
             playerAttack.whipActive = true;
+            playerAttack.inventoryCount++;
         }
         else if (playerWeapon == "boomerang")
         {
             playerAttack.boomerangActive = true;
+            playerAttack.inventoryCount++;
         }
     }
 }

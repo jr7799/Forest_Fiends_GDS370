@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour, IDataPersistance
                 killCounter.text = "0" + totalKilled.ToString();
             }
         }
+        
     }
     public void increaseTotalSpawned()
     {

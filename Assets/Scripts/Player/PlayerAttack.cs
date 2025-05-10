@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.UI;
 
 
 public class PlayerAttack : MonoBehaviour
@@ -116,6 +117,14 @@ public class PlayerAttack : MonoBehaviour
     public float trapTimerReset = 10;
     public float trapTriggerSpeed = 0.5f;
 
+    [Header("Inventory Images")]
+    public HorizontalLayoutGroup images;
+    public GameObject whipImage;
+    public GameObject ArrowImage;
+    public GameObject OrbImage;
+    public GameObject caltropImage;
+    public GameObject starImage;
+    public GameObject BoomerangImage;
     private void Awake()
     {
         whipActive = false;
@@ -131,23 +140,67 @@ public class PlayerAttack : MonoBehaviour
         screenShake = GameObject.Find("Main Camera").GetComponent<ScreenShake>();
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
+        ArrowImage.SetActive(false);
+        OrbImage.SetActive(false);
+        whipImage.SetActive(false);
+        BoomerangImage.SetActive(false);
+        caltropImage.SetActive(false);
+        starImage.SetActive(false);
+
+
         orbitTimer = bibleOrbitDuration;
     }
 
     void Update()
     {
+        switch (inventoryCount)
+        {
+            case 1:
+                images.spacing = 0;
+                break;
+            case 2:
+                images.spacing = -51;
+                break;
+            case 3:
+                images.spacing = -25;
+                break;
+            case 4:
+                images.spacing = 0;
+                break;
+        }
+
+
         if (shootingActive)
+        {
+            ArrowImage.SetActive(true);
             HandleShooting();
+        }
+           
         if (bibleActive)
+        {
+            OrbImage.SetActive(true);
             HandleBibleLogic();
+        }
         if (whipActive)
+        {
+            whipImage.SetActive(true);
             HandleWhipLogic();
+        }
         if (boomerangActive)
+        {
+            BoomerangImage.SetActive(true);
             ThrowBoomerang();
+        }
         if (bearTrapsActive)
+        {
+            caltropImage.SetActive(true);
             ThrowBearTrap();
+        }
         if (potionActive)
+        {
+            starImage.SetActive(true);
             ThrowPotion();
+        }
     }
 
     void HandleShooting()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Rewards : MonoBehaviour
 {
+    public Magnet magnet;
     [Header("Health Scripts")]
     PlayerHealth pHealth;
     [Header("Movement Scripts")]
@@ -50,154 +51,171 @@ public class Rewards : MonoBehaviour
         updateActiveButtonsUpgrades();
         updateActiveWeaponUnlockButtons();
     }
-    public void GetRandomButtonsWeapon(int count)
-    {
-        // Shuffle the list
-        for (int i = 0; i < upgradeButtonGroups.Count; i++)
+    #region SETTING/ACTIVATING BUTTON RELATED
+        public void GetRandomButtonsWeapon(int count)
         {
-            int randomIndex = Random.Range(i, upgradeButtonGroups.Count);
-            GameObject temp = upgradeButtonGroups[i];
-            upgradeButtonGroups[i] = upgradeButtonGroups[randomIndex];
-            upgradeButtonGroups[randomIndex] = temp;
-        }
-
-        // Activate the first 'count' buttons, deactivate the rest
-        for (int i = 0; i < upgradeButtonGroups.Count; i++)
-        {
-            upgradeButtonGroups[i].SetActive(i < count);
-        }
-    }
-    public void GetRandomButtonsUpgrades(int count)
-    {
-        // Shuffle the list
-        for (int i = 0; i < upgradeButtonGroups.Count; i++)
-        {
-            int randomIndex = Random.Range(i, upgradeButtonGroups.Count);
-            GameObject temp = upgradeButtonGroups[i];
-            upgradeButtonGroups[i] = upgradeButtonGroups[randomIndex];
-            upgradeButtonGroups[randomIndex] = temp;
-        }
-
-        // Activate the first 'count' buttons, deactivate the rest
-        for (int i = 0; i < upgradeButtonGroups.Count; i++)
-        {
-            upgradeButtonGroups[i].SetActive(i < count);
-        }
-    }
-    private void updateActiveWeaponUnlockButtons()
-    {
-        if (!playerAttack.shootingActive && !weaponButtonGroups.Contains(shootingUnlockButton))
-            weaponButtonGroups.Add(shootingUnlockButton);
-        else if (playerAttack.shootingActive && weaponButtonGroups.Contains(shootingUnlockButton))
-            weaponButtonGroups.Remove(shootingUnlockButton);
-
-        if (!playerAttack.bibleActive && !weaponButtonGroups.Contains(orbUnlockButton))
-            weaponButtonGroups.Add(orbUnlockButton);
-        else if (playerAttack.bibleActive && weaponButtonGroups.Contains(orbUnlockButton))
-            weaponButtonGroups.Remove(orbUnlockButton);
-
-        if (!playerAttack.whipActive && !weaponButtonGroups.Contains(whipUnlockButton))
-            weaponButtonGroups.Add(whipUnlockButton);
-        else if (playerAttack.whipActive && weaponButtonGroups.Contains(whipUnlockButton))
-            weaponButtonGroups.Remove(whipUnlockButton);
-
-        if (!playerAttack.potionActive && !weaponButtonGroups.Contains(potionUnlockButton))
-            weaponButtonGroups.Add(potionUnlockButton);
-        else if (playerAttack.potionActive && weaponButtonGroups.Contains(potionUnlockButton))
-            weaponButtonGroups.Remove(potionUnlockButton);
-
-        if (!playerAttack.bearTrapsActive && !weaponButtonGroups.Contains(trapUnlockButton))
-            weaponButtonGroups.Add(trapUnlockButton);
-        else if (playerAttack.bearTrapsActive && weaponButtonGroups.Contains(trapUnlockButton))
-            weaponButtonGroups.Remove(trapUnlockButton);
-
-        if (!playerAttack.boomerangActive && !weaponButtonGroups.Contains(boomUnlockButton))
-            weaponButtonGroups.Add(boomUnlockButton);
-        else if (playerAttack.boomerangActive && weaponButtonGroups.Contains(boomUnlockButton))
-            weaponButtonGroups.Remove(boomUnlockButton);
-
-    }
-    private void updateActiveButtonsUpgrades()
-    {
-        if (playerAttack.shootingActive)
-        {
-            foreach (GameObject button in shootingButtons)
+            // Shuffle the list
+            for (int i = 0; i < upgradeButtonGroups.Count; i++)
             {
-                upgradeButtonGroups.Add(button);
+                int randomIndex = Random.Range(i, upgradeButtonGroups.Count);
+                GameObject temp = upgradeButtonGroups[i];
+                upgradeButtonGroups[i] = upgradeButtonGroups[randomIndex];
+                upgradeButtonGroups[randomIndex] = temp;
+            }
+
+            // Activate the first 'count' buttons, deactivate the rest
+            for (int i = 0; i < upgradeButtonGroups.Count; i++)
+            {
+                upgradeButtonGroups[i].SetActive(i < count);
             }
         }
-        if (playerAttack.bibleActive)
+        public void GetRandomButtonsUpgrades(int count)
         {
-            foreach (GameObject button in orbButtons)
+            // Shuffle the list
+            for (int i = 0; i < upgradeButtonGroups.Count; i++)
             {
-                upgradeButtonGroups.Add(button);
+                int randomIndex = Random.Range(i, upgradeButtonGroups.Count);
+                GameObject temp = upgradeButtonGroups[i];
+                upgradeButtonGroups[i] = upgradeButtonGroups[randomIndex];
+                upgradeButtonGroups[randomIndex] = temp;
+            }
+
+            // Activate the first 'count' buttons, deactivate the rest
+            for (int i = 0; i < upgradeButtonGroups.Count; i++)
+            {
+                upgradeButtonGroups[i].SetActive(i < count);
             }
         }
-        if (playerAttack.whipActive)
+        private void updateActiveWeaponUnlockButtons()
         {
-            foreach (GameObject button in whipButtons)
+            if (!playerAttack.shootingActive && !weaponButtonGroups.Contains(shootingUnlockButton))
+                weaponButtonGroups.Add(shootingUnlockButton);
+            else if (playerAttack.shootingActive && weaponButtonGroups.Contains(shootingUnlockButton))
+                weaponButtonGroups.Remove(shootingUnlockButton);
+
+            if (!playerAttack.bibleActive && !weaponButtonGroups.Contains(orbUnlockButton))
+                weaponButtonGroups.Add(orbUnlockButton);
+            else if (playerAttack.bibleActive && weaponButtonGroups.Contains(orbUnlockButton))
+                weaponButtonGroups.Remove(orbUnlockButton);
+
+            if (!playerAttack.whipActive && !weaponButtonGroups.Contains(whipUnlockButton))
+                weaponButtonGroups.Add(whipUnlockButton);
+            else if (playerAttack.whipActive && weaponButtonGroups.Contains(whipUnlockButton))
+                weaponButtonGroups.Remove(whipUnlockButton);
+
+            if (!playerAttack.potionActive && !weaponButtonGroups.Contains(potionUnlockButton))
+                weaponButtonGroups.Add(potionUnlockButton);
+            else if (playerAttack.potionActive && weaponButtonGroups.Contains(potionUnlockButton))
+                weaponButtonGroups.Remove(potionUnlockButton);
+
+            if (!playerAttack.bearTrapsActive && !weaponButtonGroups.Contains(trapUnlockButton))
+                weaponButtonGroups.Add(trapUnlockButton);
+            else if (playerAttack.bearTrapsActive && weaponButtonGroups.Contains(trapUnlockButton))
+                weaponButtonGroups.Remove(trapUnlockButton);
+
+            if (!playerAttack.boomerangActive && !weaponButtonGroups.Contains(boomUnlockButton))
+                weaponButtonGroups.Add(boomUnlockButton);
+            else if (playerAttack.boomerangActive && weaponButtonGroups.Contains(boomUnlockButton))
+                weaponButtonGroups.Remove(boomUnlockButton);
+
+        }
+        private void updateActiveButtonsUpgrades()
+        {
+            if (playerAttack.shootingActive)
             {
-                upgradeButtonGroups.Add(button);
+                foreach (GameObject button in shootingButtons)
+                {
+                    upgradeButtonGroups.Add(button);
+                }
+            }
+            if (playerAttack.bibleActive)
+            {
+                foreach (GameObject button in orbButtons)
+                {
+                    upgradeButtonGroups.Add(button);
+                }
+            }
+            if (playerAttack.whipActive)
+            {
+                foreach (GameObject button in whipButtons)
+                {
+                    upgradeButtonGroups.Add(button);
+                }
+            }
+            if (playerAttack.potionActive)
+            {
+                foreach (GameObject button in potionButtons)
+                {
+                    upgradeButtonGroups.Add(button);
+                }
+            }
+            if (playerAttack.bearTrapsActive)
+            {
+                foreach (GameObject button in trapButtons)
+                {
+                    upgradeButtonGroups.Add(button);
+                }
+            }
+            if (playerAttack.boomerangActive)
+            {
+                foreach (GameObject button in boomButtons)
+                {
+                    upgradeButtonGroups.Add(button);
+                }
             }
         }
-        if (playerAttack.potionActive)
-        {
-            foreach (GameObject button in potionButtons)
-            {
-                upgradeButtonGroups.Add(button);
-            }
-        }
-        if (playerAttack.bearTrapsActive)
-        {
-            foreach (GameObject button in trapButtons)
-            {
-                upgradeButtonGroups.Add(button);
-            }
-        }
-        if (playerAttack.boomerangActive)
-        {
-            foreach (GameObject button in boomButtons)
-            {
-                upgradeButtonGroups.Add(button);
-            }
-        }
-    }
+    #endregion
+
     #region WEAPON Unlock RELATED
         public void GetWhip()
         {
             playerAttack.whipActive = true;
+            playerAttack.inventoryCount++;
         }
         public void getBoomerang()
         {
-            playerAttack.boomerangActive = true;
+            playerAttack.boomerangActive = true; 
+            playerAttack.inventoryCount++;
         }
         public void getPotions()
         {
             playerAttack.potionActive = true;
+            playerAttack.inventoryCount++;
         }
         public void getShooting()
         {
             playerAttack.shootingActive = true;
+            playerAttack.inventoryCount++;
         }
         public void GetBibles()
         {
             playerAttack.SpawnBibles();
             playerAttack.bibleActive = true;
+            playerAttack.inventoryCount++;
         }
         public void GetBearTraps()
         {
             playerAttack.bearTrapsActive = true;
+            playerAttack.inventoryCount++;
         }
     #endregion
 
     #region PLAYER RELATED
-    public void IncreaseHealth()
+        public void IncreaseHealth()
         {
             pHealth.playerHealth += 0.2f;
         }
         public void IncreaseSpeed()
         {
-            playerController.moveSpeed += 0.2f;
+            if(playerController.moveSpeed < 10)
+                playerController.moveSpeed += 0.1f;
+        }
+        public void IncreaseMagnetRadius()
+        {
+            if(magnet.pullSpeed < 10)
+                magnet.pullSpeed += 0.2f;
+            if(magnet.magnetRadius < 20)
+                magnet.magnetRadius += 0.2f;
         }
     #endregion
     #region ALL OTHER UPGRADES RELATED
@@ -217,10 +235,10 @@ public class Rewards : MonoBehaviour
                 if (playerAttack.boomerangActive)
                     boomerang.damage += 0.2f;
             }
-            public void DecreaseCooldownTime()
+            public void DecreaseCooldownTime() //decrase timer time
             {
                 if (playerAttack.shootingActive)
-                    playerAttack.fireRate -= 0.02f;
+                    playerAttack.fireRate += 0.02f;
                 if (playerAttack.bibleActive)
                     playerAttack.bibleTimerReset -= 0.02f;
                 if (playerAttack.whipActive)
@@ -246,7 +264,7 @@ public class Rewards : MonoBehaviour
                 playerAttack.boomerangSpeed += 0.2f;
                 playerAttack.potionSpeed += 0.2f;
             }
-            public void IncreaseAllTriggerSpeeds()
+            public void IncreaseAllTriggerSpeeds() // increase rate at which timer expires
             {
                 playerAttack.fireRate += 0.01f;
                 playerAttack.whipTriggerSpeed += 0.2f;
@@ -255,8 +273,114 @@ public class Rewards : MonoBehaviour
                 playerAttack.boomerangTriggerSpeed += 0.2f;
                 playerAttack.bibleTriggerSpeed += 0.2f;
             }
-    #endregion
+        #endregion
         #region WHIP RELATED
+            public void WHipDamageIncrease()
+            {
+                whipAttack.damage += 0.2f;
+            }
+            public void WhipTriggerIncrease() //
+            {
+                playerAttack.whipTriggerSpeed += 0.2f;
+            }
+            public void WhipTimerDecrease()
+            {
+                playerAttack.whipTimerReset -= 0.02f;
+            }
+        #endregion
+        #region SHOOTING RELATED
+            public void ShootingDamageIncrease()
+            {
+                playerBulletAttack.damage += 0.2f;
+            }
+            public void ShootingTriggerIncrease() //
+            {
+                playerAttack.fireRate += 0.01f;
+            }
+        #endregion
+        #region BIBLE RELATED
+            public void BibleDamageIncrease()
+            {
+                bibleAttack.damage += 0.2f;
+            }
+            public void BibleTriggerIncrease() //
+            {
+                playerAttack.bibleTriggerSpeed += 0.2f;
+            }
+            public void BibleTimerDecrease()
+            {
+                playerAttack.bibleTimerReset -= 0.02f;
+            }
+            public void IncreaseBibleNumber()
+            {
+                playerAttack.numberOfBibles++;
+            }
+            public void IncreaseBibleRotateSpeed()
+            {
+                playerAttack.orbitSpeed += 0.2f;
+            }
+        #endregion
+        #region POTION RELATED
+            public void PotionDamageIncrease()
+            {
+                potionSplash.damage += 0.2f;
+            }
+            public void PotionTriggerIncrease() //
+            {
+                playerAttack.potionTriggerSpeed += 0.2f;
+            }
+            public void PotionTimerDecrease()
+            {
+                playerAttack.potionTimerReset -= 0.02f;
+            }
+            public void IncreasePotionNumber()
+            {
+                playerAttack.maxPotions++;
+            }
+            public void IncreasePotionRotateSpeed()
+            {
+                playerAttack.potionSpeed += 0.2f;
+            }
+        #endregion
+        #region BOOMERANG RELATED
+            public void BoomerangeDamageIncrease()
+            {
+                boomerang.damage += 0.2f;
+            }
+            public void BoomerangeTriggerIncrease() //
+            {
+                playerAttack.boomerangTriggerSpeed += 0.2f;
+            }
+            public void BoomerangeTimerDecrease()
+            {
+                playerAttack.boomerangTimerReset -= 0.02f;
+            }
+            public void IncreasBoomerangeNumber()
+            {
+                playerAttack.maxBoomerangs++;
+            }
+            public void IncreaseBoomerangeRotateSpeed()
+            {
+                playerAttack.boomerangSpeed += 0.2f;
+            }
+        #endregion
+        #region TRAPS/CALTROP RELATED
+            public void TrapsDamageIncrease()
+            {
+                traps.damage += 0.2f;
+            }
+            public void TrapsTriggerIncrease() //
+            {
+                playerAttack.trapTriggerSpeed += 0.2f;
+            }
+            public void TrapsTimerDecrease()
+            {
+                playerAttack.trapTimerReset -= 0.02f;
+            }
+            public void IncreaseTrapsNumber()
+            {
+                playerAttack.maxTraps++;
+            }
         #endregion
     #endregion
 

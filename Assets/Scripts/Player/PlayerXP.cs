@@ -13,6 +13,7 @@ public class PlayerXP : MonoBehaviour
     public Image xpBarFill;  // Fill image of XP bar
 
     public UnityEvent LevelUpWeapon;
+    public UnityEvent levelUpAllWeapons;
     public UnityEvent LevelUpGeneric;
 
     SoundManager soundManager;
@@ -41,11 +42,15 @@ public class PlayerXP : MonoBehaviour
             playerLevel++;
             xpToNextLevel = Mathf.RoundToInt(xpToNextLevel * 1.35f); // Increase difficulty each level
             currentXP = temp;
-            if (playerLevel % 5 == 0)
+            if (playerLevel % 5 == 0 && GetComponent<PlayerAttack>().inventoryCount < 4)
             {
-                if(GetComponent<PlayerAttack>().inventoryCount < 4)
                     if (LevelUpWeapon != null)
                         LevelUpWeapon.Invoke();
+            }
+            else if(playerLevel % 3 == 0)
+            {
+                if(levelUpAllWeapons != null)
+                    levelUpAllWeapons.Invoke();
             }
             else
             {

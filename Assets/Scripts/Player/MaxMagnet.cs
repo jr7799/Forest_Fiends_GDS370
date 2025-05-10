@@ -24,7 +24,7 @@ public class MaxMagnet : MonoBehaviour
         var tempRadius = magnet.magnetRadius;
         var tempSpeed = magnet.pullSpeed;
         magnet.magnetRadius = tempRadius * 200;
-        magnet.pullSpeed = 15;
+        magnet.pullSpeed = tempSpeed * 3;
         yield return new WaitForSeconds(5);
         magnet.pullSpeed = tempSpeed;
         magnet.magnetRadius = tempRadius;
