@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eb716f53d8cf0964db6d19069722de9e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296967
+  packageName: 'Chibi Monster: Desert (Unique Skill Animated Prefab with SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Chibi Monster Desert (Unique Skill Animated Prefab with SFX)/Monster/Vulture/Vulture/atkHit.anim
+  uploadId: 695410

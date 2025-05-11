@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7fa6804d8afa1954aa2bdc3e226cb427
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296967
+  packageName: 'Chibi Monster: Desert (Unique Skill Animated Prefab with SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Chibi Monster Desert (Unique Skill Animated Prefab with SFX)/Monster/Snake/Snake/SnakeAttack.controller
+  uploadId: 695410

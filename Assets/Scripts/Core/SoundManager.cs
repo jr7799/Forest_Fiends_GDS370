@@ -1,7 +1,7 @@
 using System.Drawing;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : MonoBehaviour, IDataPersistance
 {
     [Header("Audio Sources")]
     [SerializeField] public AudioSource enemyDamageSource;
@@ -77,6 +77,16 @@ public class SoundManager : MonoBehaviour
     public void boomerang()
     {
 
+    }
+
+    public void LoadData(GameData data)
+    {
+        volume = data.SFXMusic;
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.SFXMusic = volume;
     }
     #endregion
 }

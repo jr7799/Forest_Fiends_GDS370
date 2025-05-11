@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9545c1e2214fe4e4d956c5395f5e029b
+guid: dea126f7841118f4ba151bbbbfce3adb
 DefaultImporter:
   externalObjects: {}
   userData: 
@@ -7,9 +7,9 @@ DefaultImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 296778
-  packageName: 'Cute Chibi Character: Medieval (Unique Skill Animated Prefab with
+  productId: 296966
+  packageName: '2D Monster - Cute & Chibi: Sea (Unique Skill Animated Prefab with
     SFX)'
   packageVersion: 1.0
-  assetPath: Assets/Art/Hood And Monk Chibi/Demo Scene/DemoScene.unity
-  uploadId: 695064
+  assetPath: Assets/Art - Downloaded/Hood And Monk Chibi/Demo Scene/DemoScene.unity
+  uploadId: 695325

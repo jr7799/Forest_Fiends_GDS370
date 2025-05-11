@@ -18,7 +18,7 @@ public class GameData
         this.coins = 0;
         charactersUnlocked = new SerializeDictionary<string, bool>();
         damageNumbersOn = true;
-        MusicVolume = 1;
+        MusicVolume = 0.5f;
         SFXMusic = 1;
     }
 }

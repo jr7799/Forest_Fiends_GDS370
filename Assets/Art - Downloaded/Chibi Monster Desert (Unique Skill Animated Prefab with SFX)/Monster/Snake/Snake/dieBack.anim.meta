@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b7055d010661265439463db9b55d04ea
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296967
+  packageName: 'Chibi Monster: Desert (Unique Skill Animated Prefab with SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Chibi Monster Desert (Unique Skill Animated Prefab with SFX)/Monster/Snake/Snake/dieBack.anim
+  uploadId: 695410

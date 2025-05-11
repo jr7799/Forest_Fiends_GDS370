@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 65e7e2f0fad019c41ab4343a10e8cd09
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296967
+  packageName: 'Chibi Monster: Desert (Unique Skill Animated Prefab with SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Chibi Monster Desert (Unique Skill Animated Prefab with SFX)/Monster/Snake/Snake/idleBack.anim
+  uploadId: 695410

@@ -33,7 +33,11 @@ public class Scenes : MonoBehaviour
     }
     public void MainMenu()
     {
+        if (music.musicSource.clip != music.mainMenuMusic)
+            music.switchToMainMenuMusic();
         Time.timeScale = 1.0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
     }
     public void StartGame()
@@ -63,7 +67,11 @@ public class Scenes : MonoBehaviour
     }
     public void ToShop()
     {
+        if(music.musicSource.clip != music.mainMenuMusic)
+            music.switchToMainMenuMusic();
         SceneManager.LoadScene(5);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
     public void LoseScene()
     {

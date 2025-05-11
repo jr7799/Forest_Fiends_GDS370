@@ -1,22 +1,22 @@
 using UnityEngine;
 
-public class BGMusic : MonoBehaviour
+public class BGMusic : MonoBehaviour, IDataPersistance
 {
     public static BGMusic instance;
 
     [Header("Audio Settings")]
-    [SerializeField][Range(0f, 1f)] public float volume = 1f;
+    [SerializeField][Range(0f, .5f)] public float volume = .5f;
 
     [Header("Audio Source")]
     [SerializeField] public AudioSource musicSource;
 
     [Header("Music Tracks")]
-    [SerializeField] private AudioClip mainMenuMusic;
-    [SerializeField] private AudioClip winMusic;
-    [SerializeField] private AudioClip loseMusic;
-    [SerializeField] private AudioClip forestMusic;
-    [SerializeField] private AudioClip desertMusic;
-    [SerializeField] private AudioClip tundraMusic;
+    [SerializeField] public AudioClip mainMenuMusic;
+    [SerializeField] public AudioClip winMusic;
+    [SerializeField] public AudioClip loseMusic;
+    [SerializeField] public AudioClip forestMusic;
+    [SerializeField] public AudioClip desertMusic;
+    [SerializeField] public AudioClip tundraMusic;
 
     private void Awake()
     {
@@ -87,5 +87,15 @@ public class BGMusic : MonoBehaviour
         musicSource.clip = tundraMusic;
         musicSource.volume = volume;
         musicSource.Play();
+    }
+
+    public void LoadData(GameData data)
+    {
+        volume = data.MusicVolume;
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.MusicVolume = volume;
     }
 }

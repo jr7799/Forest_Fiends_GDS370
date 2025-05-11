@@ -1,0 +1,678 @@
+fileFormatVersion: 2
+guid: bacc08b14439c9743bb5a8c65aec89dd
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296966
+  packageName: '2D Monster - Cute & Chibi: Sea (Unique Skill Animated Prefab with
+    SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Chibi Monster Sea (Unique Skill Animated Prefab with SFX)/Monster/MermaidQueen/mermaidQueenSk.png
+  uploadId: 695325
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2300422937101770574
+    second: mermaidQueenSk_0
+  - first:
+      213: 2844704228381018751
+    second: mermaidQueenSk_1
+  - first:
+      213: 3076039309808800573
+    second: mermaidQueenSk_2
+  - first:
+      213: 8766828794572899757
+    second: mermaidQueenSk_3
+  - first:
+      213: 7147929365530453526
+    second: mermaidQueenSk_4
+  - first:
+      213: -5401383259910444400
+    second: mermaidQueenSk_5
+  - first:
+      213: -4906464960624133789
+    second: mermaidQueenSk_6
+  - first:
+      213: 8782074465588367197
+    second: mermaidQueenSk_7
+  - first:
+      213: 5262543768165475187
+    second: mermaidQueenSk_8
+  - first:
+      213: -551566566609407219
+    second: mermaidQueenSk_9
+  - first:
+      213: 5030406194667575401
+    second: mermaidQueenSk_10
+  - first:
+      213: 8864959288013277563
+    second: mermaidQueenSk_11
+  - first:
+      213: 4502350165135586332
+    second: mermaidQueenSk_12
+  - first:
+      213: -119383145154208063
+    second: mermaidQueenSk_13
+  - first:
+      213: -3592051869721487533
+    second: mermaidQueenSk_14
+  - first:
+      213: -9121260248504097806
+    second: mermaidQueenSk_15
+  - first:
+      213: 1570153191917923639
+    second: mermaidQueenSk_16
+  - first:
+      213: 3847805068455672196
+    second: mermaidQueenSk_17
+  - first:
+      213: -4936300971396649260
+    second: mermaidQueenSk_18
+  - first:
+      213: 5889661331110301247
+    second: mermaidQueenSk_19
+  - first:
+      213: -9125944545401178629
+    second: mermaidQueenSk_20
+  - first:
+      213: 6691303500000692828
+    second: mermaidQueenSk_21
+  - first:
+      213: -1072568860918384786
+    second: mermaidQueenSk_22
+  - first:
+      213: 7214366637727689291
+    second: mermaidQueenSk_23
+  - first:
+      213: 9010089750427406709
+    second: mermaidQueenSk_24
+  - first:
+      213: 2259932042145885628
+    second: mermaidQueenSk_25
+  - first:
+      213: 7517305029276082290
+    second: mermaidQueenSk_26
+  - first:
+      213: -4065614417212288290
+    second: mermaidQueenSk_27
+  - first:
+      213: -4386902835335343419
+    second: mermaidQueenSk_28
+  - first:
+      213: 5454377252505643503
+    second: mermaidQueenSk_29
+  - first:
+      213: 233432468104995839
+    second: mermaidQueenSk_30
+  - first:
+      213: 8164976989610946589
+    second: mermaidQueenSk_31
+  - first:
+      213: -6830461622664243291
+    second: mermaidQueenSk_32
+  - first:
+      213: -3369756015197782485
+    second: mermaidQueenSk_33
+  - first:
+      213: -3298203305343376003
+    second: mermaidQueenSk_34
+  - first:
+      213: 146672369837100045
+    second: mermaidQueenSk_35
+  - first:
+      213: 7385567895340979683
+    second: mermaidQueenSk_36
+  - first:
+      213: -5064148233192134871
+    second: mermaidQueenSk_37
+  - first:
+      213: 9124441474992415184
+    second: mermaidQueenSk_38
+  - first:
+      213: 4816440362127047140
+    second: mermaidQueenSk_39
+  - first:
+      213: 1123072880975583566
+    second: mermaidQueenSk_40
+  - first:
+      213: 4524092623040629070
+    second: mermaidQueenSk_41
+  - first:
+      213: 7689194610063311720
+    second: mermaidQueenSk_42
+  - first:
+      213: 1952510731456799955
+    second: mermaidQueenSk_43
+  - first:
+      213: 7293317074027258371
+    second: mermaidQueenSk_44
+  - first:
+      213: 3046889259145919385
+    second: mermaidQueenSk_45
+  - first:
+      213: -3417895054414033181
+    second: mermaidQueenSk_46
+  - first:
+      213: -2191963947168141380
+    second: mermaidQueenSk_47
+  - first:
+      213: 1352413685923336061
+    second: mermaidQueenSk_48
+  - first:
+      213: -3830964381354315528
+    second: mermaidQueenSk_49
+  - first:
+      213: 7963636525642628828
+    second: mermaidQueenSk_50
+  - first:
+      213: -4691963205025750360
+    second: mermaidQueenSk_51
+  - first:
+      213: 4812718992903236571
+    second: mermaidQueenSk_52
+  - first:
+      213: 2669913540290521022
+    second: mermaidQueenSk_53
+  - first:
+      213: -6541905001704712722
+    second: mermaidQueenSk_54
+  - first:
+      213: 4334974651210854079
+    second: mermaidQueenSk_55
+  - first:
+      213: -6668650301760631773
+    second: mermaidQueenSk_56
+  - first:
+      213: -2929821796561497111
+    second: mermaidQueenSk_57
+  - first:
+      213: -3581523246591146994
+    second: mermaidQueenSk_58
+  - first:
+      213: -1314326412200083114
+    second: mermaidQueenSk_59
+  - first:
+      213: 5710701145952483760
+    second: mermaidQueenSk_60
+  - first:
+      213: 2413145950242294780
+    second: mermaidQueenSk_61
+  - first:
+      213: 3734583999456051362
+    second: mermaidQueenSk_62
+  - first:
+      213: 5481498107226057838
+    second: mermaidQueenSk_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mermaidQueenSk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b063e0e6814310e0800000000000000
+      internalID: -2300422937101770574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 912
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ac3bf7c6b6a7720800000000000000
+      internalID: 2844704228381018751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 912
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d339a48647940ba20800000000000000
+      internalID: 3076039309808800573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 912
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da50f2b07580aa970800000000000000
+      internalID: 8766828794572899757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616a608f2eb823360800000000000000
+      internalID: 7147929365530453526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 624
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09aeb49fa8e6a05b0800000000000000
+      internalID: -5401383259910444400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 624
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369f8172d1cb8ebb0800000000000000
+      internalID: -4906464960624133789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f4c60723230e970800000000000000
+      internalID: 8782074465588367197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373e27cccaf480940800000000000000
+      internalID: 5262543768165475187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 336
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03b34741217858f0800000000000000
+      internalID: -551566566609407219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_10
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 336
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968d51528c79fc540800000000000000
+      internalID: 5030406194667575401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79c45ef089a60b70800000000000000
+      internalID: 8864959288013277563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14f357ee9f8b7e30800000000000000
+      internalID: 4502350165135586332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermaidQueenSk_13
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 48
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce1ae879add75ef0800000000000000
+      internalID: -119383145154208063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 38b7c2faed30eae43a6fac4bcdce98d4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mermaidQueenSk_0: -2300422937101770574
+      mermaidQueenSk_1: 2844704228381018751
+      mermaidQueenSk_10: 5030406194667575401
+      mermaidQueenSk_11: 8864959288013277563
+      mermaidQueenSk_12: 4502350165135586332
+      mermaidQueenSk_13: -119383145154208063
+      mermaidQueenSk_2: 3076039309808800573
+      mermaidQueenSk_3: 8766828794572899757
+      mermaidQueenSk_4: 7147929365530453526
+      mermaidQueenSk_5: -5401383259910444400
+      mermaidQueenSk_6: -4906464960624133789
+      mermaidQueenSk_7: 8782074465588367197
+      mermaidQueenSk_8: 5262543768165475187
+      mermaidQueenSk_9: -551566566609407219
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

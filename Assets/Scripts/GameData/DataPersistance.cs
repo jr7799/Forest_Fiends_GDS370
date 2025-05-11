@@ -46,7 +46,6 @@ public class DataPersistance : MonoBehaviour
     }
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-
         dataPersistanceObjects = FindAllDataPersistenceObjects();
         LoadGame();
     }

@@ -3738,9 +3738,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4550400852783310939, guid: 127a3bb433011e34585671278050aec2, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4707642692084188978, guid: 127a3bb433011e34585671278050aec2, type: 3}
       propertyPath: m_Name
       value: BGMusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894547350296739449, guid: 127a3bb433011e34585671278050aec2, type: 3}
+      propertyPath: volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4894547350296739449, guid: 127a3bb433011e34585671278050aec2, type: 3}
       propertyPath: winMusic

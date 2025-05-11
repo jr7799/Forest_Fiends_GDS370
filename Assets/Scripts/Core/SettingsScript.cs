@@ -21,19 +21,7 @@ public class SettingsScript : MonoBehaviour, IDataPersistance
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         music = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
     }
-    public void LoadData(GameData data)
-    {
-        damNumbers.isOn = data.damageNumbersOn;
-        MusicSlider.value = data.MusicVolume;
-        SFXSlider.value = data.SFXMusic;
-    }
-
-    public void SaveData(GameData data)
-    {
-        data.damageNumbersOn = damNumbers.isOn;
-        data.MusicVolume = MusicSlider.value;
-        data.SFXMusic = SFXSlider.value;
-    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -49,6 +37,18 @@ public class SettingsScript : MonoBehaviour, IDataPersistance
     {
         damNUmIsOn = damNumbers.isOn;
     }
+    public void LoadData(GameData data)
+    {
+        damNumbers.isOn = data.damageNumbersOn;
+        MusicSlider.value = data.MusicVolume;
+        SFXSlider.value = data.SFXMusic;
+    }
 
+    public void SaveData(GameData data)
+    {
+        data.damageNumbersOn = damNumbers.isOn;
+        data.MusicVolume = MusicSlider.value;
+        data.SFXMusic = SFXSlider.value;
+    }
     
 }

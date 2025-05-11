@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e65c2b0e0b2ff2544bfd5d4f8fdd4906
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296967
+  packageName: 'Chibi Monster: Desert (Unique Skill Animated Prefab with SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Chibi Monster Desert (Unique Skill Animated Prefab with SFX)/Monster/Beetle/Beetle/idle.anim
+  uploadId: 695410

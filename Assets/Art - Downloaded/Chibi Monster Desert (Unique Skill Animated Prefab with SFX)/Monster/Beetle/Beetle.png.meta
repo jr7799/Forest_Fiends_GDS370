@@ -1,0 +1,927 @@
+fileFormatVersion: 2
+guid: 0d4948134e244c34b8edd20abf6f7902
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296967
+  packageName: 'Chibi Monster: Desert (Unique Skill Animated Prefab with SFX)'
+  packageVersion: 1.0
+  assetPath: Assets/Chibi Monster Desert (Unique Skill Animated Prefab with SFX)/Monster/Beetle/Beetle.png
+  uploadId: 695410
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2631103260818236658
+    second: Beetle_0
+  - first:
+      213: 7801186258100458736
+    second: Beetle_1
+  - first:
+      213: -3665364186405681620
+    second: Beetle_2
+  - first:
+      213: -7567055186130341114
+    second: Beetle_3
+  - first:
+      213: -7714739335585216364
+    second: Beetle_4
+  - first:
+      213: -3640528837133240302
+    second: Beetle_5
+  - first:
+      213: -8183089007822979094
+    second: Beetle_6
+  - first:
+      213: 437628400299887224
+    second: Beetle_7
+  - first:
+      213: -5311378579363438358
+    second: Beetle_8
+  - first:
+      213: -5389035027184523418
+    second: Beetle_9
+  - first:
+      213: 4521902234388037903
+    second: Beetle_10
+  - first:
+      213: -6288602502391489237
+    second: Beetle_11
+  - first:
+      213: 7883141140381985119
+    second: Beetle_12
+  - first:
+      213: 8013541882104858882
+    second: Beetle_13
+  - first:
+      213: 6033505819445390423
+    second: Beetle_14
+  - first:
+      213: -7365886563573228596
+    second: Beetle_15
+  - first:
+      213: 7206479655934348726
+    second: Beetle_16
+  - first:
+      213: 6550003022043759569
+    second: Beetle_17
+  - first:
+      213: 966919355087930144
+    second: Beetle_18
+  - first:
+      213: -5107950078779367919
+    second: Beetle_19
+  - first:
+      213: -5303988015069068197
+    second: Beetle_20
+  - first:
+      213: -2294332346530294924
+    second: Beetle_21
+  - first:
+      213: 1978093683931016022
+    second: Beetle_22
+  - first:
+      213: 8857309015043736605
+    second: Beetle_23
+  - first:
+      213: 7469536035715125038
+    second: Beetle_24
+  - first:
+      213: -5813006465846067196
+    second: Beetle_25
+  - first:
+      213: 4447852033950714737
+    second: Beetle_26
+  - first:
+      213: 3059590214735988293
+    second: Beetle_27
+  - first:
+      213: 8820783749413444241
+    second: Beetle_28
+  - first:
+      213: -4869846430426471958
+    second: Beetle_29
+  - first:
+      213: 8539318654382691893
+    second: Beetle_30
+  - first:
+      213: -2210257048695306254
+    second: Beetle_31
+  - first:
+      213: 4537637212060631938
+    second: Beetle_32
+  - first:
+      213: 4584776528026087053
+    second: Beetle_33
+  - first:
+      213: 8946069717929687678
+    second: Beetle_34
+  - first:
+      213: -3711479155393972619
+    second: Beetle_35
+  - first:
+      213: -6147917684718866954
+    second: Beetle_36
+  - first:
+      213: 6748797714038927557
+    second: Beetle_37
+  - first:
+      213: -1385254015021811734
+    second: Beetle_38
+  - first:
+      213: 33921813397806502
+    second: Beetle_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beetle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1712
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4617cb97e838420800000000000000
+      internalID: 2631103260818236658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1712
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f49cbcb191634c60800000000000000
+      internalID: 7801186258100458736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1712
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26c9d041b2022dc0800000000000000
+      internalID: -3665364186405681620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1712
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6037ce2766b6cf690800000000000000
+      internalID: -7567055186130341114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1424
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498c5bfd27dbfe490800000000000000
+      internalID: -7714739335585216364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1424
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2187b1c9f4e3a7dc0800000000000000
+      internalID: -3640528837133240302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1424
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefbe4b37e3df6e80800000000000000
+      internalID: -8183089007822979094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_7
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1424
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a4f7f16b4c21600800000000000000
+      internalID: 437628400299887224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_8
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1424
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae06c6da2513a46b0800000000000000
+      internalID: -5311378579363438358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1424
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6676782f13d4635b0800000000000000
+      internalID: -5389035027184523418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_10
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1424
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f018eb5cf1601ce30800000000000000
+      internalID: 4521902234388037903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1136
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d925fa7556ab8a0800000000000000
+      internalID: -6288602502391489237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1136
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f596cbab91b866d60800000000000000
+      internalID: 7883141140381985119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_13
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1136
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209439b52e1d53f60800000000000000
+      internalID: 8013541882104858882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_14
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1136
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c6b4e63915bb350800000000000000
+      internalID: 6033505819445390423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb1562523d17c990800000000000000
+      internalID: -7365886563573228596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 848
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bdcb05c01f820460800000000000000
+      internalID: 7206479655934348726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_17
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 848
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d347ae8b0946ea50800000000000000
+      internalID: 6550003022043759569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 848
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023477ec7003b6d00800000000000000
+      internalID: 966919355087930144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_19
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 848
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e5de7677aec19b0800000000000000
+      internalID: -5107950078779367919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_20
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 848
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5401e480037466b0800000000000000
+      internalID: -5303988015069068197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_21
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 848
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4739f5003e4e820e0800000000000000
+      internalID: -2294332346530294924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65be623a9b9937b10800000000000000
+      internalID: 1978093683931016022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_23
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 560
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d140c830f9b7bea70800000000000000
+      internalID: 8857309015043736605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_24
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 560
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54959f38d696d7f43a6f18f250ed25ee
+      internalID: 1196619222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec688f0e4ffa1b46a8cefac5bcb83ce
+      internalID: 1594102959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_26
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 272
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dfed8058d9bb048810e8dbec5d67ba
+      internalID: -659313014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beetle_27
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 272
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5019871f4f53e5c47a6a64b069cf1d03
+      internalID: 1296916744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 24c84cf100009dd4fa0fc68dd354ab25
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Beetle_0: 2631103260818236658
+      Beetle_1: 7801186258100458736
+      Beetle_10: 4521902234388037903
+      Beetle_11: -6288602502391489237
+      Beetle_12: 7883141140381985119
+      Beetle_13: 8013541882104858882
+      Beetle_14: 6033505819445390423
+      Beetle_15: -7365886563573228596
+      Beetle_16: 7206479655934348726
+      Beetle_17: 6550003022043759569
+      Beetle_18: 966919355087930144
+      Beetle_19: -5107950078779367919
+      Beetle_2: -3665364186405681620
+      Beetle_20: -5303988015069068197
+      Beetle_21: -2294332346530294924
+      Beetle_22: 1978093683931016022
+      Beetle_23: 8857309015043736605
+      Beetle_24: 1196619222
+      Beetle_25: 1594102959
+      Beetle_26: -659313014
+      Beetle_27: 1296916744
+      Beetle_3: -7567055186130341114
+      Beetle_4: -7714739335585216364
+      Beetle_5: -3640528837133240302
+      Beetle_6: -8183089007822979094
+      Beetle_7: 437628400299887224
+      Beetle_8: -5311378579363438358
+      Beetle_9: -5389035027184523418
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
