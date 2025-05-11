@@ -175,8 +175,8 @@ MonoBehaviour:
   playerHealthBar: {fileID: 0}
   takingDamage: 0
   anim: {fileID: 0}
-  animAttackName: Move
-  animWalkName: Attack
+  animAttackName: Attack
+  animWalkName: Move
   attacking: 0
 --- !u!114 &-636089432892496095
 MonoBehaviour:
