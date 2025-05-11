@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Rewards : MonoBehaviour
@@ -45,6 +46,16 @@ public class Rewards : MonoBehaviour
         playerAttack = GameObject.Find("Player").GetComponent<PlayerAttack>();
         updateActiveButtonsUpgrades();
         updateActiveWeaponUnlockButtons();
+        foreach (GameObject button in playerRelatedButtons)
+        {
+            if (!upgradeButtonGroups.Contains(button))
+                upgradeButtonGroups.Add(button);
+        }
+        foreach (GameObject button in allWeaponsButtons)
+        {
+            if (!upgradeButtonGroups.Contains(button))
+                upgradeButtonGroups.Add(button);
+        }
     }
     private void Update()
     {
@@ -54,36 +65,41 @@ public class Rewards : MonoBehaviour
     #region SETTING/ACTIVATING BUTTON RELATED
         public void GetRandomButtonsWeapon(int count)
         {
-            // Shuffle the list
-            for (int i = 0; i < upgradeButtonGroups.Count; i++)
+            List<GameObject> shuffled = new List<GameObject>(weaponButtonGroups);
+
+            // Shuffle using Fisher-Yates
+            for (int i = shuffled.Count - 1; i > 0; i--)
             {
-                int randomIndex = Random.Range(i, upgradeButtonGroups.Count);
-                GameObject temp = upgradeButtonGroups[i];
-                upgradeButtonGroups[i] = upgradeButtonGroups[randomIndex];
-                upgradeButtonGroups[randomIndex] = temp;
+                int j = Random.Range(0, i + 1);
+                GameObject temp = shuffled[i];
+                shuffled[i] = shuffled[j];
+                shuffled[j] = temp;
             }
 
-            // Activate the first 'count' buttons, deactivate the rest
-            for (int i = 0; i < upgradeButtonGroups.Count; i++)
+            // Activate the selected buttons, deactivate the rest
+            for (int i = 0; i < weaponButtonGroups.Count; i++)
             {
-                upgradeButtonGroups[i].SetActive(i < count);
+            weaponButtonGroups[i].SetActive(shuffled.Take(count).Contains(weaponButtonGroups[i]));
             }
         }
         public void GetRandomButtonsUpgrades(int count)
         {
-            // Shuffle the list
-            for (int i = 0; i < upgradeButtonGroups.Count; i++)
-            {
-                int randomIndex = Random.Range(i, upgradeButtonGroups.Count);
-                GameObject temp = upgradeButtonGroups[i];
-                upgradeButtonGroups[i] = upgradeButtonGroups[randomIndex];
-                upgradeButtonGroups[randomIndex] = temp;
-            }
+            // Create a copy to avoid modifying the original list order
+            List<GameObject> shuffled = new List<GameObject>(upgradeButtonGroups);
 
-            // Activate the first 'count' buttons, deactivate the rest
+            // Shuffle using Fisher-Yates
+            for (int i = shuffled.Count - 1; i > 0; i--)
+            {
+                int j = Random.Range(0, i + 1);
+                GameObject temp = shuffled[i];
+                shuffled[i] = shuffled[j];
+                shuffled[j] = temp;
+            }
+       
+            // Activate the selected buttons, deactivate the rest
             for (int i = 0; i < upgradeButtonGroups.Count; i++)
             {
-                upgradeButtonGroups[i].SetActive(i < count);
+                upgradeButtonGroups[i].SetActive(shuffled.Take(count).Contains(upgradeButtonGroups[i]));
             }
         }
         private void updateActiveWeaponUnlockButtons()
@@ -121,46 +137,53 @@ public class Rewards : MonoBehaviour
         }
         private void updateActiveButtonsUpgrades()
         {
+            
             if (playerAttack.shootingActive)
             {
                 foreach (GameObject button in shootingButtons)
                 {
-                    upgradeButtonGroups.Add(button);
+                    if(!upgradeButtonGroups.Contains(button))
+                        upgradeButtonGroups.Add(button);
                 }
             }
             if (playerAttack.bibleActive)
             {
                 foreach (GameObject button in orbButtons)
                 {
-                    upgradeButtonGroups.Add(button);
+                    if (!upgradeButtonGroups.Contains(button))
+                        upgradeButtonGroups.Add(button);
                 }
             }
             if (playerAttack.whipActive)
             {
                 foreach (GameObject button in whipButtons)
                 {
-                    upgradeButtonGroups.Add(button);
+                    if (!upgradeButtonGroups.Contains(button))
+                        upgradeButtonGroups.Add(button);
                 }
             }
             if (playerAttack.potionActive)
             {
                 foreach (GameObject button in potionButtons)
                 {
-                    upgradeButtonGroups.Add(button);
+                    if (!upgradeButtonGroups.Contains(button))
+                        upgradeButtonGroups.Add(button);
                 }
             }
             if (playerAttack.bearTrapsActive)
             {
                 foreach (GameObject button in trapButtons)
                 {
-                    upgradeButtonGroups.Add(button);
+                    if (!upgradeButtonGroups.Contains(button))
+                        upgradeButtonGroups.Add(button);
                 }
             }
             if (playerAttack.boomerangActive)
             {
                 foreach (GameObject button in boomButtons)
                 {
-                    upgradeButtonGroups.Add(button);
+                    if (!upgradeButtonGroups.Contains(button))
+                        upgradeButtonGroups.Add(button);
                 }
             }
         }
@@ -218,6 +241,7 @@ public class Rewards : MonoBehaviour
                 magnet.magnetRadius += 0.2f;
         }
     #endregion
+
     #region ALL OTHER UPGRADES RELATED
         #region ALL WEAPONS RELATED
             public void IncreaseDamageAll()
@@ -337,12 +361,16 @@ public class Rewards : MonoBehaviour
             {
                 playerAttack.maxPotions++;
             }
-            public void IncreasePotionRotateSpeed()
+            public void IncreasePotionSpeed()
             {
                 playerAttack.potionSpeed += 0.2f;
             }
         #endregion
         #region BOOMERANG RELATED
+            public void BoomerangeIncreaseBounce()
+            {
+                playerAttack.boomerangMaxTargets++;
+            }
             public void BoomerangeDamageIncrease()
             {
                 boomerang.damage += 0.2f;
@@ -359,7 +387,7 @@ public class Rewards : MonoBehaviour
             {
                 playerAttack.maxBoomerangs++;
             }
-            public void IncreaseBoomerangeRotateSpeed()
+            public void IncreaseBoomerangeSpeed()
             {
                 playerAttack.boomerangSpeed += 0.2f;
             }

@@ -76,6 +76,9 @@ public class DataPersistance : MonoBehaviour
         }
         Debug.Log("Loaded Unlocks = " + gamedata.charactersUnlocked.Keys);
         Debug.Log("Loaded Coin Count = " + gamedata.coins);
+        Debug.Log("Loaded Damage Numbers is On: " + gamedata.damageNumbersOn);
+        Debug.Log("Loaded SFX Volume: " + gamedata.SFXMusic);
+        Debug.Log("Loaded Music Volume: " + gamedata.MusicVolume);
 
     }
     public void SaveGame()
@@ -85,7 +88,10 @@ public class DataPersistance : MonoBehaviour
             obj.SaveData(gamedata);
         }
         Debug.Log("Saved Coin Count = " + gamedata.coins);
-        Debug.Log("Saved Unlocks = " + gamedata.charactersUnlocked.Keys);
+        Debug.Log("Saved Unlocks = " + gamedata.charactersUnlocked.Keys); 
+        Debug.Log("Saved Damage Numbers is On: " + gamedata.damageNumbersOn);
+        Debug.Log("Saved SFX Volume: " + gamedata.SFXMusic);
+        Debug.Log("Saved Music Volume: " + gamedata.MusicVolume);
         fileDataHandler.Save(gamedata);
     }
 

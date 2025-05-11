@@ -44,13 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d806bcffe5c3bd243a6e9cbdde4e6082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedSlider: {fileID: 0}
-  dashSlider: {fileID: 0}
-  duartionSlider: {fileID: 0}
-  minSpeed: 1
-  maxSpeed: 10
-  minDash: 10
-  maxDash: 25
-  minDuration: 0.1
-  maxDuration: 1
-  player: {fileID: 0}
+  MusicSlider: {fileID: 0}
+  SFXSlider: {fileID: 0}
+  damNumbers: {fileID: 0}
+  damNUmIsOn: 0

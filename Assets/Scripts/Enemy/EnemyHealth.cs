@@ -15,26 +15,33 @@ public class EnemyHealth : MonoBehaviour
     private GameManager manager;
     public SpriteRenderer spriteRenderer;
     SoundManager soundManager;
-
+    SettingsScript settings;
+    [SerializeField] public bool damagePopUpIsOn;
     void Start()
     {
         startHealth = Random.Range(minHealth, maxHealth);
         currentHealth = startHealth;
         pupilTracking = GameObject.Find("Viewcone").GetComponent<PupilTracking>();
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        settings = GameObject.Find("SettingsManager").GetComponent<SettingsScript>();
         gemSpawner = GetComponent<GemSpawner>();
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
     public void TakeDamage(float damage, bool isCriticalHit)
     {
         currentHealth -= damage;
-        soundManager.playerDamaged();
-        DamagePopup.Create(transform.position, damage, isCriticalHit);
+        soundManager.enemyDamaged();
+        if(damagePopUpIsOn)
+            DamagePopup.Create(transform.position, damage, isCriticalHit);
         StartCoroutine(hitIndicator());
         if (currentHealth <= 0)
         {
             OnDeath();
         }
+    }
+    private void Update()
+    {
+        damagePopUpIsOn = settings.damNUmIsOn;
     }
     public void OnDeath()
     {
@@ -54,4 +61,6 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color = Color.white;
     }
+
+
 }

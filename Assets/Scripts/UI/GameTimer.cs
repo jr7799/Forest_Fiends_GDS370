@@ -57,6 +57,8 @@ public class GameTimer : MonoBehaviour
     }
     public IEnumerator Win()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         soundManager.switchToWinMusic();
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(3);

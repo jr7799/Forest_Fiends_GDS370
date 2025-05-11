@@ -7,6 +7,7 @@ public class Scenes : MonoBehaviour
     static Scenes instance;
     GameManager gameManager;
     public int levelIndexSelected;
+    BGMusic music;
     //private void Awake()
     //{
     //    if (instance == null)
@@ -22,6 +23,7 @@ public class Scenes : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        music = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
         levelIndexSelected = gameManager.levelIndex;
     }
     private void Update()
@@ -38,7 +40,21 @@ public class Scenes : MonoBehaviour
     {
         if (gameManager.readyToPlay)
         {
+            if(levelIndexSelected == 1)
+            {
+                music.SwitchToForestMusic();
+            }
+            else if(levelIndexSelected == 8)
+            {
+                music.SwitchToDesertMusic();
+            }
+            else if(levelIndexSelected == 9)
+            {
+                music.SwitchToTundraMusic();
+            }
             SceneManager.LoadScene(levelIndexSelected);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = false;
 
         }
         else

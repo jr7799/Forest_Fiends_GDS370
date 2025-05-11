@@ -12,7 +12,7 @@ public class PropSpawner : MonoBehaviour
     public float despawnRadius = 35f;
     public float spawnChance = 0.3f;
 
-    private Dictionary<Vector2Int, GameObject> spawnedProps = new Dictionary<Vector2Int, GameObject>();
+    public Dictionary<Vector2Int, GameObject> spawnedProps = new Dictionary<Vector2Int, GameObject>();
     private Vector2Int lastPlayerCell;
 
     void Start()
@@ -71,6 +71,10 @@ public class PropSpawner : MonoBehaviour
                 );
 
                 GameObject obj = Instantiate(prefab, spawnPos + jitter, Quaternion.identity);
+                if(obj.GetComponent<DestroyableCrate>() != null)
+                {
+                    obj.GetComponent<DestroyableCrate>().propValue = gridPos;
+                }
                 spawnedProps[gridPos] = obj;
             }
         }
@@ -95,7 +99,25 @@ public class PropSpawner : MonoBehaviour
             spawnedProps.Remove(key);
         }
     }
+    void DespawnFarProps(GameObject prop)
+    {
+        Vector3 center = player.position;
+        List<Vector2Int> toRemove = new List<Vector2Int>();
 
+        foreach (var pair in spawnedProps)
+        {
+            if (Vector3.Distance(center, pair.Value.transform.position) > despawnRadius)
+            {
+                Destroy(pair.Value);
+                toRemove.Add(pair.Key);
+            }
+        }
+
+        foreach (var key in toRemove)
+        {
+            spawnedProps.Remove(key);
+        }
+    }
     bool IsPointVisible(Vector3 worldPos)
     {
         Vector3 viewportPoint = mainCamera.WorldToViewportPoint(worldPos);

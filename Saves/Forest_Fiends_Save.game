@@ -17,5 +17,8 @@
             true,
             false
         ]
-    }
+    },
+    "damageNumbersOn": true,
+    "MusicVolume": 1.0,
+    "SFXMusic": 1.0
 }

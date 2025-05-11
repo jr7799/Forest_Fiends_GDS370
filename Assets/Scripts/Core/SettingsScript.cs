@@ -1,59 +1,54 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
-public class SettingsScript : MonoBehaviour
+public class SettingsScript : MonoBehaviour, IDataPersistance
 {
 
+    public SoundManager soundManager;
+    public BGMusic music;
     [Header("Sliders")]
-    public Slider speedSlider;
-    public Slider dashSlider;
-    public Slider duartionSlider;
+    public Slider MusicSlider;
+    public Slider SFXSlider;
+    public Toggle damNumbers;
+    public bool damNUmIsOn;
 
-    [Header("Slider Ranges")]
-    public float minSpeed = 1f;
-    public float maxSpeed = 10f;
-
-    public float minDash = 10f;
-    public float maxDash = 25f;
-
-    public float minDuration = 0.1f;
-    public float maxDuration = 1f;
-
-    [Header("Player Settings")]
-    public PlayerController player;
-
-    public GameObject settingsMenu;
-    public GameObject pauseMenu;
-    public GameObject whipMenu;
-    public GameObject bibleMenu;
-    public GameObject rewardsMenu;
 
     void Start()
     {
-        player = GameObject.Find("Player").GetComponent<PlayerController>();
-        settingsMenu.SetActive(false);
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        music = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
+    }
+    public void LoadData(GameData data)
+    {
+        damNumbers.isOn = data.damageNumbersOn;
+        MusicSlider.value = data.MusicVolume;
+        SFXSlider.value = data.SFXMusic;
     }
 
-    public void SettingsMenu(InputAction.CallbackContext ctx)
+    public void SaveData(GameData data)
     {
-        if(pauseMenu.activeSelf == false)
-        {
-            settingsMenu.SetActive(!settingsMenu.activeSelf);
-            Time.timeScale = settingsMenu.activeSelf ? 0 : 1;
-        }
+        data.damageNumbersOn = damNumbers.isOn;
+        data.MusicVolume = MusicSlider.value;
+        data.SFXMusic = SFXSlider.value;
     }
     // Update is called once per frame
     void Update()
     {
-        UpdatePlayerSettings();
+        UpdateSoundSettings();
+        UpdateDamageNumbers();
+    }
+    public void UpdateSoundSettings()
+    {
+        music.volume = MusicSlider.value;
+        soundManager.volume = SFXSlider.value;
+    }
+    public void UpdateDamageNumbers()
+    {
+        damNUmIsOn = damNumbers.isOn;
     }
 
-    public void UpdatePlayerSettings()
-    {
-        player.moveSpeed = speedSlider.value;
-        player.dashSpeed = dashSlider.value;
-        player.dashDuration = duartionSlider.value;
-    }
+    
 }

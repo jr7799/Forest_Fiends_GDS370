@@ -96,7 +96,7 @@ public class PlayerAttack : MonoBehaviour
     public float distanceThreshold = 0.1f;
     public float potionDistance = 10f;
     GameObject potion;
-    private List<GameObject> activePotions = new List<GameObject>();
+    public List<GameObject> activePotions = new List<GameObject>();
 
     [Header("Throwable Potion Timer")]
     public float potionTimer = 0;
@@ -455,25 +455,28 @@ public class PlayerAttack : MonoBehaviour
         potionTimer -= Time.deltaTime * potionTriggerSpeed;
         if (potionTimer <= 0)
         {
-            if (activePotions.Count < maxPotions && potionPrefab != null)
+            if(potionPrefab != null)
             {
-                for(int i = 0; i < maxPotions; i++)
+                if (activePotions.Count < maxPotions)
                 {
-                    Vector2 start = transform.position;
-                    Vector2 mouseTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-                    potion = Instantiate(potionPrefab, start, Quaternion.identity);
-                    activePotions.Add(potion);
-                    potion.GetComponent<PotionImpact>().destroyed.AddListener(() =>
+                    for (int i = 0; i < maxPotions; i++)
                     {
-                        activePotions.Remove(potion); // Remove from list on destroy
-                    });
-               
-                    StartCoroutine(PotionLobArc(potion, new Vector2(potion.transform.position.x, potion.transform.position.y + potionDistance)));
+                        Vector2 start = transform.position;
+                        Vector2 mouseTarget = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+                        potion = Instantiate(potionPrefab, start, Quaternion.identity);
+                        activePotions.Add(potion);
+                        potion.GetComponent<PotionImpact>().destroyed.AddListener(() =>
+                        {
+                            activePotions.Remove(potion); // Remove from list on destroy
+                        });
+
+                        StartCoroutine(PotionLobArc(potion, new Vector2(potion.transform.position.x, potion.transform.position.y + potionDistance)));
+                    }
                 }
-                potionTimer = potionTimerReset;
+                else return;
             }
-            else return;
+            potionTimer = potionTimerReset;
         }
         
     }

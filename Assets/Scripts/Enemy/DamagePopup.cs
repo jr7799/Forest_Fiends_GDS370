@@ -3,14 +3,7 @@ using TMPro;
 using UnityEngine;
 
 public class DamagePopup : MonoBehaviour {
-    public static DamagePopup Create(Vector3 position, float damageAmount, bool isCriticalHit) {
-        Transform damagePopUpTransform = Instantiate(GameAssets.i.pfDamagePopup, position, Quaternion.identity);
-
-        DamagePopup damagePopup = damagePopUpTransform.GetComponent<DamagePopup>();
-        damagePopup.SetUp(damageAmount, isCriticalHit);
-
-        return damagePopup;
-    }
+    
     private static int SortOrder;
 
     private const float DISAPPEAR_TIMER_MAX = 0.3f;
@@ -26,7 +19,14 @@ public class DamagePopup : MonoBehaviour {
     [SerializeField] private float increaseScaleAmount = 1f;
     [SerializeField] private float decreaseScaleAmount = 1f;
 
+    public static DamagePopup Create(Vector3 position, float damageAmount, bool isCriticalHit)
+    {
+       Transform damagePopUpTransform = Instantiate(GameAssets.i.pfDamagePopup, position, Quaternion.identity);
+        DamagePopup damagePopup = damagePopUpTransform.GetComponent<DamagePopup>();
+        damagePopup.SetUp(damageAmount, isCriticalHit);
 
+        return damagePopup;
+    }
     private void Awake()
     {
         text = transform.GetComponent<TextMeshPro>();

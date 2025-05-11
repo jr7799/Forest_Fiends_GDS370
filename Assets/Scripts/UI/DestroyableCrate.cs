@@ -5,7 +5,12 @@ public class DestroyableCrate : MonoBehaviour
     public Sprite destroyedSprite;
     public GameObject[] foodPrefabs; // Assign in Inspector
     public float dropDelay = 0.2f;
-
+    public PropSpawner spawner;
+    public Vector2Int propValue;
+    private void Start()
+    {
+        spawner = GameObject.Find("EnvironmentSpawner").GetComponent<PropSpawner>();
+    }
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("PlayerBullet"))
@@ -21,7 +26,7 @@ public class DestroyableCrate : MonoBehaviour
                     Instantiate(chosenPrefab, transform.position, Quaternion.identity);
                 }
             }
-
+            spawner.spawnedProps.Remove(propValue);
             Destroy(gameObject, dropDelay);
         }
     }

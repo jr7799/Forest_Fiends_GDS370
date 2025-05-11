@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Threading;
 using UnityEngine;
 
@@ -13,14 +14,23 @@ public class LevelUpUI : MonoBehaviour
     {
         gameObject.SetActive(true);
         confetti.SetActive(true);
+        StartCoroutine(PauseMouse());
         
-        Time.timeScale = 0f;
         Debug.Log("LEVELUP");
     }
     public void CloseLevelUpMenu()
     {
+        Cursor.visible = false;
         gameObject.SetActive(false);
         confetti.SetActive(false);
         Time.timeScale = 1;
+    }
+    IEnumerator PauseMouse()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        yield return new WaitForSeconds(0.25f);
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

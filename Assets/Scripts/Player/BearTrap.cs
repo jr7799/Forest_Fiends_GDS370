@@ -19,6 +19,7 @@ public class LobArcTween2D : MonoBehaviour
 
         // Start arc movement
         StartCoroutine(ArcMove());
+        Destroy(gameObject, Random.Range(10, 15));
     }
 
     IEnumerator ArcMove()
