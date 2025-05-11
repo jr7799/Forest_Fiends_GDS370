@@ -62,25 +62,35 @@ public class Rewards : MonoBehaviour
         updateActiveButtonsUpgrades();
         updateActiveWeaponUnlockButtons();
     }
+    public List<GameObject> allWeaponButtons;
     #region SETTING/ACTIVATING BUTTON RELATED
-        public void GetRandomButtonsWeapon(int count)
+    public void GetRandomButtonsWeapon(int count)
         {
-            List<GameObject> shuffled = new List<GameObject>(weaponButtonGroups);
+            foreach (GameObject button in allWeaponButtons)
+                button.SetActive(false);
 
-            // Shuffle using Fisher-Yates
+            int availableCount = weaponButtonGroups.Count;
+
+            if (availableCount < 4)
+            {
+                foreach (GameObject button in weaponButtonGroups)
+                    button.SetActive(true);
+                return;
+            }
+
+            count = Mathf.Min(count, availableCount);
+
+            // Shuffle copy
+            List<GameObject> shuffled = new List<GameObject>(weaponButtonGroups);
             for (int i = shuffled.Count - 1; i > 0; i--)
             {
                 int j = Random.Range(0, i + 1);
-                GameObject temp = shuffled[i];
-                shuffled[i] = shuffled[j];
-                shuffled[j] = temp;
+                (shuffled[i], shuffled[j]) = (shuffled[j], shuffled[i]);
             }
 
-            // Activate the selected buttons, deactivate the rest
-            for (int i = 0; i < weaponButtonGroups.Count; i++)
-            {
-            weaponButtonGroups[i].SetActive(shuffled.Take(count).Contains(weaponButtonGroups[i]));
-            }
+            // Activate selected
+            for (int i = 0; i < count; i++)
+                shuffled[i].SetActive(true);
         }
         public void GetRandomButtonsUpgrades(int count)
         {

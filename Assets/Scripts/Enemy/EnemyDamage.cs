@@ -12,9 +12,31 @@ public class EnemyDamage : MonoBehaviour
     public string animAttackName;
     public string animWalkName;
 
+    public bool attacking;
     private void Start()
     {
         anim = GetComponent<Animator>();
+    }
+    private void Update()
+    {
+        if (attacking)
+        {
+            if (anim != null)
+            {
+
+                anim.SetBool(animWalkName, false);
+                anim.SetBool(animAttackName, true);
+            }
+        }
+        else
+        {
+            if (anim != null)
+            {
+
+                anim.SetBool(animWalkName, true);
+                anim.SetBool(animAttackName, false);
+            }
+        }
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -25,12 +47,9 @@ public class EnemyDamage : MonoBehaviour
             {
                 playerHealth.TakeDamage(damageAmount);
                 playerHealth.takingDamage = true;
-                //if(anim != null)
-                //{
-                //    anim.SetBool(animWalkName, false);
-                //    anim.SetBool(animAttackName, true);
-                //}
+
             }
+            attacking = true;
         }
     }
     private void OnCollisionStay2D(Collision2D other)
@@ -41,12 +60,9 @@ public class EnemyDamage : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damageAmount);
-                //if (anim != null)
-                //{
-                //    anim.SetBool(animWalkName, false);
-                //    anim.SetBool(animAttackName, true);
-                //}
+
             }
+            attacking = true;
         }
     }
     private void OnCollisionExit2D(Collision2D other)
@@ -55,11 +71,8 @@ public class EnemyDamage : MonoBehaviour
         {
             PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
             playerHealth.takingDamage = false;
-            //if (anim != null)
-            //{
-            //    anim.SetBool(animWalkName, true);
-            //    anim.SetBool(animAttackName, false);
-            //}
+            attacking = false;
         }
     }
+   
 }

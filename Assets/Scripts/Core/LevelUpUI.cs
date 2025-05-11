@@ -28,8 +28,8 @@ public class LevelUpUI : MonoBehaviour
     IEnumerator PauseMouse()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        yield return new WaitForSeconds(0.25f);
-        Time.timeScale = 0f;
+        Time.timeScale = 0;
+        yield return new WaitForSecondsRealtime(1f);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }

@@ -59,7 +59,6 @@ public class Scenes : MonoBehaviour
             SceneManager.LoadScene(levelIndexSelected);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = false;
-
         }
         else
             Debug.Log("Character Locked: not ready to play");

@@ -50,12 +50,13 @@ public class PlayerHealth : MonoBehaviour
             healthbarAlpha = Color.Lerp(new Color(healthbarAlpha.r, healthbarAlpha.g, healthbarAlpha.b, 0), new Color(healthbarAlpha.r, healthbarAlpha.g, healthbarAlpha.b, 1), 1f);
             healthBarFill.color = healthbarAlpha;
         }
-        else
+        else if(!takingDamage)
         {
             playerBlood.SetActive(false);
             healthbarAlpha = Color.Lerp(new Color(healthbarAlpha.r, healthbarAlpha.g, healthbarAlpha.b, 1), new Color(healthbarAlpha.r, healthbarAlpha.g, healthbarAlpha.b, 0), 1f);
             healthBarFill.color = healthbarAlpha;
         }
+
         if(playerHealth <= 0)
         {
             StartCoroutine(Death());

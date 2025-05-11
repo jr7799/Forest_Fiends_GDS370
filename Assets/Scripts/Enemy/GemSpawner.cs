@@ -42,9 +42,9 @@ public class GemSpawner : MonoBehaviour
             int posX = 0;
             int posY = 0;
             while(posX == 0)
-                posX = Random.Range(-5, 5);
+                posX = Random.Range(-3, 3);
             while(posY == 0)
-                posY = Random.Range(-5, 5);
+                posY = Random.Range(-3, 3);
 
             Instantiate(healPrefab, new Vector3(transform.position.x + posX, transform.position.y + posY, 0), Quaternion.identity);
         }

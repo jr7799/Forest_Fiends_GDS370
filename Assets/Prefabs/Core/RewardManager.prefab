@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8328429496853979338}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.347755, y: 6.998827, z: 0.02374096}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44,7 +44,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9cc5a61c8415944931484cfc2501d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  magnet: {fileID: 0}
   playerBulletAttack: {fileID: 5406539270419022367, guid: bb15a38f6bc03fc4d84f8cadef64d1e7, type: 3}
   bibleAttack: {fileID: -8723664941131782574, guid: 403bfc34f85bb194eb87fc1c57660df0, type: 3}
-  whipAttack: {fileID: 5459642065684079497, guid: 3a60d399f793832438d3e40e4df06b65, type: 3}
+  whipAttack: {fileID: 2786233825235214266, guid: 3a60d399f793832438d3e40e4df06b65, type: 3}
+  potionSplash: {fileID: 2656911148737629107, guid: 477c804bc06afdb499d34fd7331a728f, type: 3}
+  traps: {fileID: 4544502791021304192, guid: 52f01cc407633864299c0133cb252180, type: 3}
+  boomerang: {fileID: 5983544662595847679, guid: 51ecbe4c86fb83b4e87466b488cd11d0, type: 3}
   playerAttack: {fileID: 0}
+  upgradeButtonGroups: []
+  playerRelatedButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  allWeaponsButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  whipButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  boomButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  potionButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  trapButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  shootingButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  orbButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  weaponButtonGroups: []
+  whipUnlockButton: {fileID: 0}
+  boomUnlockButton: {fileID: 0}
+  potionUnlockButton: {fileID: 0}
+  trapUnlockButton: {fileID: 0}
+  shootingUnlockButton: {fileID: 0}
+  orbUnlockButton: {fileID: 0}
+  allWeaponButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

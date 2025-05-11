@@ -3,22 +3,34 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour, IDataPersistance
 {
-    [Header("Audio Sources")]
+    [Header("Game Audio Sources")]
     [SerializeField] public AudioSource enemyDamageSource;
     [SerializeField] public AudioSource levelUpSource;
     [SerializeField] public AudioSource clickSource;
-    [SerializeField] public AudioSource shootSource = new AudioSource();
     [SerializeField] public AudioSource collectSource;
+    [SerializeField] public AudioSource coinSource;
     [SerializeField] public AudioSource musicSource;
 
-    [Header("Sound Effects")]
+    [Header("Weapon  Audio Sources")]
+    [SerializeField] public AudioSource shootSource = new AudioSource();
+    [SerializeField] public AudioSource whipSource = new AudioSource();
+    [SerializeField] public AudioSource starSource = new AudioSource();
+    [SerializeField] public AudioSource trapSource = new AudioSource();
+    [SerializeField] public AudioSource boomerangeSource = new AudioSource();
+
+    [Header("Game Sound Effects")]
     [SerializeField] private AudioClip enemyDamageSound;
     [SerializeField] private AudioClip playerDamageSound;
     [SerializeField] private AudioClip levelUpMusic;
     [SerializeField] private AudioClip mouseClickSound;
-    [SerializeField] private AudioClip playerShootingSound;
     [SerializeField] private AudioClip collectSound;
 
+    [Header("Weapon  Sound Effects")]
+    [SerializeField] private AudioClip playerShootingSound;
+    [SerializeField] private AudioClip whipSound;
+    [SerializeField] private AudioClip starSound;
+    [SerializeField] private AudioClip trapSound;
+    [SerializeField] private AudioClip boomerangSound;
     [Header("Volume")]
     [Range(0f, 1f)]
     [SerializeField] public float volume = 1f;
@@ -34,6 +46,12 @@ public class SoundManager : MonoBehaviour, IDataPersistance
         clickSource.volume = volume;
         shootSource.volume = volume;
         collectSource.volume = volume;
+        coinSource.volume = volume;
+        whipSource.volume = volume;
+        starSource.volume = volume;
+        trapSource.volume = volume;
+        boomerangeSource.volume = volume;
+
     }
     public void ButtonClick()
     {
@@ -57,28 +75,31 @@ public class SoundManager : MonoBehaviour, IDataPersistance
         shootSource.volume = volume;
         shootSource.Play();
     }
-
-    public void StopBullet()//
-    {
-        shootSource.Stop();
-    }
     public void Whip()
     {
-        // Add whip sound if needed
+        whipSource.volume = volume;
+        whipSource.Play();
     }
     public void Star()
     {
-        // Add whip sound if needed
+        starSource.volume = volume;
+        starSource.Play();
     }
     public void caltrops()
     {
-        // Add whip sound if needed
+        trapSource.volume = volume;
+        trapSource.Play();
     }
     public void boomerang()
     {
-
+        boomerangeSource.volume = volume;
+        boomerangeSource.Play();
     }
-
+    public void coin()
+    {
+        coinSource.volume = volume;
+        coinSource.Play();
+    }
     public void LoadData(GameData data)
     {
         volume = data.SFXMusic;

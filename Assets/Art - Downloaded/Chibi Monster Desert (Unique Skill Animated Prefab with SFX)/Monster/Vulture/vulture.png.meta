@@ -338,12 +338,12 @@ TextureImporter:
       name: vulture_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3768
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 124
+        y: 3771
+        width: 174
+        height: 213
+      alignment: 9
+      pivot: {x: 0.49474868, y: 0.6072442}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,12 +360,12 @@ TextureImporter:
       name: vulture_1
       rect:
         serializedVersion: 2
-        x: 432
+        x: 549
         y: 3768
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 181
+        height: 212
+      alignment: 9
+      pivot: {x: 0.5, y: 0.61636984}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -382,12 +382,12 @@ TextureImporter:
       name: vulture_2
       rect:
         serializedVersion: 2
-        x: 864
+        x: 985
         y: 3768
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 177
+        height: 208
+      alignment: 9
+      pivot: {x: 0.5051621, y: 0.6098222}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -404,12 +404,12 @@ TextureImporter:
       name: vulture_3
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 3768
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1413
+        y: 3769
+        width: 181
+        height: 211
+      alignment: 9
+      pivot: {x: 0.5100961, y: 0.603931}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -423,103 +423,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vulture_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3336
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2bf1aeb3059fe12e0800000000000000
-      internalID: -2153009448838619214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vulture_5
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 3336
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03df1fa38bd4ea090800000000000000
-      internalID: -8021388432642015952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vulture_6
-      rect:
-        serializedVersion: 2
-        x: 864
-        y: 3336
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f83c6270a59136b0800000000000000
-      internalID: -5318305168600844043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vulture_7
-      rect:
-        serializedVersion: 2
-        x: 1296
-        y: 3336
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d96af2175c5522e0800000000000000
-      internalID: -2151211717949232688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: vulture_8
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 3336
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 124
+        y: 3343
+        width: 174
+        height: 209
+      alignment: 9
+      pivot: {x: 0.4882247, y: 0.611105}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -536,12 +448,12 @@ TextureImporter:
       name: vulture_9
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 3336
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 541
+        y: 3341
+        width: 183
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5074643, y: 0.59705234}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -558,12 +470,12 @@ TextureImporter:
       name: vulture_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2904
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 985
+        y: 3337
+        width: 177
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -580,12 +492,12 @@ TextureImporter:
       name: vulture_11
       rect:
         serializedVersion: 2
-        x: 432
-        y: 2904
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1424
+        y: 3380
+        width: 172
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -602,12 +514,12 @@ TextureImporter:
       name: vulture_12
       rect:
         serializedVersion: 2
-        x: 864
-        y: 2904
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1878
+        y: 3401
+        width: 175
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -624,12 +536,12 @@ TextureImporter:
       name: vulture_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2472
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 2361
+        y: 3461
+        width: 150
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -643,103 +555,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vulture_14
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 2472
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8d44b02adc1081f0800000000000000
-      internalID: -1044803390372819569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vulture_15
-      rect:
-        serializedVersion: 2
-        x: 864
-        y: 2472
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 738a41e0ce2d7c510800000000000000
-      internalID: 1569454906452256823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vulture_16
-      rect:
-        serializedVersion: 2
-        x: 1296
-        y: 2472
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dcaa3df7e3136b0d0800000000000000
-      internalID: -3407481923556889907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vulture_17
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2040
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e2281d35e0d68ae0800000000000000
-      internalID: -1547319738964106527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: vulture_18
       rect:
         serializedVersion: 2
-        x: 432
-        y: 2040
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 2357
+        y: 3337
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -756,12 +580,12 @@ TextureImporter:
       name: vulture_19
       rect:
         serializedVersion: 2
-        x: 864
-        y: 2040
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 82
+        y: 2992
+        width: 183
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -778,12 +602,12 @@ TextureImporter:
       name: vulture_20
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 2040
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 527
+        y: 2978
+        width: 180
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -800,12 +624,12 @@ TextureImporter:
       name: vulture_21
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 2040
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 988
+        y: 2969
+        width: 174
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -822,12 +646,12 @@ TextureImporter:
       name: vulture_22
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 2040
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 107
+        y: 2905
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -844,12 +668,12 @@ TextureImporter:
       name: vulture_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1608
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 539
+        y: 2905
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -866,12 +690,12 @@ TextureImporter:
       name: vulture_24
       rect:
         serializedVersion: 2
-        x: 432
-        y: 1608
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1007
+        y: 2905
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -888,12 +712,12 @@ TextureImporter:
       name: vulture_25
       rect:
         serializedVersion: 2
-        x: 864
-        y: 1608
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 124
+        y: 2537
+        width: 174
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -910,12 +734,12 @@ TextureImporter:
       name: vulture_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1176
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 549
+        y: 2533
+        width: 181
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -932,12 +756,12 @@ TextureImporter:
       name: vulture_27
       rect:
         serializedVersion: 2
-        x: 432
-        y: 1176
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 985
+        y: 2529
+        width: 177
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -954,12 +778,12 @@ TextureImporter:
       name: vulture_28
       rect:
         serializedVersion: 2
-        x: 864
-        y: 1176
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1413
+        y: 2533
+        width: 181
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -976,12 +800,12 @@ TextureImporter:
       name: vulture_29
       rect:
         serializedVersion: 2
-        x: 0
-        y: 744
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 143
+        y: 2473
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -998,12 +822,12 @@ TextureImporter:
       name: vulture_30
       rect:
         serializedVersion: 2
-        x: 432
-        y: 744
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 575
+        y: 2473
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1020,12 +844,12 @@ TextureImporter:
       name: vulture_31
       rect:
         serializedVersion: 2
-        x: 864
-        y: 744
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1007
+        y: 2473
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1042,12 +866,12 @@ TextureImporter:
       name: vulture_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 312
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1439
+        y: 2473
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1064,12 +888,12 @@ TextureImporter:
       name: vulture_33
       rect:
         serializedVersion: 2
-        x: 432
-        y: 312
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 124
+        y: 2105
+        width: 174
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1086,12 +910,12 @@ TextureImporter:
       name: vulture_34
       rect:
         serializedVersion: 2
-        x: 864
-        y: 312
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 542
+        y: 2081
+        width: 183
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1108,12 +932,12 @@ TextureImporter:
       name: vulture_35
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 312
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 985
+        y: 2041
+        width: 176
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1130,12 +954,12 @@ TextureImporter:
       name: vulture_36
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 312
-        width: 432
-        height: 432
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1424
+        y: 2084
+        width: 172
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1144,6 +968,600 @@ TextureImporter:
       bones: []
       spriteID: a11208341bbebc650800000000000000
       internalID: 6254351654108274970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_37
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 2105
+        width: 174
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf66aa345b2c2f499ac26ad539a1dc0
+      internalID: 1422437947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_38
+      rect:
+        serializedVersion: 2
+        x: 2361
+        y: 2165
+        width: 150
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63100b206c9456848815f91c15b10299
+      internalID: -676921855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_39
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 2041
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c610460cf6fa89468b4f4785caa9afb
+      internalID: 680517773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_40
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 2041
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870d64a81736903498070b79993e6595
+      internalID: 1711295029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_41
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 2041
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e847df35ccc7ae545941622684fac5db
+      internalID: -1813728205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_42
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 2041
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e136e31a05f07449bf10da04522d48
+      internalID: -723157178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_43
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 2041
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1b1e0e25a42e442b0afbed65d5760b
+      internalID: -132952013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_44
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1697
+        width: 183
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141d2e2ad83b75a4a8844c03eda5a828
+      internalID: 1839546524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_45
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1682
+        width: 180
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a069d496c263d42b1f83a051ff3c7c
+      internalID: -1492341283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_46
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1673
+        width: 174
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c3956ec33681c49a9d9396112fffa8
+      internalID: -1380898743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_47
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1609
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14446e17f54bfa5418f0f64630370f33
+      internalID: 1985116780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_48
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1609
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2f2b9e73a851b4ca6f1949f7564332
+      internalID: -1302247772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_49
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 1609
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b2ce0edeb104e4188b41918634b350
+      internalID: -1301277087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_50
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1241
+        width: 174
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf865e0067d72f4ea04b6e7ec87d2ab
+      internalID: 268158446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_51
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1177
+        width: 179
+        height: 157
+      alignment: 9
+      pivot: {x: 0.5115653, y: 0.5000008}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f2a5bdfec1cd349a51e5eaccbd38cb
+      internalID: -329917056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_52
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1177
+        width: 198
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847e3beda3fbdec4cac643d344fa0e55
+      internalID: -682432182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_53
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1177
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f64d7ad0d07834f85ea19797e05234
+      internalID: 1985053280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_54
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 809
+        width: 173
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbd8cef8e17b234686689da3b9f6bc1
+      internalID: 1086746563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_55
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 745
+        width: 179
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455f4d1ffa6deed4eb416a487f53362a
+      internalID: 1370193130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_56
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 745
+        width: 198
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6775a89259762ab41a63ff508828d3f6
+      internalID: -1258669186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_57
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 745
+        width: 146
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a6e8019c89e00429ce161c41673606
+      internalID: 1895656056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_58
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 566
+        width: 135
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f2ce2109d4ee14eb45af284d49066b
+      internalID: -88449147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_59
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 351
+        width: 392
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aff6cda706ff8347a48541febe2b9ad
+      internalID: -1109862581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_60
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 351
+        width: 392
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92daa54013b70354b871915786ee6309
+      internalID: 2008735163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_61
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 327
+        width: 367
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bc9c41fdc17fa4ca8108aef5085428
+      internalID: -1602921345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_62
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 327
+        width: 343
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24210bfc78d80c543b1f3bae0a83ec5a
+      internalID: -643117790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vulture_63
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 331
+        width: 155
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99de27ca5d0d5c428029bec82d0af88
+      internalID: 1146176932
       vertices: []
       indices: 
       edges: []
@@ -1193,9 +1611,36 @@ TextureImporter:
       vulture_34: -8475801077974872683
       vulture_35: 1545344451640084260
       vulture_36: 6254351654108274970
+      vulture_37: 1422437947
+      vulture_38: -676921855
+      vulture_39: 680517773
       vulture_4: -2153009448838619214
+      vulture_40: 1711295029
+      vulture_41: -1813728205
+      vulture_42: -723157178
+      vulture_43: -132952013
+      vulture_44: 1839546524
+      vulture_45: -1492341283
+      vulture_46: -1380898743
+      vulture_47: 1985116780
+      vulture_48: -1302247772
+      vulture_49: -1301277087
       vulture_5: -8021388432642015952
+      vulture_50: 268158446
+      vulture_51: -329917056
+      vulture_52: -682432182
+      vulture_53: 1985053280
+      vulture_54: 1086746563
+      vulture_55: 1370193130
+      vulture_56: -1258669186
+      vulture_57: 1895656056
+      vulture_58: -88449147
+      vulture_59: -1109862581
       vulture_6: -5318305168600844043
+      vulture_60: 2008735163
+      vulture_61: -1602921345
+      vulture_62: -643117790
+      vulture_63: 1146176932
       vulture_7: -2151211717949232688
       vulture_8: -1070519513450160749
       vulture_9: 7457014265570863589

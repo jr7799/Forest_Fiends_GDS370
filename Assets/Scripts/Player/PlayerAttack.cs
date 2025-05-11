@@ -272,6 +272,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (whipTimer <= 0f)
         {
+            soundManager.Whip();
             TriggerWhipEffect();
         }       
     }
@@ -404,7 +405,7 @@ public class PlayerAttack : MonoBehaviour
                 {
                     GameObject newBoomerang = Instantiate(boomerangPrefab, boomerangSpawnPoint.position, Quaternion.identity);
                     activeBoomerangs.Add(newBoomerang);
-
+                    soundManager.boomerang();
                     Vector3 targetPosition = GetNthClosestEnemyPosition(i);
                     Vector3 throwDirection = (targetPosition - boomerangSpawnPoint.position).normalized;
 
@@ -466,6 +467,7 @@ public class PlayerAttack : MonoBehaviour
 
                         potion = Instantiate(potionPrefab, start, Quaternion.identity);
                         activePotions.Add(potion);
+                        soundManager.Star();
                         potion.GetComponent<PotionImpact>().destroyed.AddListener(() =>
                         {
                             activePotions.Remove(potion); // Remove from list on destroy
@@ -531,6 +533,7 @@ public class PlayerAttack : MonoBehaviour
             for (int i = 0; i < maxTraps; i ++)
             {
                 trap = Instantiate(bearTrapPrefab, transform.position, Quaternion.identity);
+                soundManager.caltrops();
             }
             trapTimer = trapTimerReset;
         }
