@@ -259,8 +259,8 @@ MonoBehaviour:
   shadowType: 1
   shadowLayer: 0
   shadowDistance: 1
-  shadowDistanceMin: 2.0680473
-  shadowDistanceMax: 10
+  shadowDistanceMin: 0.2863926
+  shadowDistanceMax: 1
   shadowTranslucency: 0.5
   maskType: 3
   maskLit: 0

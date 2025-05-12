@@ -292,10 +292,10 @@ MonoBehaviour:
   shadowType: 1
   shadowLayer: 0
   shadowDistance: 1
-  shadowDistanceMin: 2.0976331
-  shadowDistanceMax: 10
+  shadowDistanceMin: 0.2761028
+  shadowDistanceMax: 0.9663799
   shadowTranslucency: 0.5
-  maskType: 3
+  maskType: 1
   maskLit: 0
   maskPivot: 0
   maskLayer: 0
@@ -311,6 +311,6 @@ MonoBehaviour:
     spriteRenderer: {fileID: 0}
   mainShape:
     shadowType: 1
-    maskType: 3
+    maskType: 1
     maskPivot: 0
     transform: {fileID: 5263580506807328265}
