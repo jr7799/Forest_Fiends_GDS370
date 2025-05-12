@@ -64,6 +64,10 @@ public class Scenes : MonoBehaviour
             Debug.Log("Character Locked: not ready to play");
             //message or something
     }
+    public void Restart()
+    {
+        SceneManager.LoadScene(gameManager.levelIndex);
+    }
     public void ToShop()
     {
         if(music.musicSource.clip != music.mainMenuMusic)
