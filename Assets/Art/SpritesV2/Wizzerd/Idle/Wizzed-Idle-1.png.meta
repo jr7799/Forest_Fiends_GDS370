@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wizzed-Idle-1_0: 7249110266198623440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
