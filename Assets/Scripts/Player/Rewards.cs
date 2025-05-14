@@ -246,9 +246,17 @@ public class Rewards : MonoBehaviour
         public void IncreaseMagnetRadius()
         {
             if(magnet.pullSpeed < 10)
+            {
                 magnet.pullSpeed += 0.2f;
+                
+            }
+                
             if(magnet.magnetRadius < 20)
+            {
                 magnet.magnetRadius += 0.2f;
+                magnet.temp = magnet.magnetRadius;
+            }
+               
         }
     #endregion
 

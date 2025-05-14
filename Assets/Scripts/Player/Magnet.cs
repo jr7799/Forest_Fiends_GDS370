@@ -5,9 +5,25 @@ public class Magnet : MonoBehaviour
     public float magnetRadius = 5f;
     public float pullSpeed = 5f;
     public LayerMask magneticLayer;
-
+    public float temp;
+    public GameObject MaxMagnetEffect;
+    private void Start()
+    {
+        temp = magnetRadius;
+    }
     void Update()
     {
+        
+        if(magnetRadius > temp)
+        {
+            MaxMagnetEffect.SetActive(true);
+        }
+        else
+        {
+            MaxMagnetEffect.SetActive(false);
+
+        }
+
         // Find all nearby magnetic objects
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, magnetRadius, magneticLayer);
 
@@ -18,6 +34,7 @@ public class Magnet : MonoBehaviour
 
             item.position += (Vector3)(direction * pullSpeed * Time.deltaTime);
         }
+         temp = magnetRadius;
     }
 
     // Optional: draw radius in scene view

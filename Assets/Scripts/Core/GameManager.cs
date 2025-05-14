@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour, IDataPersistance
     private void Update()
     {        
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name == "ForestGameScene")
+        if (currentScene.name == "GameScene - Forest" || currentScene.name == "GameScene - Desert" || currentScene.name == "GameScene - Tundra")
         {
             if (killCounter == null)
                 killCounter = GameObject.Find("KilledTXT").GetComponent<TMP_Text>();

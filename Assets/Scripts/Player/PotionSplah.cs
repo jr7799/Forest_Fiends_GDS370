@@ -32,6 +32,22 @@ public class PotionSplah : MonoBehaviour
                     enemy.TakeDamage(damage * 1.35f, true);
             }
         }
+
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        isCriticalHit = Random.Range(0, 100) < 30;
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
+            if (enemy != null)
+            {
+                if (!isCriticalHit)
+                    enemy.TakeDamage(damage, false);
+                else
+                    enemy.TakeDamage(damage * 1.35f, true);
+            }
+        }
     }
     bool inside;
     float timer = .2f;
@@ -44,26 +60,7 @@ public class PotionSplah : MonoBehaviour
         }
         
     }
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        inside = true;
-        if(timer <= 0)
-        {
-            isCriticalHit = Random.Range(0, 100) < 30;
-            if (other.gameObject.CompareTag("Enemy"))
-            {
-                EnemyHealth enemy = other.gameObject.GetComponent<EnemyHealth>();
-                if (enemy != null)
-                {
-                    if (!isCriticalHit)
-                        enemy.TakeDamage(damage, false);
-                    else
-                        enemy.TakeDamage(damage * 1.35f, true);
-                }
-            }
-            timer = timerReset;
-        }
-    }
+
     float lerpDuration = 1f;
     IEnumerator fadeOut()
     {
@@ -84,7 +81,6 @@ public class PotionSplah : MonoBehaviour
         mainModule.startColor = new ParticleSystem.MinMaxGradient(off);
         Destroy(gameObject);
         yield return null;
-        
     }
     IEnumerator fadeIn()
     {
