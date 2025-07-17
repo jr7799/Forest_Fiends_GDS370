@@ -1,5 +1,5 @@
 {
-    "coins": 4946,
+    "coins": 4017,
     "charactersUnlocked": {
         "keys": [
             "178de8b5-6c8f-4948-9f8d-e4d11ecd6878",
@@ -13,9 +13,9 @@
             false,
             true,
             false,
+            false,
             true,
-            true,
-            true
+            false
         ]
     },
     "damageNumbersOn": true,
