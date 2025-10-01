@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 6659334256821169210}
   - component: {fileID: -636089432892496095}
   - component: {fileID: 5705156280331062767}
-  - component: {fileID: 2987819121807133343}
   m_Layer: 10
   m_Name: Enemy- Small Eye (scaler) (Eye Script here)
   m_TagString: Enemy
@@ -260,43 +259,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2987819121807133343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671706927557675049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5783dbbad6a59184fa58aa75d79bcc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shadowType: 3
-  shadowLayer: 0
-  shadowDistance: 1
-  shadowDistanceMin: 0.2761028
-  shadowDistanceMax: 0.9663799
-  shadowTranslucency: 0.5
-  maskType: 5
-  maskLit: 0
-  maskPivot: 0
-  maskLayer: 0
-  maskLitCustom: 1
-  bumpMapMode:
-    type: 0
-    textureType: 0
-    texture: {fileID: 0}
-    sprite: {fileID: 0}
-    invertX: 0
-    invertY: 0
-    depth: 1
-    spriteRenderer: {fileID: 5705156280331062767}
-  mainShape:
-    shadowType: 3
-    maskType: 5
-    maskPivot: 0
-    transform: {fileID: 5263580506807328265}
 --- !u!1 &1885670275505096873
 GameObject:
   m_ObjectHideFlags: 0

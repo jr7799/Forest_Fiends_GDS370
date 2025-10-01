@@ -1,5 +1,5 @@
 {
-    "coins": 4017,
+    "coins": 3569,
     "charactersUnlocked": {
         "keys": [
             "178de8b5-6c8f-4948-9f8d-e4d11ecd6878",
@@ -11,14 +11,14 @@
         ],
         "values": [
             false,
-            true,
+            false,
             false,
             false,
             true,
             false
         ]
     },
-    "damageNumbersOn": true,
+    "damageNumbersOn": false,
     "MusicVolume": 0.2395595759153366,
     "SFXMusic": 0.4305036962032318
 }

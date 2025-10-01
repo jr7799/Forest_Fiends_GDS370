@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: -636089432892496095}
   - component: {fileID: 7805429621578415330}
   - component: {fileID: 1105718060544779888}
-  - component: {fileID: 327477526796612863}
   - component: {fileID: -8865469075984622216}
   m_Layer: 10
   m_Name: GoblinTreeGuardian
@@ -264,19 +263,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &327477526796612863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671706927557675049}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8462421185b490745ba91d2d39d36c78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animTrigger: MoveTreeGob
 --- !u!114 &-8865469075984622216
 MonoBehaviour:
   m_ObjectHideFlags: 0

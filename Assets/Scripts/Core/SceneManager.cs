@@ -99,6 +99,10 @@ public class Scenes : MonoBehaviour
             SceneManager.LoadScene(7);
         }
     }
+    public void Credits()
+    {
+        SceneManager.LoadScene(10);
+    }
     public void QuitGame()
     {
         Application.Quit();
