@@ -25,6 +25,12 @@ public class Scenes : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         music = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
         levelIndexSelected = gameManager.levelIndex;
+
+        if (SceneManager.GetActiveScene().name == "WinScene")
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
     private void Update()
     {
