@@ -19,7 +19,8 @@ public class PlayerXP : MonoBehaviour
     SoundManager soundManager;
     private void Start()
     {
-        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        //soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        soundManager = SoundManager.instance;
     }
     private void Update()
     {

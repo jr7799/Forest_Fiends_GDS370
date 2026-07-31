@@ -10,8 +10,8 @@ public class GemXP : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
-
+        //soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        soundManager = SoundManager.instance;
         if (gameObject.name == "LargeGem")
         {
             isRedGem = true;

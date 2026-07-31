@@ -138,7 +138,8 @@ public class PlayerAttack : MonoBehaviour
     {
         cam = Camera.main;
         screenShake = GameObject.Find("Main Camera").GetComponent<ScreenShake>();
-        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        //soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        soundManager = SoundManager.instance;
 
         ArrowImage.SetActive(false);
         OrbImage.SetActive(false);

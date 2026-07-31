@@ -1,8 +1,11 @@
+using System;
 using System.Drawing;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour, IDataPersistance
 {
+    public static SoundManager instance;
+    
     [Header("Game Audio Sources")]
     [SerializeField] public AudioSource enemyDamageSource;
     [SerializeField] public AudioSource levelUpSource;
@@ -35,9 +38,19 @@ public class SoundManager : MonoBehaviour, IDataPersistance
     [Range(0f, 1f)]
     [SerializeField] public float volume = 1f;
 
-    void Start()//
+    private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
+
     private void Update()
     {
         musicSource.volume = volume;

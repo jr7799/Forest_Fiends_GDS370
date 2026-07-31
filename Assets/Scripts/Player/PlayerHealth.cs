@@ -31,8 +31,10 @@ public class PlayerHealth : MonoBehaviour
         healthBarFill.color = healthbarAlpha;
 
         playerBlood.SetActive(false);
-        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
-        bgMusic = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
+        //soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        soundManager = SoundManager.instance;
+        bgMusic = BGMusic.instance;
+        //bgMusic = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
     }
 
     private void Update()

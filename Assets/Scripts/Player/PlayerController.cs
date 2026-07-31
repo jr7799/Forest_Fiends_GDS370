@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         spriteRender = GetComponent<SpriteRenderer>();
-        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        //soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        soundManager = SoundManager.instance;
 
         rb = GetComponent<Rigidbody2D>();
         cam = Camera.main;

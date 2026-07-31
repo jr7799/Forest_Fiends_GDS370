@@ -12,7 +12,8 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         isCriticalHit = Random.Range(0, 100) < critChance;
-        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        //soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        soundManager = SoundManager.instance;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

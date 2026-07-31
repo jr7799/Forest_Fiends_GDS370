@@ -15,7 +15,8 @@ public class GameTimer : MonoBehaviour
     void Start()
     { 
         //updateBestTime();
-        soundManager = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
+        //soundManager = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
+        soundManager = BGMusic.instance;
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
     bool switchEndgame;

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -8,6 +9,8 @@ public class Scenes : MonoBehaviour
     GameManager gameManager;
     public int levelIndexSelected;
     BGMusic music;
+
+    [SerializeField] private List<GameObject> OptionPages = new();
     //private void Awake()
     //{
     //    if (instance == null)
@@ -23,7 +26,8 @@ public class Scenes : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        music = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
+        //music = GameObject.Find("BGMusicManager").GetComponent<BGMusic>();
+        music = BGMusic.instance;
         levelIndexSelected = gameManager.levelIndex;
 
         if (SceneManager.GetActiveScene().name == "WinScene")
@@ -32,6 +36,14 @@ public class Scenes : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
+
+    public void SwapPages(int page)
+    {
+        foreach (GameObject pageOption in OptionPages)
+            pageOption.SetActive(false);
+        OptionPages[page].SetActive(true);
+    }
+    
     private void Update()
     {
         if(gameManager.levelIndex == 1 || gameManager.levelIndex == 8 || gameManager.levelIndex == 9)

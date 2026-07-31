@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8410859211056277265}
   - component: {fileID: 5247095235154670608}
   - component: {fileID: 4919295590729990167}
-  - component: {fileID: 1312136249208543341}
   m_Layer: 0
   m_Name: Static Tree Type 2 Green Snow
   m_TagString: Untagged
@@ -126,40 +125,3 @@ CapsuleCollider2D:
   m_Offset: {x: 0.094258785, y: 0.7609197}
   m_Size: {x: 0.4814825, y: 1.6088469}
   m_Direction: 0
---- !u!70 &1312136249208543341
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4172422395106126512}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.06779568, y: 1.2812783}
-  m_Size: {x: 1.8777642, y: 0.52732044}
-  m_Direction: 1

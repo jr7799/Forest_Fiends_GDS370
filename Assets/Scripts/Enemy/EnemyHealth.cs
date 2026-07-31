@@ -23,9 +23,11 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = startHealth;
         pupilTracking = GameObject.Find("Viewcone").GetComponent<PupilTracking>();
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        settings = GameObject.Find("SettingsManager").GetComponent<SettingsScript>();
+        //settings = GameObject.Find("SettingsManager").GetComponent<SettingsScript>();
+        settings = SettingsScript.instance;
         gemSpawner = GetComponent<GemSpawner>();
-        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        //soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        soundManager = SoundManager.instance;
     }
     public void TakeDamage(float damage, bool isCriticalHit)
     {
