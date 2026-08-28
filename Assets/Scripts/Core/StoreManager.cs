@@ -29,6 +29,10 @@ public class StoreManager : MonoBehaviour
             {
                 gameManager.characterSelected = true;
             }
+            else
+            {
+                gameManager.characterSelected = false;
+            }
         }
     }
     public void Buy()
